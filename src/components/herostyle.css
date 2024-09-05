@@ -1,0 +1,48 @@
+
+
+.outer-container-hero
+{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 225, 225);
+}
+
+.header-names
+{
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.two-minds-one-passion
+{
+    margin-top: 5%; 
+    font-family: "Abril Fatface", serif;
+}
+
+.hero-names-container
+{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+}
+
+.coming-soon
+{
+    margin-top: 2%; 
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.omd-img
+{
+    border-radius: 10px;
+    width: 15vw;
+    margin-bottom: 5%;
+}

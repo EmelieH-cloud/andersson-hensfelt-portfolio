@@ -1,0 +1,33 @@
+.bg-footer {
+    background-color: #a2a09a;
+    padding: 50px 0 30px;
+}
+
+.footer-heading {
+    letter-spacing: 3px;
+}
+
+.footer-link a {
+    color: #747070;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: #444237;
+}
+
+.contact-info {
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+
+
+
+.footer-alt {
+    color: #161515;
+        font-family: "Raleway", sans-serif;
+}
+

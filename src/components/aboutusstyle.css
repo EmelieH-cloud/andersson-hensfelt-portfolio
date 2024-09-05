@@ -1,0 +1,23 @@
+
+.our-story-p
+{
+    width: 50vw;
+    margin: 3%;
+}
+
+.about-us-wrapper
+{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.about-header
+{
+        font-family: "Abril Fatface", serif;
+
+}
