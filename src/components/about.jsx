@@ -2,6 +2,7 @@ import React from 'react'
 import './aboutusstyle.css'
 import Signatur1 from './signatur1.png';
 import Signatur2 from './signatur2.png';
+import Flower from './flwr.png';
 
 const about = () => {
   return (
@@ -24,7 +25,8 @@ You might think fate had done its part at that point, but the most
 </p>
 
 <p className='our-story-p  animate__animated  animate__slideInRight'>
-  <h5 className='honolulu-header'>The Honolulu Flower</h5>
+  <h5 className='honolulu-header'>The Honolulu Flower
+  <img src={Flower} alt="flower" className='honolulu-img'/></h5>
   One day, when we were both deeply immersed and frustrated by a bug we had been working on for a long time, 
   Emelie suddenly burst out, "That's where we’re going!" She had been scrolling around on Google Maps and was
    now pointing at what seemed to be an island in the middle of nowhere. It turned out to be Honolulu, Hawaii.<br></br><br></br>

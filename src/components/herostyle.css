@@ -13,13 +13,17 @@
    
 }
 
+.omd4-icon
+{
+    width: 15%; 
+}
+
 .intro-p 
 {
     font-size: .9rem;
     width: 60vw;
     padding: 2%;
     border-radius: 20px;
-    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.3);
     /* Vit skugga */
 }
 
@@ -55,7 +59,7 @@
 
 .coming-soon
 {
-    margin-top: 2%; 
+    margin-top: 1%; 
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
@@ -75,6 +79,7 @@
     margin: 0 auto;
     width: 60%;
     text-align: center;
+    font-family: "Raleway", sans-serif;
 }
 
 .omd-img
@@ -113,14 +118,14 @@
 .icons-wrapper
 {
     box-shadow: 0 0 20px 0 rgb(117, 114, 114);
-    border-radius: 10px;
     display: flex;
     text-align: center;
-    margin: 3%;
+    margin: 2%;
     margin-top: 5%; 
-    width: 25vw;
+    border-radius: 20px;
+    width: 20vw;
     padding: 3%; 
-    flex-direction: column;
+    height: min-content;
     justify-content: space-between;
     align-items: center;
 }
@@ -129,17 +134,22 @@
 {
 
     font-family: "Raleway", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     width: 100vw;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 5%;
  
 
 }
 
 .flower-hero
 {
-    opacity: .4;
+    opacity: .7;
     width: 10vw;
+}
+
+.app-details-btn
+{
+    margin: 1%; 
 }

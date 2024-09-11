@@ -1,18 +1,30 @@
 .bg-footer 
 {
-    background-color: rgb(214, 206, 206);
+   background-color: rgb(197, 190, 190);
     padding: 50px 0 30px;
     height: 40vh;
+        font-size: 14px;
+                font-family: "Raleway", sans-serif;
 }
 
 .footer-heading {
     letter-spacing: 3px;
 }
 
+.mail-icon
+{
+    font-size: 1.4rem;
+}
+
+.org-icon
+{
+    font-size: 1.4rem;
+}
+
 .footer-link a {
-    color: #747070;
+ 
     line-height: 40px;
-    font-size: 14px;
+
     transition: all 0.5s;
 }
 
@@ -20,19 +32,26 @@
     color: #444237;
 }
 
-.contact-info {
-    color: #2d2d2d;
-    font-size: 14px;
-}
 
-
-p
+.tabicon-footer
 {
-            font-family: "Raleway", sans-serif;
+    width: 10%; 
+    position: absolute;
+    border-radius: 50%;
+
 }
 
-.footer-alt {
-    color: #161515;
-        font-family: "Raleway", sans-serif;
+.flower-footer-wrapper
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+
+
+
+
+
+
 

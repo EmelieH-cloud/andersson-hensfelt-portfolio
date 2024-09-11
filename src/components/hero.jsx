@@ -4,6 +4,7 @@ import 'animate.css';
 import OMD from './omd.jpg';
 import OMD2 from './omd2.jpg';
 import OMD3 from './omd3.jpg';
+import OMD4 from './omd-intro.png';
 import { FaGooglePlay } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -30,10 +31,10 @@ const hero = () => {
         </div>
      </div>
         <div className='one-more-date-container  animate__animated animate__fadeIn'>
-                <h1 className='our-apps-h1'>OUR APPS</h1>
+                <h1 className='our-apps-h1'>Introducing our first app release</h1>
                 <h2 className='coming-soon'>ONE MORE DATE</h2>
-        <p>Don't miss out on our very first app release!</p>
-           <button className='btn btn-light mb-3 app-details-btn' onClick={handleNavigate}>APP DETAILS <MdKeyboardArrowRight /></button>
+                <img src={OMD4} alt="omdicon" className='omd4-icon'/>
+           <button className='btn btn-light mb-3 app-details-btn' onClick={handleNavigate}>TECHNICAL DETAILS <MdKeyboardArrowRight /></button>
         <p className='omd-p'>ONE MORE DATE offers a fun way to explore your personal limits in the world of dating.
        It’s ideal for breaking the ice, getting to know new people or for adding excitement to a pre-party.
    
