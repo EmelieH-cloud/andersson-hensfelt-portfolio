@@ -2,23 +2,30 @@
 
 .outer-container-hero
 {
-    height: 120vh;
+    height: 70vh;
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(234, 225, 225);
+    background-color: rgb(221, 216, 216);
 }
 
 .header-names
 {
-    font-weight: 100;
+    width: 100vw;
+    font-weight: 200;
     font-size: 3rem;
+    letter-spacing: 20px;
+    margin-top: 5%; 
+    padding: 3%; 
+
+
 }
 
 .two-minds-one-passion
 {
-    margin-top: 5%; 
+    margin-top: 3%; 
     font-family: "Abril Fatface", serif;
 }
 
@@ -31,6 +38,7 @@
     height: 100%;
     width: 60%;
     flex-direction: column;
+    text-align: center;
 }
 
 .coming-soon
@@ -40,9 +48,86 @@
   font-weight: 300;
 }
 
+.img-container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.omd-p
+{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
 .omd-img
 {
     border-radius: 10px;
     width: 15vw;
-    margin-bottom: 5%;
+    margin: 1%;
+
+}
+
+.one-more-date-container
+{
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon-size
+{
+    font-size: 3rem;
+    border: 2px solid black;
+    padding: 3%;
+    border-radius: 10px;
+
+}
+
+.icons-outer-wrapper
+{
+    display: flex;
+}
+
+
+.icons-wrapper
+{
+    box-shadow: 0 0 20px 0 rgb(117, 114, 114);
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    margin: 3%;
+    margin-top: 5%; 
+    width: 25vw;
+    padding: 3%; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-apps-h1
+{
+
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    width: 100vw;
+    text-align: center;
+    padding-top: 3%;
+ 
+
+}
+
+.flower-hero
+{
+    opacity: .4;
+    width: 10vw;
 }

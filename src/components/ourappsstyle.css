@@ -1,0 +1,21 @@
+
+.our-apps-wrapper
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-img
+{
+    margin: 2%; 
+    border-radius: 10px;
+    width: 15%;
+}
+
+.omd-header
+{
+        font-family: "Abril Fatface", serif;
+}

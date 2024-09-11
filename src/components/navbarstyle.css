@@ -1,13 +1,12 @@
 
 .logo-navbar
 {
-    width: 40%;
-   border-radius: 10px;
+    width: 50%;
 }
 
 .navlinks
 {
-   
+    text-transform: uppercase;
         font-family: "Raleway", sans-serif;
 }
 
