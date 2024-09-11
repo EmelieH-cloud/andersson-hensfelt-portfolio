@@ -23,7 +23,10 @@ const hero = () => {
     
         <div className='hero-names-container'>
          <h1 className='header-names '>ANDERSSON & HENSFELT   <img src={Flower} alt="flower" className='flower-hero'/></h1>
-       
+       <p className='intro-p'>Andersson and Hensfelt is a small IT company based in Lund, led by Alinia Andersson and Emelie Hensfelt. We are dedicated, creative, and passionate about programming. A testament to our commitment is the app One More Date, 
+         which we developed early in our studies to become system developers. The app is available for download on both the App Store and Google Play.
+          We are always eager to tackle new challenges and bring innovative ideas to life.
+</p>
         </div>
      </div>
         <div className='one-more-date-container  animate__animated animate__fadeIn'>

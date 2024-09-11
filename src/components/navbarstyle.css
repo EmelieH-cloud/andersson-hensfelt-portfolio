@@ -2,6 +2,7 @@
 .logo-navbar
 {
     width: 50%;
+
 }
 
 .navlinks
@@ -12,4 +13,5 @@
 
 .navbar {
     background-color: white !important;
+    padding: 2%; 
 }

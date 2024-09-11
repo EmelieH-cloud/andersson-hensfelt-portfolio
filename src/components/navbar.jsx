@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary animate__animated animate__fadeIn">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+ <Navbar.Brand as={Link} to="/">
           <img src={Logo} alt="logo" className='logo-navbar' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,6 +20,7 @@ function NavBar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About Us</Nav.Link>
             <Nav.Link as={Link} to="/apps">Our Apps</Nav.Link>
+                
           </Nav>
         </Navbar.Collapse>
       </Container>
