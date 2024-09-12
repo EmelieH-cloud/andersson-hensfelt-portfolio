@@ -2,7 +2,7 @@
 {
    background-color: rgb(197, 190, 190);
     padding: 50px 0 30px;
-    height: 40vh;
+    height: 45vh;
         font-size: 14px;
                 font-family: "Raleway", sans-serif;
 }
@@ -32,22 +32,44 @@
     color: #444237;
 }
 
-
-.tabicon-footer
-{
-    width: 10%; 
-    position: absolute;
+.tabicon-footer {
+    width: 10%;
+    padding: 3%; 
     border-radius: 50%;
-
 }
 
-.flower-footer-wrapper
-{
+.flower-footer-wrapper {
     width: 100vw;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
 }
+
+
+.about-omd
+{
+    width: 50vw; 
+    
+            font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .tabicon-footer {
+            width: 30%;
+            border-radius: 50%;
+            padding: 5%;
+        }
+    
+        .flower-footer-wrapper {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+}
+
+
 
 
 

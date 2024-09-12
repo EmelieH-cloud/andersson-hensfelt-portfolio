@@ -15,7 +15,7 @@
 
 .about-header
 {
-        font-weight: 200;
+        font-weight: 350;
         padding-top: 4%;
         padding-bottom: 1%;
 }
@@ -23,7 +23,7 @@
 
 .honolulu-header
 {
-        font-weight: 300;
+        font-weight: 400;
         padding-top: 3%; 
 }
 
@@ -45,4 +45,23 @@
     justify-content: center;
     align-items: center;
     font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 768px) 
+{
+.signatur-img {
+        width: 50%;
+    }
+
+        .our-story-p {
+            width: 70vw;
+            font-weight: 400;
+            font-size: .9rem;
+    
+        }
+
+                .honolulu-img {
+                    width: 9%;
+                    margin: 1%;
+                }
 }

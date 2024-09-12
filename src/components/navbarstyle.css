@@ -15,3 +15,12 @@
     background-color: white !important;
     padding: 2%; 
 }
+
+@media (max-width: 768px) 
+{
+    .logo-navbar
+    {
+        width: 90vw;
+  
+    }
+}
