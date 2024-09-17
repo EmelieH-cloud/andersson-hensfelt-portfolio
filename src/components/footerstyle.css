@@ -1,8 +1,9 @@
 .bg-footer 
 {
-   background-color: rgb(197, 190, 190);
+
     padding: 50px 0 30px;
-    height: 45vh;
+    height: 55vh;
+    background-color: rgb(230, 229, 229);
         font-size: 14px;
                 font-family: "Raleway", sans-serif;
 }
@@ -33,18 +34,18 @@
 }
 
 .tabicon-footer {
-    width: 10%;
-    padding: 3%; 
+    width: 20%;
+    margin-bottom: 5%; 
+
     border-radius: 50%;
 }
 
-.flower-footer-wrapper {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
+
+.company-name-p
+{
+    font-size: 1.5rem;
+}
 
 .about-omd
 {

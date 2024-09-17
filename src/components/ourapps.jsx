@@ -7,7 +7,7 @@ const Ourapps = () => {
     <div className='our-apps-wrapper'>
         <h1 className='omd-header'>One More Date?</h1>
         <img src={Icon} alt="icon" className='icon-img'/>
-        <p className='about-omd'>The application is developed using Blazor MAUI Hybrid,
+        <p className='about-omd'>ONE MORE DATE is developed using Blazor MAUI Hybrid,
            a cross-platform framework that allows building web and
             native applications with .NET. The app leverages Blazor
              for its web-based components, using Razor syntax for
