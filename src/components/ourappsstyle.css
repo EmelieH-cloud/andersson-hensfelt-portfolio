@@ -2,7 +2,7 @@
 .our-apps-wrapper
 {
     width: 100vw;
-    height: 140vh; 
+    height: 180vh; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,7 +57,7 @@
 
                 .our-apps-wrapper {
                     width: 100vw;
-                    height: 380vh;
+                    height: 420vh;
                     text-align: center;
                     display: flex;
                     justify-content: center;
