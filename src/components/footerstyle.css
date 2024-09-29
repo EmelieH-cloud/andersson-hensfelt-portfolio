@@ -1,9 +1,10 @@
 .bg-footer 
 {
 
+    border-top: 1px solid black;
     padding: 50px 0 30px;
-    height: 55vh;
-    background-color: rgb(230, 229, 229);
+    height: 50vh;
+background-color: rgba(230, 230, 230, 0.308);
         font-size: 14px;
                 font-family: "Raleway", sans-serif;
 }
@@ -33,12 +34,7 @@
     color: #444237;
 }
 
-.tabicon-footer {
-    width: 20%;
-    margin-bottom: 5%; 
 
-    border-radius: 50%;
-}
 
 
 
@@ -55,19 +51,19 @@
 }
 
 @media (max-width: 768px) {
-    .tabicon-footer {
-            width: 30%;
-            border-radius: 50%;
-            padding: 5%;
-        }
-    
-        .flower-footer-wrapper {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+    .company-name-p {
+            font-size: 1.2rem;
         }
 
+        .contact-info
+        {
+            font-size: 1.1rem;
+        }
+  
+         .org-nbr{
+       font-size: 1.1rem;
+        }
 }
 
 

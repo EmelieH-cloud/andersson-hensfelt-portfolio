@@ -2,13 +2,21 @@
 .our-apps-wrapper
 {
     width: 100vw;
-    height: 80vh; 
+    height: 140vh; 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: rgb(248, 248, 248);
+        background: linear-gradient(0deg, rgba(248, 248, 248, 0.5013655120251226) 8%, rgba(230, 230, 230, 0.308) 51%, rgba(238, 238, 240, 0.843) 99%);
 }
 
+.images-wrapper
+{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
 .icon-img
 {
     margin: 2%; 
@@ -18,7 +26,7 @@
 
 .omd-header
 {
-    font-weight: 300;
+    font-weight: 350;
             font-family: "Raleway", sans-serif;
 }
 
@@ -26,7 +34,6 @@
 {
     width: 50vw; 
     text-align: center;
-    
             font-family: "Raleway", sans-serif;
 }
 
@@ -38,15 +45,19 @@
 
 @media (max-width: 768px) 
 {
+    .images-wrapper
+    {
+        flex-direction: column;
+    }
     .icon-img {
             margin: 2%;
             border-radius: 10px;
-            width: 90%;
+            width: 80%;
         }
 
                 .our-apps-wrapper {
                     width: 100vw;
-                    height: 120vh;
+                    height: 380vh;
                     text-align: center;
                     display: flex;
                     justify-content: center;
@@ -55,7 +66,7 @@
                 }
                                 .about-omd {
                                     width: 90vw;
-                                     
+                                     margin-top: 5%;
                                     font-family: "Raleway", sans-serif;
                                 }
 }

@@ -1,22 +1,42 @@
 import React from 'react'
 import './ourappsstyle.css'
-import Icon from './omd-icon.png';
+import Icon from './cardview.png';
+import Icon2 from './deckview.png';
+import Icon3 from './playersview.png';
 
 const Ourapps = () => {
   return (
     <div className='our-apps-wrapper'>
         <h1 className='omd-header'>One More Date?</h1>
-        <img src={Icon} alt="icon" className='icon-img'/>
-        <p className='about-omd'>ONE MORE DATE is developed using Blazor MAUI Hybrid,
-           a cross-platform framework that allows building web and
-            native applications with .NET. The app leverages Blazor
-             for its web-based components, using Razor syntax for
-              front-end UI design and C# for business logic. MAUI
-               (Multi-platform App UI) enables deployment across multiple platforms,
-                including iOS, Android, Windows, and macOS, all from a single codebase.
-                 The hybrid architecture allows seamless integration of web and native functionalities,
-                  ensuring high performance and a responsive user experience on various devices.
-                   The app utilizes .NET 6, offering modern development features and improved runtime efficiency.</p>
+        <div className='images-wrapper'>
+     <img src={Icon} alt="icon" className='icon-img'/>
+    <img src={Icon2} alt="icon" className='icon-img'/>
+   <img src={Icon3} alt="icon" className='icon-img'/>
+        </div>
+   
+  <p className='about-omd'>
+  Imagine you're on a date with someone who seems absolutely perfect – attractive, charming and even makes you laugh. But then, suddenly something happens. It turns out that your date doesn’t believe in the moon landing. Is this a dealbreaker for you, or would you consider going on One More Date?
+</p>
+
+<p className='about-omd'>
+  One More Date is the perfect game to spark lively discussions and break the ice at every party!
+</p>
+
+<p className='about-omd'>
+  The game contains a variety of statements, such as:
+  <ul className='list-unstyled'>
+    <li>"Your date only brushes their teeth once a day"</li>
+    <li>"Your date was born as a different gender than they are today"</li>
+  </ul>
+</p>
+
+<p className='about-omd'>
+  It is up to you to decide whether you'd continue dating the person or if you want to move on to someone new.
+</p>
+
+<p className='about-omd'>
+  One More Date promises plenty of laughs and, occasionally, a few heated discussions. It’s a perfect game for a girls night, an afterwork, or getting to know new people on a deeper level.
+</p>
     </div>
   )
 }
