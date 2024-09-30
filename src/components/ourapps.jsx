@@ -2,12 +2,14 @@ import React from 'react'
 import './ourappsstyle.css'
 import Icon from './cardview.png';
 import Icon2 from './deckview.png';
+import { Link } from 'react-router-dom';
 import Icon3 from './playersview.png';
 
 const Ourapps = () => {
   return (
     <div className='our-apps-wrapper'>
         <h1 className='omd-header'>One More Date?</h1>
+             <Link to="/policy"> Privacy Policy</Link>.
         <div className='images-wrapper'>
      <img src={Icon} alt="icon" className='icon-img'/>
     <img src={Icon2} alt="icon" className='icon-img'/>
