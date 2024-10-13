@@ -1,11 +1,12 @@
 import React from 'react';
+import './policystyle.css'
 
 const Policy = () => {
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px', fontFamily: '"Raleway", sans-serif' }}>
-      <h1 className='mt-4' style={{ textAlign: 'center' }}>Privacy Policy for ONE MORE DATE</h1>
-      <p style={{ fontStyle: 'italic', textAlign: 'center' }}>Effective Date: 2024-09-30</p>
-
+    <div className='outer-policy-cont'>
+      <div className='inner-policy-cont bg-light'>
+      <h1>Privacy Policy for ONE MORE DATE</h1>
+      <p>Effective Date: 2024-09-30</p>
       <h3>1. Introduction</h3>
       <p>
         Welcome to the privacy policy page for the app ONE MORE DATE. Your privacy is important to us. 
@@ -40,6 +41,7 @@ const Policy = () => {
       <p>
         info@anderssonhensfelt.se
       </p>
+      </div>
     </div>
   );
 };

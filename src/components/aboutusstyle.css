@@ -1,9 +1,24 @@
 
 .our-story-p
 {
-    width: 50vw;
+    width: 43vw;
     font-weight: 400;
     font-size: .9rem;
+
+}
+
+.signature-wrapper
+{
+
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-cont
+{
+    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.5);
 
 }
 
@@ -15,9 +30,10 @@
 
 .about-header
 {
-        font-weight: 350;
-        padding-top: 4%;
-        padding-bottom: 1%;
+        font-weight: 280;
+        margin-bottom: 4%;
+        margin-top: 7%;
+
 }
 
 
@@ -29,7 +45,7 @@
 
 .signatur-img
 {
-    width: 20%; 
+    width: 30%; 
 }
 
 
@@ -39,17 +55,27 @@
     width: 100vw;
     display: flex;
     padding: 3%;
+    height: 150vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(248, 248, 248);
-        background: linear-gradient(0deg, rgba(248, 248, 248, 0.5013655120251226) 8%, rgba(230, 230, 230, 0.308) 51%, rgba(238, 238, 240, 0.843) 99%);
+background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
     font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 768px) 
 {
+    .about-us-wrapper
+    {
+        height: 220vh;
+
+    }
+        .about-header
+        {
+            padding-bottom: 8%;
+        }
 .signatur-img {
+    margin-top: 3%;
         width: 50%;
     }
 

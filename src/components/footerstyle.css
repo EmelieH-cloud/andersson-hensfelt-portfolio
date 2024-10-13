@@ -1,16 +1,22 @@
-.bg-footer 
-{
-
-    border-top: 1px solid black;
-    padding: 50px 0 30px;
-    height: 50vh;
-background-color: rgba(230, 230, 230, 0.308);
-        font-size: 14px;
-                font-family: "Raleway", sans-serif;
-}
 
 .footer-heading {
     letter-spacing: 3px;
+    font-weight: 380;
+}
+
+
+.outer-footer-div
+{
+
+    display: flex;
+background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    width: 100vw;
+    font-family: "Raleway", sans-serif;
+    padding-top: 4%; 
+    padding-bottom: 4%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mail-icon
@@ -36,24 +42,22 @@ background-color: rgba(230, 230, 230, 0.308);
 
 
 
-
-
 .company-name-p
 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 370;
+    letter-spacing: 10px;
 }
 
-.about-omd
-{
-    width: 50vw; 
-    
-            font-family: "Raleway", sans-serif;
-}
 
 @media (max-width: 768px) {
 
     .company-name-p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            width: 100vw;
+            margin-top: 4%;
+           letter-spacing: 2px;
+           text-align: center;
         }
 
         .contact-info

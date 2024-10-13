@@ -1,13 +1,27 @@
 /* Allmän stil för alla skärmar */
 .outer-container-hero {
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-background: rgb(248, 248, 248);
-    background: linear-gradient(0deg, rgba(248, 248, 248, 0.5013655120251226) 8%, rgba(230, 230, 230, 0.308) 51%, rgba(238, 238, 240, 0.843) 99%);
+    flex-direction: column;
+background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
+
+}
+
+.outer-container-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(250, 223, 246, 0.2);
+    /* Svart overlay med 50% opacitet */
+    z-index: -1;
+    /* Lägg den bakom innehållet */
 }
 
 .omd4-icon {
@@ -17,20 +31,22 @@ background: rgb(248, 248, 248);
 }
 
 .intro-p {
-    font-size: 0.9rem;
+    font-size: .9rem;
     width: 70vw;
     text-align: center;
-    margin-top: 3%; 
-    font-weight: 500;
+    margin-top: 1%; 
+    color: black;
+    font-weight: 400;
 
 }
 
 .header-names {
 
-    width: 100vw;
-    font-weight: 300;
-  color: rgb(77, 75, 75);
-    font-size: 3rem;
+    width: 80vw;
+    font-weight: 160;
+  color: black;
+    font-size: 3.1rem;
+    padding: 2%;
     letter-spacing: 13px;
 
 }
@@ -41,61 +57,91 @@ background: rgb(248, 248, 248);
     font-family: "Raleway", sans-serif;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 60%;
+    margin-bottom: 3%;
+    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.5);
+        /* Mjuk grå skugga */
+  border-radius: 8px;
     flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.2);
+            /* Halvtransparent bakgrundsfärg */
+            backdrop-filter: blur(5px);
+            /* 10px oskärpa på bakgrunden */
+            -webkit-backdrop-filter: blur(5px);
+            /* För WebKit-baserade webbläsare (t.ex. Safari) */
+  
+            /* Lite padding för att ge luft åt texten */
     text-align: center;
+
 }
 
+.omd-img
+{
+    margin-top: 5%; 
+    border-radius: 29px;
+    width: 18vw;
+    
+}
 
-
-.img-container
- {
-    width: 100vw;
+.img-cont
+{
+    width: 60vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    justify-content: space-between;
+
 }
 
 .omd-p 
 {
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-        font-size: 1.2rem;
-        margin-top: 2%;
+
+    text-align: left;
+        font-size: 1.1rem;
+        width: 30vw;
     font-weight: 400;
-    padding-bottom: 2%; 
+    margin-top: 6%; 
     font-family: "Raleway", sans-serif;
 }
 
-.omd-img {
-    border-radius: 10px;
-    width: 15vw;
-    margin: 1%;
+.download-btn-cont
+{
+    display: flex; 
+    margin-top: 7%;
+
+
 }
+
+.download
+{
+    height: 6vh; 
+   margin: 2%;
+
+    
+}
+.download-btn
+{
+    border: none;
+    background-color: transparent;
+
+}
+
+.omd-textcontainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: flex-start;
+}
+
 
 .one-more-date-container {
-    width: 100vw;
+    width: 90vw;
     align-items: center;
-    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
     display: flex;
     justify-content: center;
-background: rgb(248, 248, 248);
-    background: linear-gradient(0deg,
-        rgba(230, 230, 230, 0.308) 8%,
-            rgba(242, 254, 255, 0.30808820110075286) 51%,
-            rgba(248, 248, 248, 0.5013655120251226) 99%);
-  
-}
 
-.icon-size {
-    font-size: 3rem;
-    border: 2px solid black;
-    padding: 3%;
-    border-radius: 10px;
+  
 }
 
 
@@ -104,45 +150,45 @@ background: rgb(248, 248, 248);
     font-family: "Raleway", sans-serif;
     font-size: 3rem;
     font-weight: 200;
-    width: 50vw;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 1%;
+
 }
 
-.flower-hero {
-    opacity: 0.7;
-    width: 10vw;
-}
-
-.app-details-btn {
-    margin: 1%;
-}
 
 /* Media query för mobila enheter */
 @media (max-width: 768px) 
 {
 
-    .omd4-icon {
-            width: 80vw;
-          margin-bottom: 4%; 
-    
-        }
-    .icons-wrapper
+    .release-p
     {
-        align-items: center;
-        box-shadow: none;
+        width: 100vw;
+        text-align: center;
     }
-    
-    .icons-outer-wrapper
-     {
 
-            width: 90%; 
+    .img-cont {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-
+    
         }
+
+       .download-btn-cont {
+            display: flex;
+            justify-content: center;
+      
+  }
+
+    .one-more-date-container
+    {
+        height: 150vh;
+      width: 100vw;
+      margin-top: 7%; 
+      align-items: flex-start;
+  
+
+    }
 
     .app-header
     {
@@ -154,17 +200,19 @@ background: rgb(248, 248, 248);
     }
     .outer-container-hero 
     {
-        height: auto;
+        height: 80vh;
         padding: 20px;
    
     }
 
     .header-names 
     {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 400;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
+        width: 100vw;
         margin-top: 7%; 
+      
 
     }
 
@@ -178,46 +226,36 @@ background: rgb(248, 248, 248);
     {
        
         width: 80vw;
+        font-size: 1rem;
     }
 
     .omd-img
      {
         width: 80%;
+        margin: 0 auto;
+    }
+
+    .omd-textcontainer
+    {
+        width: 100vw;
+        margin: 0 auto;
+       
     }
 
     .our-apps-h1 
     {
         font-size: 1.8rem;
-        width: 80vw;
+        width: 100vw;
     }
 
-        .omd-p {
-
-            width: 80vw;
- 
+        .omd-p
+         {
+         width: 85vw;
+         text-align: center;
+         font-size: .9rem;
+         
         }
 
-    .icons-wrapper 
-     {
-       width: 80%; 
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-     }
-
-    .icon-size
-     {
-        font-size: 3rem;
-        padding: 2%;
-    }
-
-    .flower-hero 
-    {
-        width: 20vw;
-        padding-top: 5%; 
-
-    }
 
     .img-container
     {

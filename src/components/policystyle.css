@@ -1,0 +1,51 @@
+
+.outer-policy-cont
+{
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    width: 100vw;
+    height: 150vh;
+    padding-top: 6%;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+h1
+{
+    font-weight: 260;
+    font-size: 1.8rem;
+}
+
+h3
+{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 3%;
+}
+
+.inner-policy-cont
+{
+    width: 50vw;
+    margin: 0 auto;
+    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+@media (max-width: 768px)
+{
+
+.inner-policy-cont {
+        width: 90vw;
+
+    }
+
+        .outer-policy-cont {
+           height: 185vh;
+           padding-top: 15%;
+        }
+
+}

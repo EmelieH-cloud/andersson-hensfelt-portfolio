@@ -7,7 +7,8 @@ import Flower from './flwr.png';
 const about = () => {
   return (
     <div className='about-us-wrapper'>
-      <h2 className='about-header  animate__animated  animate__slideInDown'>Meant to Be</h2>
+      <div className='bg-light p-4 bg-cont'>
+              <h2 className='about-header  animate__animated  animate__slideInDown'>Meant to Be</h2>
       <p className='our-story-p  animate__animated  animate__slideInRight'>
 
 Saying that things are "meant to be" might seem a bit cheesy, but when it comes to our story (Emelie and Alinia),
@@ -36,12 +37,14 @@ You might think fate had done its part at that point, but the most
        reminder of where we’re headed.<br></br><br></br>
 <span className='fw-bold'>Saying that things are "meant to be" might seem a bit cheesy, but when we sit in Honolulu, toasting with our coconut drinks,
  it will be hard not to believe that fate played a small role in it all. </span>
-
-</p>
 <div className='signature-wrapper'>
 <img src={Signatur1} alt="signatur2" className='signatur-img'/>
 <img src={Signatur2} alt="signatur2"className='signatur-img'/>
 </div>
+</p>
+
+</div>
+
 
     </div>
   )

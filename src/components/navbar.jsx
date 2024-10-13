@@ -9,18 +9,18 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary animate__animated animate__fadeIn">
+    <Navbar expand="lg " className="bg-body-tertiary animate__animated animate__fadeIn">
       <Container>
  <Navbar.Brand as={Link} to="/">
           <img src={Logo} alt="logo" className='logo-navbar' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav navbar-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto navlinks">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About Us</Nav.Link>
             <Nav.Link as={Link} to="/apps">One more date?</Nav.Link>
-            <Nav.Link as={Link} to="/support">Support</Nav.Link>
+         
           </Nav>
         </Navbar.Collapse>
       </Container>

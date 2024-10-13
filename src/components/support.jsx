@@ -14,6 +14,7 @@ const Supportpage = () => {
 
   return (
     <div className="support-container">
+      <div className='bg-light support-cont'>
       <h1 className="support-header">Support</h1>
       <p className="support-text">
         Welcome to the support page for <strong>One More Date</strong>! Below you’ll find information about common issues, how to contact us, and more.
@@ -24,7 +25,7 @@ const Supportpage = () => {
         <li><button onClick={() => scrollToSection(contactRef)} className="support-link ">Contact Us</button></li>
         <li><button onClick={() => scrollToSection(guidesRef)} className="support-link ">How to Play Guide</button></li>
         <li><button onClick={() => scrollToSection(troubleshootingRef)} className="support-link ">Troubleshooting</button></li>
-        <li><button onClick={() => scrollToSection(feedbackRef)} className="feedback-link ">Feedback or Suggestions?</button></li>
+        
       </ul>
 
       {/* FAQ Section */}
@@ -81,6 +82,7 @@ const Supportpage = () => {
         <h2>Feedback and Suggestions</h2>
         <p>We love hearing from our players! If you have suggestions for new features, card decks, or improvements, please don’t hesitate to send us your ideas. Email us at <a href="mailto:info@anderssonhensfelt.se">info@anderssonhensfelt.se</a>.</p>
       </section>
+      </div>
     </div>
   );
 };

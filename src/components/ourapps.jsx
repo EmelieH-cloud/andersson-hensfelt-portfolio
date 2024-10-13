@@ -8,14 +8,18 @@ import Icon3 from './playersview.png';
 const Ourapps = () => {
   return (
     <div className='our-apps-wrapper'>
+      <div className='bg-light apps-cont'>
         <h1 className='omd-header'>One More Date?</h1>
+        <p>One more date is a mobile game available for both android and IOS.</p>
              <Link to="/policy"> Privacy Policy</Link>.
+               <Link to="/support"> Support</Link>.
         <div className='images-wrapper'>
      <img src={Icon} alt="icon" className='icon-img'/>
     <img src={Icon2} alt="icon" className='icon-img'/>
    <img src={Icon3} alt="icon" className='icon-img'/>
         </div>
    
+   <div>
   <p className='about-omd'>
   Imagine you're on a date with someone who seems absolutely perfect – attractive, charming and even makes you laugh. But then, suddenly something happens. It turns out that your date doesn’t believe in the moon landing. Is this a dealbreaker for you, or would you consider going on One More Date?
 </p>
@@ -39,6 +43,8 @@ const Ourapps = () => {
 <p className='about-omd'>
   One More Date promises plenty of laughs and, occasionally, a few heated discussions. It’s a perfect game for a girls night, an afterwork, or getting to know new people on a deeper level.
 </p>
+</div>
+    </div>
     </div>
   )
 }
