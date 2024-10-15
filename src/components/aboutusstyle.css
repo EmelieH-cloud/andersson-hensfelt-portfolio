@@ -1,7 +1,8 @@
 
 .our-story-p
 {
-    width: 43vw;
+    width:  70%;
+    margin: 0 auto;
     font-weight: 400;
     font-size: .9rem;
 
@@ -19,7 +20,7 @@
 .bg-cont
 {
     box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.5);
-
+    width: 80%;
 }
 
 .honolulu-img
@@ -32,7 +33,7 @@
 {
         font-weight: 280;
         margin-bottom: 4%;
-        margin-top: 7%;
+        margin-top: 3%;
 
 }
 
@@ -40,7 +41,7 @@
 .honolulu-header
 {
         font-weight: 400;
-        padding-top: 3%; 
+  
 }
 
 .signatur-img
@@ -54,8 +55,9 @@
     text-align: center;
     width: 100vw;
     display: flex;
-    padding: 3%;
-    height: 150vh;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    height: 140vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,26 +65,42 @@ background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
     font-family: "Raleway", sans-serif;
 }
 
+
+
 @media (max-width: 768px) 
 {
+    .bg-cont
+    {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .honolulu-header
+    {
+       margin-top: 4%; 
+    }
     .about-us-wrapper
     {
-        height: 220vh;
+        height: 160vh;
 
     }
         .about-header
         {
             padding-bottom: 8%;
         }
+
 .signatur-img {
     margin-top: 3%;
         width: 50%;
     }
 
         .our-story-p {
-            width: 80vw;
+            width: 100%;
             font-weight: 400;
-            font-size: .9rem;
+            font-size: .8rem;
+
     
         }
 

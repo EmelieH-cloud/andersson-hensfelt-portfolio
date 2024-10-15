@@ -29,6 +29,7 @@ const Ourapps = () => {
 </p>
 
 <p className='about-omd'>
+  <br/>
   The game contains a variety of statements, such as:
   <ul className='list-unstyled'>
     <li>"Your date only brushes their teeth once a day"</li>

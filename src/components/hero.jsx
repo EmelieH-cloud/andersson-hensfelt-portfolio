@@ -4,6 +4,7 @@ import 'animate.css';
 import OMD from './mobile.png'
 import GOOGLE from './googlebtn.png'
 import IOS from './appstore.svg'
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -33,13 +34,20 @@ const hero = () => {
                   ONE MORE DATE</h1>
                    <div className='img-cont'>
              <img src={OMD} alt="mobile" className='omd-img'/>
-  <p className='omd-p'>This app offers a perfect, fun way to explore your personal limits in the world of dating.
-       It’s ideal for breaking the ice, getting to know new people or for adding excitement to a pre-party.
+  <p className='omd-p'>ONE MORE DATE offers a perfect, fun way to explore your personal limits in the world of dating.
+       It’s ideal for breaking the ice, getting to know new people or for adding excitement to a pre-party.<br/><br/>
+              <Link to="/apps" className='m-4'>Find out more</Link>
        <div className='download-btn-cont'>
-<img src={GOOGLE} alt="google" className='download'/>
-               <img src={IOS} alt="google" className='download'/>
+    
+         <a href="https://play.google.com/store/apps/details?id=com.anderssonhensfelt.onemoredate" target="_blank" rel="noopener noreferrer">
+        <img src={GOOGLE} alt="Google" className='download' />
+      </a>
+      <a href="https://apps.apple.com/us/app/one-more-date/id6651834743" target="_blank" rel="noopener noreferrer">
+        <img src={IOS} alt="iOS" className='download' />
+
+      </a>
        </div>
-          
+                 
         </p>
             
            

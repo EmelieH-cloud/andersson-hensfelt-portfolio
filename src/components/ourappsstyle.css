@@ -4,8 +4,8 @@
     width: 100vw;
     font-size: .9rem;
     height: 170vh; 
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 18%;
+        padding-bottom: 17%;
     display: flex;
         font-family: "Raleway", sans-serif;
     justify-content: center;
@@ -16,7 +16,7 @@ background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 
 .apps-cont
 {
-    width: 47vw;
+    width: 83vw;
     display: flex;
     padding: 4%;
     align-items: center;
@@ -35,7 +35,7 @@ background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 {
     margin: 2%; 
     border-radius: 10px;
-    width: 30%;
+    width: 20%;
 }
 
 .omd-header
@@ -47,8 +47,9 @@ background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 
 .about-omd
 {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin: 0 auto;
 
             font-family: "Raleway", sans-serif;
 }
@@ -78,7 +79,7 @@ background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 
                 .our-apps-wrapper {
                     width: 100vw;
-                    height: 170vh;
+                    height: 160vh;
                     text-align: center;
                     display: flex;
                     justify-content: center;
