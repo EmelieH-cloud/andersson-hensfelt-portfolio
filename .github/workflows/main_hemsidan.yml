@@ -1,7 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - Hemsidan
+name: Build and deploy React app to Azure Web App - Hemsidan
 
 on:
   push:
@@ -11,58 +8,56 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
-    permissions:
-      contents: read #This is required for actions/checkout
+    runs-on: ubuntu-latest  # Eftersom React körs på Node.js, används Ubuntu här.
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4  # Hämtar koden från GitHub-repositoryt.
 
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Ställer in Node.js.
         with:
-          dotnet-version: '8.x'
+          node-version: '16'  # Eller den version du använder i din React-app.
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: Install dependencies
+        run: |
+          npm install  # Installerar alla npm-paket.
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+      - name: Build React app
+        run: |
+          npm run build  # Bygger React-appen och skapar en `build`-mapp med statiska filer.
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: react-app
+          path: ./build  # Vägen till byggmappen.
 
   deploy:
-    runs-on: windows-latest
-    needs: build
+    runs-on: ubuntu-latest  # Använder samma miljö som för byggsteget.
+
+    needs: build  # Detta steg behöver vänta på att byggsteget ska slutföras.
+
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
-      
+          name: react-app  # Hämtar den byggda React-appen.
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E4CBD128588C425F9A1ABBDD5931C79B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EE54D201DF4A45789A404132C6255AEE }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_980712DF0F78424095FBD7943F2CBCD3 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Hemsidan'
-          slot-name: 'Production'
-          package: .
-          
+          app-name: 'Hemsidan'  # Sätt detta till ditt Azure App Service-namn.
+          slot-name: 'Production'  # Om du använder slots, sätt här.
+          package: ./build  # Pekar på den byggda React-appen som ska deployas.
