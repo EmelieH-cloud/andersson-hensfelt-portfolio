@@ -1,0 +1,187 @@
+/* =====================================================
+   NAVBAR LAYOUT
+   ===================================================== */
+
+.navbar-custom {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 20;
+
+    padding: 14px 0;
+
+    background: transparent;
+
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+
+}
+
+
+/* =====================================================
+   SCROLLED NAVBAR
+   ===================================================== */
+
+.navbar-scrolled {
+
+    background: rgba(120, 120, 120, 0.9);
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo-navbar {
+    width: 200px;
+}
+
+
+/* =====================================================
+   NAV LINKS CONTAINER
+   ===================================================== */
+
+.navlinks {
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    letter-spacing: 1px;
+
+}
+
+
+/* =====================================================
+   NAV LINKS
+   ===================================================== */
+
+.navlinks a {
+
+    position: relative;
+
+    color: #ffffff !important;
+    font-size: 1rem;
+
+    text-decoration: none;
+
+    padding: 5px 0;
+
+    transition: color 0.25s ease, opacity 0.25s ease;
+
+}
+
+
+/* underline animation */
+
+.navlinks a::after {
+
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 1px;
+
+    background: #ffffff;
+
+    transition: width 0.3s ease;
+
+}
+
+
+/* hover effect */
+
+.navlinks a:hover {
+
+    opacity: 0.7;
+
+}
+
+.navlinks a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* =====================================================
+   HAMBURGER BUTTON
+   ===================================================== */
+
+.navbar-toggler {
+
+    border: none;
+
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+
+}
+
+/* =========================================
+   LIGHT MODE (för vita sidor)
+========================================= */
+
+.navbar-light-mode {
+
+    background: #ffffff;
+
+}
+
+.navbar-light-mode .navlinks a {
+
+    color: #333 !important;
+
+}
+
+.navbar-light-mode .navlinks a::after {
+
+    background: #333;
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .logo-navbar {
+        width: 160px;
+    }
+
+    .navbar-custom {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .navlinks {
+
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+        padding-top: 20px;
+
+    }
+
+    .navlinks a {
+
+        font-size: 1rem;
+
+    }
+
+}

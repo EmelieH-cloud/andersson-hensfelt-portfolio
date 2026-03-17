@@ -1,0 +1,143 @@
+/* PAGE */
+
+.terms-page {
+
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+
+    padding-top: 140px;
+    padding-bottom: 120px;
+
+}
+
+
+/* CONTAINER */
+
+.terms-container {
+
+    max-width: 900px;
+    margin: auto;
+
+    padding: 0 20px;
+
+}
+
+
+/* MAIN TITLE */
+
+.terms-main-title {
+
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+
+}
+
+
+/* CONTENTS */
+
+.terms-toc {
+
+    background: #f6f6f6;
+    padding: 22px;
+    border-radius: 10px;
+
+    margin-bottom: 45px;
+
+}
+
+.terms-toc ol {
+
+    margin-top: 10px;
+    padding-left: 18px;
+
+}
+
+.terms-toc li {
+
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #444;
+
+}
+
+.terms-toc li:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* SECTION */
+
+.terms-section {
+
+    margin-bottom: 40px;
+
+    /* FIX NAVBAR OVERLAP */
+    scroll-margin-top: 120px;
+
+}
+
+
+/* SECTION TITLE */
+
+.terms-title {
+
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+
+}
+
+
+/* TEXT */
+
+.terms-text {
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #444;
+
+}
+
+.terms-subtitle {
+
+    margin-top: 22px;
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .terms-page {
+
+        padding-top: 110px;
+        padding-bottom: 80px;
+
+    }
+
+    .terms-container {
+
+        padding: 0 20px;
+
+    }
+
+    .terms-main-title {
+
+        font-size: 1.8rem;
+
+    }
+
+    .terms-title {
+
+        font-size: 1.2rem;
+
+    }
+
+}

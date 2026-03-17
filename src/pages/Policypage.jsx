@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from "../components/navbar"
-import Policy from '../components/policy'
-import Footer from '../components/footer'
+
+import Navbar from "../components/Navbar/navbar"
+import Policy from '../components/Policy/policy'
+import Footer from '../components/Footer/footer'
 
 const Policypage = () => {
   return (

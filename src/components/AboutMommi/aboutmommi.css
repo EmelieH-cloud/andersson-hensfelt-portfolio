@@ -1,0 +1,242 @@
+.aboutmommi-page {
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 120px;
+    background: #fff;
+}
+
+.aboutmommi-container {
+
+    max-width: 760px;
+    margin: auto;
+    padding: 0 22px;
+
+}
+
+
+/* TITLE */
+
+.aboutmommi-title {
+
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+
+}
+
+
+/* INTRO */
+
+.aboutmommi-intro {
+
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    color: #555;
+
+}
+
+
+/* TEXT */
+
+.aboutmommi-text {
+
+    font-size: 0.96rem;
+    line-height: 1.85;
+    color: #444;
+    margin-bottom: 18px;
+
+}
+
+
+/* HIGHLIGHT */
+
+.aboutmommi-highlight {
+
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin: 30px 0;
+    color: #333;
+
+}
+
+
+/* FEATURES */
+
+.aboutmommi-feature {
+
+    background: #fafafa;
+    padding: 24px;
+    border-radius: 12px;
+    margin: 28px 0;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+/* subtle hover */
+
+.aboutmommi-feature:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+
+}
+
+
+/* QUOTE */
+
+.aboutmommi-quote {
+
+    font-size: 1.1rem;
+    line-height: 1.85;
+    margin: 45px 0;
+    font-weight: 500;
+    color: #333;
+
+}
+
+
+/* SIGNATURE AREA */
+
+.aboutmommi-signature-area {
+
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+
+.aboutmommi-sign-text {
+
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    color: #555;
+
+}
+
+
+.aboutmommi-signatures {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap;
+
+}
+
+
+.aboutmommi-signature-img {
+
+    width: 170px;
+    height: auto;
+    opacity: 0.95;
+
+}
+
+
+/* optional subtle hover */
+
+.aboutmommi-signature-img:hover {
+
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+
+}
+
+
+/* SIGN TEXT */
+
+.aboutmommi-sign {
+
+    margin-top: 35px;
+    font-size: 1rem;
+
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .aboutmommi-page {
+
+        padding-top: 120px;
+        padding-bottom: 100px;
+
+    }
+
+    .aboutmommi-container {
+
+        max-width: 700px;
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .aboutmommi-page {
+
+        padding-top: 100px;
+        padding-bottom: 80px;
+
+    }
+
+    .aboutmommi-title {
+
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+
+    }
+
+    .aboutmommi-intro {
+
+        font-size: 1rem;
+
+    }
+
+    .aboutmommi-text {
+
+        font-size: 0.95rem;
+        line-height: 1.8;
+
+    }
+
+    .aboutmommi-highlight {
+
+        font-size: 1rem;
+
+    }
+
+    .aboutmommi-feature {
+
+        padding: 20px;
+
+    }
+
+    .aboutmommi-quote {
+
+        font-size: 1.02rem;
+
+    }
+
+    .aboutmommi-signatures {
+
+        gap: 25px;
+
+    }
+
+    .aboutmommi-signature-img {
+
+        width: 130px;
+
+    }
+
+}

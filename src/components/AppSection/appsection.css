@@ -1,0 +1,230 @@
+/* =====================================================
+   APP SECTION
+   ===================================================== */
+
+.app-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+.app-section-container {
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 6vw;
+}
+
+
+/* =====================================================
+   RELEASE LABEL (NY)
+   ===================================================== */
+
+.app-section-release {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: -10px;
+
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    opacity: 0.5;
+    position: relative;
+}
+
+.app-section-release::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1.5px;
+    margin: 12px auto 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* =====================================================
+   PHONE ROW
+   ===================================================== */
+
+.app-section-phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.phone-image {
+    width: 320px;
+    transition: transform .3s ease;
+}
+
+.phone-image:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+
+/* =====================================================
+   TEXT CARD
+   ===================================================== */
+
+.app-section-text-area {
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08),
+        0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+/* SUBTITLE */
+
+.app-section-subtitle {
+    letter-spacing: 3px;
+    font-size: .9rem;
+
+    opacity: .7;
+
+    margin-bottom: 10px;
+}
+
+
+/* TITLE */
+
+.app-section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIPTION */
+
+.app-section-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* =====================================================
+   STORE BUTTONS
+   ===================================================== */
+
+.download-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.store-btn {
+    height: 55px;
+    cursor: pointer;
+    transition: transform .25s ease;
+}
+
+.store-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .phone-image {
+        width: 260px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .app-section-container {
+        padding: 70px 20px;
+    }
+
+    /* RELEASE LABEL */
+
+    .app-section-release {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+    }
+
+    /* PHONES STACK */
+
+    .app-section-phones {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .phone-image {
+        width: 85%;
+        max-width: 420px;
+    }
+
+    /* TEXT CARD */
+
+    .app-section-text-area {
+        padding: 40px 30px;
+    }
+
+    .app-section-title {
+        font-size: 2.3rem;
+    }
+
+    .app-section-description {
+        font-size: 1rem;
+    }
+
+    /* BUTTONS VERTICAL */
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .store-btn {
+        height: 60px;
+    }
+
+}
