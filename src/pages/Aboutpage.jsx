@@ -1,7 +1,7 @@
 
-import NavBar from '../components/navbar'
-import About from '../components/about'
-import Footer from '../components/footer'
+import NavBar from '../components/Navbar/navbar'
+import About from '../components/About/about'
+import Footer from '../components/Footer/footer'
 
 const Aboutpage = () => {
   return (

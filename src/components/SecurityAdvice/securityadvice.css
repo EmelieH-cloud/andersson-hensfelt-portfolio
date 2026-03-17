@@ -1,0 +1,103 @@
+.security-page {
+
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+}
+
+.security-container {
+
+    max-width: 800px;
+    margin: auto;
+
+    padding: 80px 20px 100px;
+
+}
+
+
+/* TITLE */
+
+.security-title {
+
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+
+}
+
+
+/* SUBTITLE */
+
+.security-subtitle {
+
+    font-size: 1.35rem;
+    margin-top: 40px;
+    margin-bottom: 14px;
+
+}
+
+
+/* TEXT */
+
+.security-text {
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+
+}
+
+
+/* LIST */
+
+.security-list {
+
+    padding-left: 18px;
+    margin-bottom: 20px;
+
+}
+
+.security-list li {
+
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+}
+
+
+/* REPORT */
+
+.security-report {
+
+    margin-top: 25px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .security-container {
+
+        padding: 60px 20px 80px;
+
+    }
+
+    .security-title {
+
+        font-size: 1.8rem;
+
+    }
+
+    .security-subtitle {
+
+        font-size: 1.2rem;
+
+    }
+
+}

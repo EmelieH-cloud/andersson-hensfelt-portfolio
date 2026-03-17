@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from "../components/navbar"
-import Footer from '../components/footer'
-import Support from '../components/support'
+
+import Navbar from "../components/Navbar/navbar"
+import Footer from '../components/Footer/footer'
+import Support from '../components/Support/support'
 
 const Supportpage = () => {
   return (

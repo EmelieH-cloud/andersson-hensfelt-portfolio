@@ -1,0 +1,100 @@
+.circle-decor {
+
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+
+}
+
+
+/* COLORS */
+
+.circle-light {
+    background: #f0b2bd;
+}
+
+.circle-medium {
+    background: #cb7988;
+}
+
+.circle-dark {
+    background: #a55c69;
+}
+
+
+/* FLOAT */
+
+.float {
+    animation: floatMove linear infinite;
+}
+
+@keyframes floatMove {
+
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-40px) translateX(20px);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+}
+
+
+/* DRIFT (mer organisk rörelse) */
+
+.drift {
+    animation: driftMove linear infinite;
+}
+
+@keyframes driftMove {
+
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(30px, -40px);
+    }
+
+    50% {
+        transform: translate(-20px, -60px);
+    }
+
+    75% {
+        transform: translate(-40px, 20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+
+/* PULSE */
+
+.pulse {
+    animation: pulseMove ease-in-out infinite;
+}
+
+@keyframes pulseMove {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
