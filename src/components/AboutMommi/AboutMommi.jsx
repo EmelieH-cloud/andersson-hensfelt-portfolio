@@ -4,33 +4,16 @@ import CircleDecor from "../CircleDecor/CircleDecor";
 import Signatur1 from "../../assets/founders/signatur1.png";
 import Signatur2 from "../../assets/founders/signatur2.png";
 
+import MOMMIGROUPHEADER from "../../assets/mommi/mommigroup-lg.png";
+import MOMMISEARCHHEADER from "../../assets/mommi/mommisok-lg.png";
+import MOMMIVENTHEADER from "../../assets/mommi/mommivent-lg.png";
+
 function AboutMommi() {
   return (
     <section className="aboutmommi-page">
 
-      {/* 🎨 BAKGRUNDSCIRKLAR */}
-
-      <CircleDecor
-        size={500}
-        top="-100px"
-        left="-120px"
-         opacity={0.35}
-        tone="light"
-        animation="drift"
-        speed={40}
-      />
-
-       <CircleDecor
-        size={400}
-        top="150px"
-        left="-120px"
-        opacity={0.25}
-        tone="light"
-        animation="drift"
-        speed={35}
-      />
-
-  
+      <CircleDecor size={500} top="-100px" left="-120px" opacity={0.35} />
+      <CircleDecor size={400} top="150px" left="-120px" opacity={0.25} />
 
       <div className="aboutmommi-container">
 
@@ -92,9 +75,7 @@ function AboutMommi() {
 
         {/* FEATURE 1 */}
         <div className="aboutmommi-feature">
-          <AppText as="h3" weight={600}>
-            mommiSök
-          </AppText>
+          <img src={MOMMISEARCHHEADER} className="feature-heading-img" />
           <AppText>
             Här kan du hitta andra mommis utifrån de filter
             du själv väljer – perfekt om du vill träffas
@@ -105,9 +86,7 @@ function AboutMommi() {
 
         {/* FEATURE 2 */}
         <div className="aboutmommi-feature">
-          <AppText as="h3" weight={600}>
-            mommiTräff
-          </AppText>
+          <img src={MOMMIVENTHEADER} className="feature-heading-img" />
           <AppText>
             Delta i eller skapa aktiviteter tillsammans
             med andra mommis. Det kan vara allt från
@@ -118,9 +97,7 @@ function AboutMommi() {
 
         {/* FEATURE 3 */}
         <div className="aboutmommi-feature">
-          <AppText as="h3" weight={600}>
-            mommiGrupper
-          </AppText>
+          <img src={MOMMIGROUPHEADER} className="feature-heading-img" />
           <AppText>
             Små communitys där du kan diskutera,
             ställa frågor eller hitta mommis
@@ -140,7 +117,6 @@ function AboutMommi() {
           feedback eller funderingar.
         </AppText>
 
-        {/* SIGNATURE */}
         <div className="aboutmommi-signature-area">
 
           <AppText className="aboutmommi-sign-text">
@@ -148,16 +124,8 @@ function AboutMommi() {
           </AppText>
 
           <div className="aboutmommi-signatures">
-            <img
-              src={Signatur1}
-              alt="Emelie signatur"
-              className="aboutmommi-signature-img"
-            />
-            <img
-              src={Signatur2}
-              alt="Alinia signatur"
-              className="aboutmommi-signature-img"
-            />
+            <img src={Signatur1} className="aboutmommi-signature-img" />
+            <img src={Signatur2} className="aboutmommi-signature-img" />
           </div>
 
         </div>

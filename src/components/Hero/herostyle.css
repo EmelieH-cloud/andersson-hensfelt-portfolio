@@ -1,22 +1,37 @@
 /* =====================================================
-   HERO SECTION
+   HERO CONTAINER
    ===================================================== */
-
-/* Hero container */
 
 .hero-container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
+/* =====================================================
+   🔥 PREMIUM FALLBACK IMAGE
+   ===================================================== */
 
-/* Background video */
+.hero-fallback {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.05);
+
+    z-index: -3;
+}
+
+/* =====================================================
+   VIDEO
+   ===================================================== */
 
 .hero-video {
     position: absolute;
@@ -27,172 +42,113 @@
     height: 100%;
 
     object-fit: cover;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.05);
 
     z-index: -2;
+
+    opacity: 0;
+    filter: brightness(0.9) contrast(1.05);
+
+    transition: opacity 1.4s ease;
 }
 
+.hero-video.loaded {
+    opacity: 1;
+}
 
-/* Dark overlay above video */
+/* =====================================================
+   🔥 CINEMATIC OVERLAY (KEY!)
+   ===================================================== */
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(169, 158, 158, 0.35);
+
+    background:
+        /* 🔥 Mörk topp (ger kontrast till loggan) */
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.45) 0%,
+            rgba(0, 0, 0, 0.35) 25%,
+            rgba(0, 0, 0, 0.25) 45%,
+            rgba(0, 0, 0, 0.15) 60%,
+            rgba(0, 0, 0, 0.08) 75%,
+            rgba(0, 0, 0, 0.03) 90%,
+            rgba(0, 0, 0, 0) 100%),
+
+        /* 🔥 Subtil center focus (premium trick) */
+        radial-gradient(circle at 50% 45%,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.08) 35%,
+            rgba(0, 0, 0, 0.03) 60%,
+            rgba(0, 0, 0, 0) 80%);
+
     z-index: -1;
 }
 
-
-/* Hero content container */
+/* =====================================================
+   CONTENT
+   ===================================================== */
 
 .hero-content {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
     color: white;
+
     width: 70%;
     margin: 0 auto;
-    font-family: "Raleway", sans-serif;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: heroFadeIn 1.2s ease forwards;
+    animation-delay: 0.3s;
 }
-
-
-/* Hero title */
-
-.hero-title {
-    font-size: 3.5rem;
-    letter-spacing: 10px;
-}
-
-
-/* Hero intro text */
-
-.hero-intro {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-
-/* Hero logo */
-
-.hero-logo {
-
-    width: 600px;
-    max-width: 90vw;
-
-    display: block;
-    margin: 0 auto 20px auto;
-
-    padding: 20px;
-
-
-}
-
-
 
 /* =====================================================
-   APP SECTION (ONE MORE DATE)
+   LOGO
    ===================================================== */
 
-
-/* Main section container */
-
-.one-more-date-container {
-    width: 90vw;
-    margin: auto;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    display: flex;
-    justify-content: center;
+.hero-logo {
+    width: 600px;
+    max-width: 90vw;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 15px 25px rgba(255, 255, 255, .8));
 }
-
-
-/* Text container */
-
-.omd-textcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-
-
-/* Image + text layout */
-
-.img-cont {
-    width: 60vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Phone image */
-
-.omd-img {
-    margin-top: 5%;
-    border-radius: 29px;
-    width: 18vw;
-}
-
-
-/* App description text */
-
-.omd-p {
-    text-align: left;
-    font-size: 1.1rem;
-    width: 30vw;
-    font-weight: 400;
-    margin-top: 6%;
-
-    font-family: "Raleway", sans-serif;
-}
-
-
-/* Download buttons container */
-
-.download-btn-cont {
-    display: flex;
-    margin-top: 7%;
-}
-
-
-/* Download buttons */
-
-.download {
-    height: 6vh;
-    cursor: pointer;
-    transition: transform 0.2s;
-    margin: 10px;
-}
-
-.download:hover {
-    transform: scale(1.05);
-}
-
-
-/* App section title */
-
-.our-apps-h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 3rem;
-    font-weight: 200;
-}
-
-
 
 /* =====================================================
-   MOBILE STYLES
+   TEXT
+   ===================================================== */
+
+.hero-intro {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 700px;
+    opacity: 0.95;
+}
+
+/* =====================================================
+   ANIMATION
+   ===================================================== */
+
+@keyframes heroFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   MOBILE
    ===================================================== */
 
 @media (max-width: 768px) {
 
-    /* Hero */
-
     .hero-container {
-        height: 85vh;
+        height: 100vh;
     }
 
     .hero-content {
@@ -200,53 +156,11 @@
     }
 
     .hero-logo {
-        width: 260px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-        letter-spacing: 3px;
+        width: 300px;
     }
 
     .hero-intro {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        max-width: 95%;
     }
-
-
-    /* App section layout */
-
-    .img-cont {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .omd-textcontainer {
-        width: 100%;
-        align-items: center;
-    }
-
-
-    /* Images */
-
-    .omd-img {
-        width: 80%;
-    }
-
-
-    /* Text */
-
-    .omd-p {
-        width: 85vw;
-        text-align: center;
-        font-size: .9rem;
-    }
-
-
-    /* Download buttons */
-
-    .download-btn-cont {
-        justify-content: center;
-    }
-
 }
