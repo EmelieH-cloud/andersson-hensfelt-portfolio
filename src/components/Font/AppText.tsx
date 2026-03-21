@@ -9,22 +9,19 @@ type AppTextProps = {
 
 const highlightMommi = (text: string) => {
 
-  const regex = /(mommi(?:s|Träff|Grupp|Sök)?)/gi;
+  // 🔥 FIX: inkluderar å ä ö
+  const regex = /(mommi[a-zA-ZåäöÅÄÖ]*)/gi;
 
   const parts = text.split(regex);
 
   return parts.map((part, index) => {
 
-    const lower = part.toLowerCase();
-
-    if (
-      lower === "mommi" ||
-      lower === "mommis" ||
-      lower === "mommiträff" ||
-      lower === "mommigrupp" ||
-      lower === "mommisök"
-    ) {
-      return <strong key={index}>{part}</strong>;
+    if (part.toLowerCase().startsWith("mommi")) {
+      return (
+        <strong key={index} style={{ fontWeight: 700 }}>
+          {part}
+        </strong>
+      );
     }
 
     return part;

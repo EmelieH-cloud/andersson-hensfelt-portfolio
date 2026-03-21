@@ -1,0 +1,272 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+.mommi-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    transform: translateZ(0);
+}
+
+/* ========================= */
+/* BACKGROUND */
+/* ========================= */
+
+.mommi-hero-bg {
+    position: absolute;
+    inset: -30px;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: heroZoom 20s ease-in-out infinite alternate;
+
+    filter: blur(5px);
+    transform: scale(1.1);
+
+    z-index: 0;
+
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* ========================= */
+/* WHITE FADE */
+/* ========================= */
+
+.mommi-hero::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    height: 260px;
+
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 35%,
+            rgba(255, 255, 255, 0.5) 60%,
+            rgba(255, 255, 255, 0.8) 85%,
+            rgba(255, 255, 255, 1) 100%);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ========================= */
+/* OVERLAY (SMOOTH) */
+/* ========================= */
+
+.mommi-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.38) 0%,
+            rgba(0, 0, 0, 0.38) 30%,
+            rgba(0, 0, 0, 0.34) 45%,
+            rgba(0, 0, 0, 0.28) 55%,
+            rgba(0, 0, 0, 0.22) 62%,
+            rgba(0, 0, 0, 0.16) 68%,
+            rgba(0, 0, 0, 0.11) 74%,
+            rgba(0, 0, 0, 0.07) 80%,
+            rgba(0, 0, 0, 0.04) 86%,
+            rgba(0, 0, 0, 0.02) 92%,
+            rgba(0, 0, 0, 0.01) 96%,
+            rgba(0, 0, 0, 0) 100%);
+
+    z-index: 2;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.mommi-hero-inner {
+    position: relative;
+    z-index: 3;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 60px 6vw 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.mommi-hero-text {
+    flex: 1;
+    max-width: 520px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: heroTextReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.2s;
+}
+
+/* TITLE */
+
+.mommi-hero-title {
+    font-size: 3rem;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ACCENT */
+
+.mommi-hero-accent {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: white;
+    margin-bottom: 18px;
+}
+
+/* DESCRIPTION */
+
+.mommi-hero-description {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+.mommi-hero-phone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mommi-phone {
+    width: 380px;
+
+    animation: floatPhone 6s ease-in-out infinite;
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes heroTextReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatPhone {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-14px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroZoom {
+    0% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+
+    .mommi-hero-inner {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 90px 20px 40px;
+        /* 🔥 mer top space */
+        gap: 40px;
+    }
+
+    .mommi-hero-text {
+        order: 1;
+
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+         .mommi-hero-title {
+             font-size: 2rem;
+             line-height: 1.25;
+    
+             margin-top: 30px;
+             /* 🔥 luft ovanför */
+             margin-bottom: 20px;
+             /* 🔥 luft under */
+         }
+
+    .mommi-hero-accent {
+        margin-top: 35px;
+        font-size: 1.6rem;
+    }
+
+    .mommi-hero-description {
+        font-size: 0.95rem;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .mommi-hero-phone {
+        order: 2;
+    }
+
+    .mommi-phone {
+        width: 88%;
+        margin-top: 10px;
+        animation: floatPhoneMobile 5s ease-in-out infinite;
+    }
+}
+
+/* MOBILE FLOAT */
+
+@keyframes floatPhoneMobile {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

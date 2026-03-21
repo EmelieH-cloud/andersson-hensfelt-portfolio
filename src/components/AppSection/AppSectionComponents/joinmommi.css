@@ -1,0 +1,115 @@
+.join-mommi-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 🔥 BACKGROUND */
+
+.join-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+
+    /* 🔥 LITE BLUR + ZOOM */
+    transform: scale(1.05);
+    filter: blur(4px);
+
+    z-index: 0;
+}
+
+/* 🔥 OVERLAY (gör texten tydlig men inte tung) */
+
+.join-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.3);
+    /* 🔥 samma som de andra */
+
+    z-index: 1;
+}
+
+/* CONTENT */
+
+.join-content {
+    position: relative;
+    z-index: 2;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* TEXT */
+
+.join-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    opacity: 0.6;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.join-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* 🔥 EXTRA TEXT */
+
+.join-description {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto 35px;
+color: white;
+}
+
+/* BUTTONS */
+
+.join-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.join-store-btn {
+    height: 60px;
+    transition: transform .3s cubic-bezier(0.22, 1, 0.36, 1),
+        filter .3s ease;
+}
+
+/* 🔥 HOVER */
+
+.join-store-btn:hover {
+    transform: translateY(-6px) scale(1.04);
+    filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.2));
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+   
+    .join-content {
+        padding: 70px 20px;
+    }
+
+    .join-title {
+        font-size: 2.2rem;
+    }
+
+    .join-description {
+        font-size: 1rem;
+    }
+
+    .join-buttons {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .join-store-btn {
+        height: 55px;
+    }
+}
