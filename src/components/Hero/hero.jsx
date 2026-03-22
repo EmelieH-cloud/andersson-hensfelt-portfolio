@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import HERO_VIDEO from '../../assets/mommi/mommivideo.mp4'
 import MOMMI_LOGO from '../../assets/mommi/mommi-logo.png'
-import HERO_FALLBACK from '../../assets/mommi/mommibg.jpg' // 🔥 viktig
+import HERO_FALLBACK from '../../assets/mommi/mommibg.jpg'
 
 import AppText from '../Font/AppText'
 
@@ -14,13 +14,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
 
-      {/* 🔥 PREMIUM fallback image */}
-      <div
-        className="hero-fallback"
-        style={{ backgroundImage: `url(${HERO_FALLBACK})` }}
-      />
-
-      {/* VIDEO */}
+      {/* VIDEO (med poster fallback) */}
       <video
         className={`hero-video ${videoLoaded ? 'loaded' : ''}`}
         autoPlay
@@ -28,13 +22,16 @@ const Hero = () => {
         loop
         playsInline
         preload="auto"
+        poster={HERO_FALLBACK}
         onLoadedData={() => setVideoLoaded(true)}
       >
         <source src={HERO_VIDEO} type="video/mp4" />
       </video>
 
+      {/* OVERLAY */}
       <div className="hero-overlay"></div>
 
+      {/* CONTENT */}
       <div className="hero-content">
 
         <img

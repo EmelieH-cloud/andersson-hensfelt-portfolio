@@ -13,77 +13,84 @@ const Supportpage = () => {
   };
 
   return (
-    <div className="support-container">
-      <div className='bg-light support-cont'>
-      <h1 className="support-header">Support</h1>
-      <p className="support-text">
-        Welcome to the support page for <strong>One More Date</strong>! Below you’ll find information about common issues, how to contact us, and more.
-      </p>
+    <section className="support-section-wrapper">
 
-      <ul className="support-list">
-        <li><button onClick={() => scrollToSection(faqRef)} className="support-link ">Frequently Asked Questions (FAQ)</button></li>
-        <li><button onClick={() => scrollToSection(contactRef)} className="support-link ">Contact Us</button></li>
-        <li><button onClick={() => scrollToSection(guidesRef)} className="support-link ">How to Play Guide</button></li>
-        <li><button onClick={() => scrollToSection(troubleshootingRef)} className="support-link ">Troubleshooting</button></li>
-        
-      </ul>
+      <div className="support-container">
 
-      {/* FAQ Section */}
-      <section ref={faqRef} className="support-section">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <p><strong>What is the goal of the game?</strong></p>
-        <p>In One More Date, players encounter fictional characters who seem perfect, but each time, a potential dealbreaker is revealed. The game is about deciding whether you can live with that dealbreaker or if it is a no-go.</p>
-        
-        <p><strong>How do I add players?</strong></p>
-        <p>You can add players by clicking on the + icon on the home screen and entering their names. All added players will be able to participate when you start a new round.</p>
+        <h1 className="support-header">Support</h1>
 
-        <p><strong>How do I purchase new decks?</strong></p>
-        <p>To buy new decks, head to the select deck page. You can preview and purchase decks with various themes. Once bought, the deck will automatically be added to your collection.</p>
+        <p className="support-text">
+          Welcome to the support page for <strong>One More Date</strong>! Below you’ll find information about common issues, how to contact us, and more.
+        </p>
 
-        <p><strong>What is a dealbreaker?</strong></p>
-        <p>A dealbreaker is a potential issue revealed during gameplay about the fictional date. It’s up to the players to decide if they can accept the dealbreaker or if it’s a red flag that can not be overlooked.</p>
+        <div className="support-nav">
+          <button onClick={() => scrollToSection(faqRef)} className="support-link">Frequently Asked Questions (FAQ)</button>
+          <button onClick={() => scrollToSection(contactRef)} className="support-link">Contact Us</button>
+          <button onClick={() => scrollToSection(guidesRef)} className="support-link">How to Play Guide</button>
+          <button onClick={() => scrollToSection(troubleshootingRef)} className="support-link">Troubleshooting</button>
+        </div>
 
-        <p><strong>I purchased a deck, but it’s not showing up. What do I do?</strong></p>
-        <p>If a purchased deck doesn’t appear, try closing and reopening the app. If the issue persists, contact us using the support form below.</p>
-      </section>
+        {/* FAQ */}
+        <section ref={faqRef} className="support-block">
+          <h2>Frequently Asked Questions (FAQ)</h2>
 
-      {/* Contact Section */}
-      <section ref={contactRef} className="support-section">
-        <h2>Contact Us</h2>
-        <p>If you are having trouble or have questions not answered on this page, feel free to contact us directly! You can reach our support team via email at <a href="mailto:support@onemoredate.com">info@anderssonhensfelt.se</a>. We typically respond within 24 hours.</p>
-      </section>
+          <p><strong>What is the goal of the game?</strong></p>
+          <p>In One More Date, players encounter fictional characters who seem perfect, but each time, a potential dealbreaker is revealed. The game is about deciding whether you can live with that dealbreaker or if it is a no-go.</p>
 
-      {/* How to Play Guide Section */}
-      <section ref={guidesRef} className="support-section">
-        <h2>How to Play Guide</h2>
-        <p><strong>How do I play One More Date?</strong></p>
-        <p>1. <strong>Start a Game</strong>: Select New Game from the main menu and add players.</p>
-        <p>2. <strong>Choose a Deck</strong>: Select a deck from the available options or purchase new ones from the store.</p>
-        <p>3. <strong>Read the Cards</strong>: Each card introduces a new scenario with your fictional date and reveals a potential dealbreaker. Debate with other players and decide whether to accept the dealbreaker.</p>
-        <p>4. <strong>Compare standpoints</strong>: Optional! At the end of the round, assess how many dates each player would continue with based on the dealbreakers.</p>
-      </section>
+          <p><strong>How do I add players?</strong></p>
+          <p>You can add players by clicking on the + icon on the home screen and entering their names. All added players will be able to participate when you start a new round.</p>
 
-      {/* Troubleshooting Section */}
-      <section ref={troubleshootingRef} className="support-section">
-        <h2>Troubleshooting</h2>
-        <p><strong>The app is crashing or freezing. What should I do?</strong></p>
-        <p>1. Make sure you have the latest version of the app installed.</p>
-        <p>2. Restart the app or, if the issue persists, reboot your device.</p>
-        <p>3. Try clearing the apps cache via your device settings if the problem continues.</p>
+          <p><strong>How do I purchase new decks?</strong></p>
+          <p>To buy new decks, head to the select deck page. You can preview and purchase decks with various themes. Once bought, the deck will automatically be added to your collection.</p>
 
-        <p><strong>In-app purchases not working</strong></p>
-        <p>1. Ensure you’re logged into the correct account.</p>
-        <p>2. Double-check if the purchase went through by reviewing your transaction history.</p>
-        <p>3. If you are still having trouble, contact us with details of the issue and purchase.</p>
-      </section>
+          <p><strong>What is a dealbreaker?</strong></p>
+          <p>A dealbreaker is a potential issue revealed during gameplay about the fictional date. It’s up to the players to decide if they can accept the dealbreaker or if it’s a red flag that can not be overlooked.</p>
 
-      {/* Feedback and Suggestions Section */}
-      <section ref={feedbackRef} className="support-section">
-        <h2>Feedback and Suggestions</h2>
-        <p>We love hearing from our players! If you have suggestions for new features, card decks, or improvements, please don’t hesitate to send us your ideas. Email us at <a href="mailto:info@anderssonhensfelt.se">info@anderssonhensfelt.se</a>.</p>
-      </section>
+          <p><strong>I purchased a deck, but it’s not showing up. What do I do?</strong></p>
+          <p>If a purchased deck doesn’t appear, try closing and reopening the app. If the issue persists, contact us using the support form below.</p>
+        </section>
+
+        {/* CONTACT */}
+        <section ref={contactRef} className="support-block">
+          <h2>Contact Us</h2>
+          <p>If you are having trouble or have questions not answered on this page, feel free to contact us directly! You can reach our support team via email at <a href="mailto:support@onemoredate.com">info@anderssonhensfelt.se</a>. We typically respond within 24 hours.</p>
+        </section>
+
+        {/* GUIDE */}
+        <section ref={guidesRef} className="support-block">
+          <h2>How to Play Guide</h2>
+
+          <p><strong>How do I play One More Date?</strong></p>
+          <p>1. <strong>Start a Game</strong>: Select New Game from the main menu and add players.</p>
+          <p>2. <strong>Choose a Deck</strong>: Select a deck from the available options or purchase new ones from the store.</p>
+          <p>3. <strong>Read the Cards</strong>: Each card introduces a new scenario with your fictional date and reveals a potential dealbreaker. Debate with other players and decide whether to accept the dealbreaker.</p>
+          <p>4. <strong>Compare standpoints</strong>: Optional! At the end of the round, assess how many dates each player would continue with based on the dealbreakers.</p>
+        </section>
+
+        {/* TROUBLESHOOT */}
+        <section ref={troubleshootingRef} className="support-block">
+          <h2>Troubleshooting</h2>
+
+          <p><strong>The app is crashing or freezing. What should I do?</strong></p>
+          <p>1. Make sure you have the latest version of the app installed.</p>
+          <p>2. Restart the app or, if the issue persists, reboot your device.</p>
+          <p>3. Try clearing the apps cache via your device settings if the problem continues.</p>
+
+          <p><strong>In-app purchases not working</strong></p>
+          <p>1. Ensure you’re logged into the correct account.</p>
+          <p>2. Double-check if the purchase went through by reviewing your transaction history.</p>
+          <p>3. If you are still having trouble, contact us with details of the issue and purchase.</p>
+        </section>
+
+        {/* FEEDBACK */}
+        <section ref={feedbackRef} className="support-block">
+          <h2>Feedback and Suggestions</h2>
+          <p>We love hearing from our players! If you have suggestions for new features, card decks, or improvements, please don’t hesitate to send us your ideas. Email us at <a href="mailto:info@anderssonhensfelt.se">info@anderssonhensfelt.se</a>.</p>
+        </section>
+
       </div>
-    </div>
+
+    </section>
   );
 };
 

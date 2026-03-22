@@ -6,7 +6,7 @@ import Support from '../components/Support/support'
 const Supportpage = () => {
   return (
     <div>
-         <Navbar/>
+         <Navbar  variant='light'/>
          <Support/>
         <Footer/>
     </div>

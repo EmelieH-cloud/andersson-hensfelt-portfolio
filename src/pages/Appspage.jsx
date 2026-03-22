@@ -6,7 +6,7 @@ import Ourapps from '../components/OurApps/ourapps'
 const Appspage = () => {
   return (
     <>
-        <NavBar/>
+        <NavBar  variant='light'/>
         <Ourapps/>
         <Footer/>
     </>

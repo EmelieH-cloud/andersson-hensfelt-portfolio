@@ -6,7 +6,7 @@ import Footer from '../components/Footer/footer'
 const Policypage = () => {
   return (
     <div>
-        <Navbar/>
+        <Navbar variant="light"/>
     <Policy/>
     <Footer/>
     </div>

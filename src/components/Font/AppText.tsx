@@ -4,36 +4,30 @@ type AppTextProps = {
   children: React.ReactNode;
   as?: keyof JSX.IntrinsicElements;
   weight?: 300 | 400 | 500 | 600 | 700;
+  size?: string;
+  color?: string;
   className?: string;
 };
 
 const highlightMommi = (text: string) => {
-
-  // 🔥 FIX: inkluderar å ä ö
-  const regex = /(mommi[a-zA-ZåäöÅÄÖ]*)/gi;
+  const regex = /\b(mommi[a-zA-ZåäöÅÄÖ]*)\b/gi;
 
   const parts = text.split(regex);
 
   return parts.map((part, index) => {
-
-    if (part.toLowerCase().startsWith("mommi")) {
-      return (
-        <strong key={index} style={{ fontWeight: 700 }}>
-          {part}
-        </strong>
-      );
+    if (regex.test(part)) {
+      return <strong key={index}>{part}</strong>;
     }
-
     return part;
-
   });
-
 };
 
 const AppText = ({
   children,
   as: Component = "p",
   weight = 400,
+  size,
+  color,
   className = "",
 }: AppTextProps) => {
 
@@ -41,14 +35,6 @@ const AppText = ({
 
     if (typeof node === "string") {
       return highlightMommi(node);
-    }
-
-    if (Array.isArray(node)) {
-      return node.map((child, i) => (
-        <React.Fragment key={i}>
-          {processChildren(child)}
-        </React.Fragment>
-      ));
     }
 
     return node;
@@ -60,6 +46,8 @@ const AppText = ({
       style={{
         fontFamily: "Open Sans, sans-serif",
         fontWeight: weight,
+        fontSize: size,
+        color: color,
       }}
     >
       {processChildren(children)}

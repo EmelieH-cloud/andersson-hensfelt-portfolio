@@ -13,7 +13,6 @@ const MommiHeroSection = () => {
         style={{ backgroundImage: `url(${MOMMIBG})` }}
       />
 
-      <div className="mommi-hero-overlay" />
 
       <div className="mommi-hero-inner">
 
@@ -23,15 +22,6 @@ const MommiHeroSection = () => {
             För mammor som vill träffa mammor
           </AppText>
 
-          <AppText as="h2" weight={300} className="mommi-hero-accent">
-            På ditt sätt
-          </AppText>
-
-          <AppText className="mommi-hero-description">
-            När vi skapade mommi hade vi med oss att alla är olika och vill träffas på olika sätt. 
-            Vissa föredrar att träffa en person i taget, medan andra hellre ses i grupp. 
-            Därför har vi skapat tre olika sätt för dig att komma i kontakt med och träffa andra mommis - mommiSök, mommiTräff och mommiGrupper. 
-          </AppText>
 
         </div>
 

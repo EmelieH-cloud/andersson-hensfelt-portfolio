@@ -1,51 +1,94 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
 
-.outer-policy-cont
-{
-    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-    width: 100vw;
-    height: 150vh;
-    padding-top: 6%;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
+.policy-section {
+    background: #ffffff;
+    padding: 140px 20px 120px;
 }
 
-h1
-{
-    font-weight: 260;
-    font-size: 1.8rem;
-}
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
 
-h3
-{
-    font-weight: 300;
-    font-size: 1.3rem;
-    margin-top: 3%;
-}
-
-.inner-policy-cont
-{
-    width: 50vw;
+.policy-container {
+    max-width: 720px;
     margin: 0 auto;
-    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.5);
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-    align-items: center;
-    justify-content: center;
- 
 }
 
-@media (max-width: 768px)
-{
+/* ========================= */
+/* TITLE */
+/* ========================= */
 
-.inner-policy-cont {
-        width: 90vw;
+.policy-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
+/* DATE */
+
+.policy-date {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+/* ========================= */
+/* BLOCKS */
+/* ========================= */
+
+.policy-block {
+    margin-bottom: 32px;
+}
+
+/* SUBHEADINGS */
+
+.policy-block h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+/* TEXT */
+
+.policy-block p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* EMAIL */
+
+.policy-email {
+    margin-top: 10px;
+    color: #a94e62;
+    font-weight: 500;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .policy-section {
+        padding: 100px 20px 80px;
     }
 
-        .outer-policy-cont {
-           height: 185vh;
-           padding-top: 15%;
-        }
+    .policy-title {
+        font-size: 1.8rem;
+    }
+
+    .policy-block h3 {
+        font-size: 1.1rem;
+    }
+
+    .policy-block p {
+        font-size: 0.95rem;
+    }
 
 }
