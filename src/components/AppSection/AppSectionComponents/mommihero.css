@@ -120,7 +120,7 @@
 /* TITLE */
 
 .mommi-hero-title {
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 1.15;
     color: white;
     margin-bottom: 10px;
@@ -130,23 +130,6 @@
         0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* ACCENT */
-
-.mommi-hero-accent {
-    font-size: 2.2rem;
-    font-style: italic;
-    color: white;
-    margin-bottom: 18px;
-}
-
-/* DESCRIPTION */
-
-.mommi-hero-description {
-    font-size: 1.1rem;
-    color: white;
-    line-height: 1.6;
-    opacity: 0.95;
-}
 
 /* ========================= */
 /* PHONE */
@@ -233,16 +216,6 @@
              /* 🔥 luft under */
          }
 
-    .mommi-hero-accent {
-        margin-top: 35px;
-        font-size: 1.6rem;
-    }
-
-    .mommi-hero-description {
-        font-size: 0.95rem;
-        max-width: 95%;
-        margin: 0 auto;
-    }
 
     .mommi-hero-phone {
         order: 2;
