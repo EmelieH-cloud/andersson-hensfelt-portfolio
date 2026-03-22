@@ -3,7 +3,7 @@
 /* ========================= */
 
 .aboutmommi-section {
-    background: #fff;
+    background: #c87484;
     padding: 160px 40px 140px;
 }
 
@@ -16,7 +16,8 @@
     margin: 0 auto;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* 🔥 align top */
     justify-content: space-between;
     gap: 80px;
 }
@@ -34,18 +35,21 @@
     font-size: 3.6rem;
     line-height: 1.05;
     margin-bottom: 24px;
+    margin-top: 0;
+    color: white;
+    /* 🔥 bättre alignment */
 }
 
 .aboutmommi-intro {
     font-size: 1.15rem;
-    color: #666;
+    color: white;
     margin-bottom: 24px;
 }
 
 .aboutmommi-text {
     font-size: 1.05rem;
     line-height: 1.85;
-    color: #444;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -57,6 +61,9 @@
     flex: 1;
     display: flex;
     justify-content: center;
+
+    margin-top: 20px;
+    /* 🔥 subtil desktop alignment */
 }
 
 .aboutmommi-image {
@@ -95,8 +102,6 @@
     margin: 50px 0;
 }
 
-/* 🔥 MAGIC */
-
 .aboutmommi-highlight-box {
     padding: 28px 32px;
 
@@ -112,10 +117,8 @@
 
     text-align: center;
 
-    /* 🔥 FIX centering PERFECT */
     min-height: 120px;
 
-    /* 🔥 3D depth */
     transform: perspective(1000px) rotateX(4deg) rotateY(-2deg);
 
     box-shadow:
@@ -137,7 +140,6 @@
 .aboutmommi-highlight {
     font-size: 1.12rem;
     line-height: 1.6;
-
     margin: 0;
 }
 
@@ -155,7 +157,7 @@
 
 .aboutmommi-sign-text {
     margin-bottom: 10px;
-    color: #666;
+    color: white;
 }
 
 .aboutmommi-signatures {
@@ -186,11 +188,17 @@
         flex-direction: column;
         text-align: center;
         gap: 50px;
+
+        align-items: center;
+        /* 🔥 center EVERYTHING */
     }
 
-    /* 🔥 IMAGE FIRST */
+    /* 🔥 IMAGE FIRST + RESET OFFSET */
     .aboutmommi-image-wrapper {
         order: -1;
+        margin-top: 0;
+        /* 🔥 viktigt: ta bort desktop offset */
+        justify-content: center;
     }
 
     .aboutmommi-title {
@@ -205,5 +213,4 @@
     .aboutmommi-signatures {
         justify-content: center;
     }
-
 }

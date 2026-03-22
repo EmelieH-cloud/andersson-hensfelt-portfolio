@@ -3,8 +3,8 @@ import { useState } from "react";
 
 import AppText from "../Font/AppText";
 
-import Signatur1 from "../../assets/founders/signatur1.png";
-import Signatur2 from "../../assets/founders/signatur2.png";
+import Signatur1 from "../../assets/founders/alinia_sign.png";
+import Signatur2 from "../../assets/founders/emelie_sign.png";
 import founders from "../../assets/founders/founders.png";
 
 function AboutMommi() {
@@ -54,28 +54,17 @@ function AboutMommi() {
             Vi ville göra det enklare att hitta någon att dela det med.
           </AppText>
 
-          {/* 🔥 PREMIUM 3D BOX */}
-          <div className="aboutmommi-highlight-wrapper">
-
-            <div className="aboutmommi-highlight-box">
-              <AppText className="aboutmommi-highlight">
+            <AppText className="aboutmommi-text">
                 Därför skapade vi <strong>mommi</strong> – en plats där du kan hitta,
                 prata med och träffa andra mommis.
               </AppText>
-            </div>
-
-          </div>
 
           <AppText className="aboutmommi-text">
-            Vi hoppas att du gillar appen 💛
+            Vi hoppas att du gillar appen!
           </AppText>
 
           {/* SIGNATURE */}
           <div className="aboutmommi-signature-area">
-
-            <AppText className="aboutmommi-sign-text">
-              Kram
-            </AppText>
 
             <div className="aboutmommi-signatures">
               <img src={Signatur1} className="aboutmommi-signature-img" />
