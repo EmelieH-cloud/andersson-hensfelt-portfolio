@@ -1,29 +1,44 @@
 import './herostyle.css'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 import HERO_VIDEO from '../../assets/mommi/mommivideo.mp4'
 import MOMMI_LOGO from '../../assets/mommi/mommi-logo.png'
-import HERO_FALLBACK from '../../assets/mommi/mommibg.jpg'
 
 import AppText from '../Font/AppText'
 
 const Hero = () => {
+  const [videoReady, setVideoReady] = useState(false)
+  const videoRef = useRef(null)
 
-  const [videoLoaded, setVideoLoaded] = useState(false)
+  useEffect(() => {
+    const video = videoRef.current
+
+    if (!video) return
+
+    // Försök spela först när videon KAN spelas smooth
+    const handleCanPlay = () => {
+      video.play().catch(() => {})
+      setVideoReady(true)
+    }
+
+    video.addEventListener('canplaythrough', handleCanPlay)
+
+    return () => {
+      video.removeEventListener('canplaythrough', handleCanPlay)
+    }
+  }, [])
 
   return (
     <section className="hero-container">
 
-      {/* VIDEO (med poster fallback) */}
+      {/* VIDEO */}
       <video
-        className={`hero-video ${videoLoaded ? 'loaded' : ''}`}
-        autoPlay
+        ref={videoRef}
+        className={`hero-video ${videoReady ? 'loaded' : ''}`}
         muted
         loop
         playsInline
-        preload="auto"
-        poster={HERO_FALLBACK}
-        onLoadedData={() => setVideoLoaded(true)}
+        preload="metadata"
       >
         <source src={HERO_VIDEO} type="video/mp4" />
       </video>

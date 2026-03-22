@@ -14,7 +14,7 @@
 }
 
 /* =====================================================
-   VIDEO (SMOOTH LOAD)
+   VIDEO (PERFORMANCE FIRST)
    ===================================================== */
 
 .hero-video {
@@ -26,22 +26,31 @@
     height: 100%;
 
     object-fit: cover;
-    transform: translate(-50%, -50%) scale(1.05);
+
+    /* 🔥 mindre scale = mindre GPU load */
+    transform: translate(-50%, -50%) scale(1.02);
 
     z-index: -2;
 
     opacity: 0;
-    transition: opacity 1.6s ease;
+    transition: opacity 1.2s ease;
 
-    filter: brightness(0.85) contrast(1.05);
+    /* 🔥 performance boost */
+    will-change: opacity, transform;
+
+    /* 🔥 mindre aggressiv filter = mindre GPU */
+    filter: brightness(0.9) contrast(1.02);
+
+    backface-visibility: hidden;
 }
 
+/* Fade in först när video är redo */
 .hero-video.loaded {
     opacity: 1;
 }
 
 /* =====================================================
-   OVERLAY (CINEMATIC)
+   OVERLAY
    ===================================================== */
 
 .hero-overlay {
@@ -87,24 +96,25 @@
     animation: heroFadeIn 1.2s ease forwards;
     animation-delay: 0.3s;
 
-    /* 🔥 subtle premium effect */
     backdrop-filter: blur(2px);
 }
 
 /* =====================================================
-   LOGO (FIXAD)
+   LOGO
    ===================================================== */
 
 .hero-logo {
     width: 600px;
     max-width: 90vw;
     margin-bottom: 20px;
- background-color: white;
-    /* 🔥 gammelrosa shadow (premium) */
+
+    background-color: white;
+
     box-shadow: 0 8px 20px rgba(203, 158, 158, 0.8);
     border-radius: 100px;
     padding: 6px;
 }
+
 /* =====================================================
    TEXT
    ===================================================== */

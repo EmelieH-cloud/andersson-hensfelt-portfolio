@@ -1,12 +1,41 @@
 import './joinmommi.css'
+import { useEffect, useState } from 'react'
 
-import GOOGLE from '../../../assets/appStore/googlebtn.png'
-import IOS from '../../../assets/appStore/appstore.svg'
 import CUSTOMBG from '../../../assets/mommi/custombg.png'
 
-import AppText from '../../Font/AppText'
+import JoinMommiContent from './JoinMommiContent'
 
 const JoinMommiSection = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    checkScreen()
+    window.addEventListener('resize', checkScreen)
+
+    return () => window.removeEventListener('resize', checkScreen)
+  }, [])
+
+  // 📱 MOBILE: cirkelbild + content
+  if (isMobile) {
+    return (
+      <section className="join-mommi-mobile">
+
+        <div
+          className="join-mobile-image"
+          style={{ backgroundImage: `url(${CUSTOMBG})` }}
+        />
+
+        <JoinMommiContent />
+
+      </section>
+    )
+  }
+
+  // 💻 DESKTOP: overlay version
   return (
     <section
       className="join-mommi-section"
@@ -15,38 +44,8 @@ const JoinMommiSection = () => {
 
       <div className="join-overlay" />
 
-      {/* 🔥 INNER WRAPPER (ny) */}
       <div className="join-inner">
-
-        <div className="join-content">
-
-          <AppText weight={600} className="join-subtitle">
-            JOINA VÅRT COMMUNITY
-          </AppText>
-
-          <AppText as="h1" weight={400} className="join-title">
-            Bli en mommi du också
-          </AppText>
-
-          <AppText className="join-description">
-            Ladda ned appen idag och skapa minnen tillsammans 
-            med andra mommis nära dig.
-          </AppText>
-
-          <div className="join-buttons">
-
-            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-              <img src={GOOGLE} alt="Google Play" className="join-store-btn" />
-            </a>
-
-            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-              <img src={IOS} alt="App Store" className="join-store-btn" />
-            </a>
-
-          </div>
-
-        </div>
-
+        <JoinMommiContent />
       </div>
 
     </section>

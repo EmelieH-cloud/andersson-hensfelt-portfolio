@@ -31,7 +31,7 @@
 }
 
 /* ========================= */
-/* INNER (NEW LAYOUT CONTROL) */
+/* INNER */
 /* ========================= */
 
 .join-inner {
@@ -53,7 +53,6 @@
 
 .join-content {
     max-width: 400px;
-
     text-align: left;
 }
 
@@ -125,7 +124,41 @@
 }
 
 /* ========================= */
-/* MOBILE */
+/* 📱 MOBILE CIRCLE LAYOUT */
+/* ========================= */
+
+.join-mommi-mobile {
+    padding: 60px 20px 50px;
+    text-align: center;
+    background: #fff;
+}
+
+/* 🔥 CIRCLE IMAGE */
+.join-mobile-image {
+    width: 180px;
+    height: 180px;
+
+    margin: 0 auto 30px;
+
+    border-radius: 50%;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    transform: scale(0.95);
+    animation: circleIn 0.8s ease forwards;
+}
+
+@keyframes circleIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* ========================= */
+/* MOBILE CONTENT */
 /* ========================= */
 
 @media (max-width: 768px) {
@@ -133,9 +166,7 @@
     .join-inner {
         flex-direction: column;
         justify-content: flex-start;
-
         padding: 80px 20px 60px;
-        /* 🔥 högre upp */
     }
 
     .join-content {
@@ -144,7 +175,7 @@
     }
 
     .join-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .join-description {
@@ -159,5 +190,4 @@
     .join-store-btn {
         height: 55px;
     }
-
 }

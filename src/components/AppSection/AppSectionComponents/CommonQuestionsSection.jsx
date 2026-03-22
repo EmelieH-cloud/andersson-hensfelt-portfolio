@@ -31,6 +31,7 @@ const CommonQuestionsSection = () => {
   return (
     <section className="faq-section">
 
+
       <div className="faq-container">
 
         <div className="faq-header">
@@ -48,22 +49,19 @@ const CommonQuestionsSection = () => {
               onClick={() => toggle(index)}
             >
 
-              {/* 🔥 QUESTION (utan AppText) */}
               <div className="faq-question">
 
-                <div className="faq-left">
-                  <p className="faq-question-text">
-                    {item.q}
-                  </p>
-                </div>
+                <p className="faq-question-text">
+                  {item.q}
+                </p>
 
                 <div className="faq-icon">
-                  {openIndex === index ? '−' : '+'}
+                  <span />
+                  <span />
                 </div>
 
               </div>
 
-              {/* 🔥 ANSWER (AppText ok här) */}
               <div className="faq-answer">
                 <AppText className="faq-answer-text">
                   {item.a}

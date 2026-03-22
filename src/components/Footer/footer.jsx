@@ -62,8 +62,8 @@ function Footer() {
 
           <div className="footer-links">
 
-            <Link to="/about" className="footer-link">
-              <AppText>Om oss</AppText>
+            <Link to="/about-mommi" className="footer-link">
+              <AppText>Bakom mommi</AppText>
             </Link>
 
             <Link to="/support" className="footer-link">
