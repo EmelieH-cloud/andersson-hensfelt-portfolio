@@ -5,8 +5,7 @@
 .join-mommi-section {
     position: relative;
     width: 100%;
-  
-    /* 🔥 BACKGROUND */
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,16 +13,14 @@
     overflow: hidden;
 }
 
-
 /* ========================= */
-/* 🔥 OVERLAY */
+/* OVERLAY */
 /* ========================= */
 
 .join-overlay {
     position: absolute;
     inset: 0;
 
-    /* 🔥 Ljus premium overlay */
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.85) 0%,
             rgba(255, 255, 255, 0.65) 40%,
@@ -34,19 +31,30 @@
 }
 
 /* ========================= */
+/* INNER (NEW LAYOUT CONTROL) */
+/* ========================= */
+
+.join-inner {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 160px 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* ========================= */
 /* CONTENT */
 /* ========================= */
 
 .join-content {
-    position: relative;
-    z-index: 2;
+    max-width: 400px;
 
-    max-width: 800px;
-    margin: 0 auto;
-
-    padding: 140px 20px;
-
-    text-align: center;
+    text-align: left;
 }
 
 /* ========================= */
@@ -61,21 +69,15 @@
 }
 
 .join-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-
     color: #111;
 }
-
-/* DESCRIPTION */
 
 .join-description {
     font-size: 1.15rem;
     line-height: 1.7;
-
-    max-width: 520px;
-    margin: 0 auto 40px;
-
+    margin-bottom: 40px;
     color: #444;
 }
 
@@ -86,7 +88,6 @@
 .join-buttons {
     display: flex;
     gap: 18px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -103,7 +104,7 @@
 }
 
 /* ========================= */
-/* 🔥 FADE TOP (matchar sidan snyggt) */
+/* FADE TOP */
 /* ========================= */
 
 .join-mommi-section::before {
@@ -129,8 +130,17 @@
 
 @media (max-width: 768px) {
 
+    .join-inner {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding: 80px 20px 60px;
+        /* 🔥 högre upp */
+    }
+
     .join-content {
-        padding: 100px 20px;
+        text-align: center;
+        max-width: 100%;
     }
 
     .join-title {
@@ -149,4 +159,5 @@
     .join-store-btn {
         height: 55px;
     }
+
 }

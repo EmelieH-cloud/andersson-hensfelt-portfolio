@@ -16,18 +16,16 @@ function AboutMommi() {
 
       <div className="aboutmommi-container">
 
-        {/* IMAGE */}
+        {/* 🔥 IMAGE */}
         <div className="aboutmommi-image-wrapper">
-
           <img
             src={founders}
             className={`aboutmommi-image ${loaded ? "loaded" : ""}`}
             onLoad={() => setLoaded(true)}
           />
-
         </div>
 
-        {/* TEXT */}
+        {/* 🔥 TEXT */}
         <div className="aboutmommi-content">
 
           <AppText as="h1" weight={600} className="aboutmommi-title">
@@ -56,7 +54,7 @@ function AboutMommi() {
             Vi ville göra det enklare att hitta någon att dela det med.
           </AppText>
 
-          {/* 🔥 PREMIUM HIGHLIGHT */}
+          {/* 🔥 PREMIUM 3D BOX */}
           <div className="aboutmommi-highlight-wrapper">
 
             <div className="aboutmommi-highlight-box">

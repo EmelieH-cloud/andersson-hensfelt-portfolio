@@ -5,7 +5,7 @@ import AppText from '../../Font/AppText'
 const questions = [
   {
     q: "Vad är mommi?",
-    a: "mommi är en app för att hitta andra mammor, skapa gemenskap och delta i aktiviteter tillsammans."
+    a: "mommi är en app för mammor som vill träffa mammor, för att knyta kontakt, träffas och skapa communities."
   },
   {
     q: "Är appen gratis?",

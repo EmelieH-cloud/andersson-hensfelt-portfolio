@@ -4,23 +4,49 @@
 
 .aboutmommi-section {
     background: #fff;
-    padding: 140px 20px 120px;
+    padding: 160px 40px 140px;
 }
 
 /* ========================= */
-/* CONTAINER */
+/* DESKTOP LAYOUT */
 /* ========================= */
 
 .aboutmommi-container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    gap: 80px;
+}
 
-    gap: 70px;
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.aboutmommi-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.aboutmommi-title {
+    font-size: 3.6rem;
+    line-height: 1.05;
+    margin-bottom: 24px;
+}
+
+.aboutmommi-intro {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.aboutmommi-text {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 /* ========================= */
@@ -28,10 +54,10 @@
 /* ========================= */
 
 .aboutmommi-image-wrapper {
-    perspective: 1200px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
-
-/* LOAD EFFECT */
 
 .aboutmommi-image {
     width: 520px;
@@ -41,13 +67,13 @@
     border-radius: 50%;
 
     opacity: 0;
-    transform: scale(1.08);
-    filter: blur(12px);
+    transform: scale(1.1);
+    filter: blur(14px);
 
     transition: all 0.8s ease;
 
     box-shadow:
-        0 50px 120px rgba(0, 0, 0, 0.25),
+        0 60px 140px rgba(0, 0, 0, 0.25),
         0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -58,87 +84,63 @@
 }
 
 .aboutmommi-image:hover {
-    transform: scale(1.03);
+    transform: scale(1.05) rotate(1deg);
 }
 
 /* ========================= */
-/* TEXT */
-/* ========================= */
-
-.aboutmommi-content {
-    max-width: 640px;
-}
-
-.aboutmommi-title {
-    font-size: 2.6rem;
-    margin-bottom: 20px;
-}
-
-.aboutmommi-intro {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 24px;
-}
-
-.aboutmommi-text {
-    font-size: 1rem;
-    line-height: 1.85;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-/* ========================= */
-/* 🔥 PREMIUM HIGHLIGHT */
+/* 🔥 3D PREMIUM BOX */
 /* ========================= */
 
 .aboutmommi-highlight-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
+/* 🔥 MAGIC */
+
 .aboutmommi-highlight-box {
-    max-width: 520px;
+    padding: 28px 32px;
 
-    padding: 24px 28px;
+    border-radius: 22px;
 
-    border-radius: 18px;
+    background: linear-gradient(145deg, #f8ecef, #efd9df);
 
-    background: linear-gradient(145deg, #f6e9ec, #efd9df);
-    border: 1px solid rgba(169, 78, 98, 0.2);
+    border: 1px solid rgba(169, 78, 98, 0.25);
 
-    /* 🔥 CENTER FIX */
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
 
-    box-shadow:
-        0 20px 40px rgba(169, 78, 98, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    /* 🔥 FIX centering PERFECT */
+    min-height: 120px;
 
-    transform: perspective(800px) rotateX(2deg);
-    transition: all 0.4s ease;
+    /* 🔥 3D depth */
+    transform: perspective(1000px) rotateX(4deg) rotateY(-2deg);
+
+    box-shadow:
+        0 40px 80px rgba(169, 78, 98, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.05),
+        inset 0 2px 0 rgba(255, 255, 255, 0.6);
+
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .aboutmommi-highlight-box:hover {
-    transform: perspective(800px) rotateX(0deg) translateY(-4px);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-6px);
 
     box-shadow:
-        0 30px 60px rgba(169, 78, 98, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        0 60px 120px rgba(169, 78, 98, 0.25),
+        0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .aboutmommi-highlight {
-    font-size: 1.08rem;
-
-    /* 🔥 viktig fix */
-    line-height: 1.55;
+    font-size: 1.12rem;
+    line-height: 1.6;
 
     margin: 0;
-    display: block;
 }
+
 .aboutmommi-highlight strong {
     color: #a94e62;
 }
@@ -158,13 +160,11 @@
 
 .aboutmommi-signatures {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
 .aboutmommi-signature-img {
     width: 180px;
-
     transition: transform 0.3s ease;
 }
 
@@ -182,26 +182,28 @@
         padding: 120px 20px 80px;
     }
 
-    /* 🔥 MER LUFT OVANFÖR BILD */
-    .aboutmommi-image-wrapper {
-        margin-top: 20px;
+    .aboutmommi-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
     }
 
-    /* 🔥 STÖRRE BILD */
+    /* 🔥 IMAGE FIRST */
+    .aboutmommi-image-wrapper {
+        order: -1;
+    }
+
+    .aboutmommi-title {
+        font-size: 2.2rem;
+    }
+
     .aboutmommi-image {
         width: 320px;
         height: 320px;
     }
 
-    .aboutmommi-title {
-        font-size: 2rem;
+    .aboutmommi-signatures {
+        justify-content: center;
     }
 
-    .aboutmommi-text {
-        font-size: 0.95rem;
-    }
-
-    .aboutmommi-signature-img {
-        width: 110px;
-    }
 }
