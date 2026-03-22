@@ -2,12 +2,19 @@ import './joinmommi.css'
 
 import GOOGLE from '../../../assets/appStore/googlebtn.png'
 import IOS from '../../../assets/appStore/appstore.svg'
+import CUSTOMBG from '../../../assets/mommi/custombg.png'
 
 import AppText from '../../Font/AppText'
 
 const JoinMommiSection = () => {
   return (
-    <section className="join-mommi-section">
+    <section
+      className="join-mommi-section"
+      style={{ backgroundImage: `url(${CUSTOMBG})` }}
+    >
+
+      {/* 🔥 DARK OVERLAY */}
+      <div className="join-overlay" />
 
       <div className="join-content">
 
@@ -15,7 +22,7 @@ const JoinMommiSection = () => {
           JOINA VÅRT COMMUNITY
         </AppText>
 
-        <AppText as="h1" weight={300} className="join-title">
+        <AppText as="h1" weight={400} className="join-title">
           Bli en mommi du också
         </AppText>
 

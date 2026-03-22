@@ -44,10 +44,6 @@ function Footer() {
               <AppText>Integritetspolicy</AppText>
             </Link>
 
-            <Link to="/policy" className="footer-link">
-              <AppText>Användarvillkor</AppText>
-            </Link>
-
             <Link to="/terms" className="footer-link">
   <AppText>Användarvillkor</AppText>
 </Link>

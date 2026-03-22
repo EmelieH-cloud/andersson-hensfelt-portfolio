@@ -9,6 +9,7 @@ import Integritypage from './pages/Integritypage';
 import Termsspage from './pages/Termspage';
 import AboutMommiPage from './pages/AboutMommiPage';
 import SecurityPage from './pages/SecurityPage';
+import FAQpage from './pages/FAQpage';
 import ScrollToTop from './components/Helpers/ScrollToTop';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/terms" element={<Termsspage />} />
         <Route path="/safety" element={<SecurityPage />} />
         <Route path="/about-mommi" element={<AboutMommiPage />} />
+        <Route path="/faq" element={<FAQpage/>}/>
       </Routes>
 
     </div>

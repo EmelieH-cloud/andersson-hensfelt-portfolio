@@ -13,7 +13,6 @@ const MommiHeroSection = () => {
         style={{ backgroundImage: `url(${MOMMIBG})` }}
       />
 
-      <div className="mommi-hero-overlay" />
 
       <div className="mommi-hero-inner">
 

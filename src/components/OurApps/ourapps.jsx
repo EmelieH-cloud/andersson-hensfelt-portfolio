@@ -1,53 +1,99 @@
-
 import './ourappsstyle.css'
-import Icon from '../../assets/oneMoreDate/cardview.png';
-import Icon2 from '../../assets/oneMoreDate/deckview.png';
-import { Link } from 'react-router-dom';
-import Icon3 from '../../assets/oneMoreDate/playersview.png';
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const Ourapps = () => {
+import Icon from '../../assets/oneMoreDate/cardview.png'
+import Icon2 from '../../assets/oneMoreDate/deckview.png'
+import Icon3 from '../../assets/oneMoreDate/playersview.png'
+
+import AppText from '../Font/AppText'
+
+/* Smooth image */
+const SmoothImage = ({ src, alt }) => {
+  const [loaded, setLoaded] = useState(false)
+
   return (
-    <div className='our-apps-wrapper'>
-      <div className='bg-light apps-cont'>
-        <h1 className='omd-header'>One More Date?</h1>
-        <p>One more date is a mobile game available for both android and IOS.</p>
-             <Link to="/policy"> Privacy Policy</Link>.
-               <Link to="/support"> Support</Link>.
-        <div className='images-wrapper'>
-     <img src={Icon} alt="icon" className='icon-img'/>
-    <img src={Icon2} alt="icon" className='icon-img'/>
-   <img src={Icon3} alt="icon" className='icon-img'/>
-        </div>
-   
-   <div>
-  <p className='about-omd'>
-  Imagine you are on a date with someone who seems absolutely perfect – attractive, charming and even makes you laugh. But then, suddenly something happens. It turns out that your date doesn’t believe in the moon landing. Is this a dealbreaker for you, or would you consider going on One More Date?
-</p>
-
-<p className='about-omd'>
-  One More Date is the perfect game to spark lively discussions and break the ice at every party!
-</p>
-
-<p className='about-omd'>
-  <br/>
-  The game contains a variety of statements, such as:
-  <ul className='list-unstyled'>
-    <li>Your date only brushes their teeth once a day</li>
-    <li>Your date was born as a different gender than they are today</li>
-  </ul>
-</p>
-
-<p className='about-omd'>
-  It is up to you to decide whether you would continue dating the person or if you want to move on to someone new.
-</p>
-
-<p className='about-omd'>
-  One More Date promises plenty of laughs and, occasionally, a few heated discussions. It’s a perfect game for a girls night, an afterwork, or getting to know new people on a deeper level.
-</p>
-</div>
-    </div>
-    </div>
+    <img
+      src={src}
+      alt={alt}
+      className={`our-img ${loaded ? 'loaded' : ''}`}
+      onLoad={() => setLoaded(true)}
+    />
   )
 }
 
-export default Ourapps;
+SmoothImage.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+}
+
+const Ourapps = () => {
+  return (
+    <section className="our-apps-section">
+
+      <div className="our-apps-container">
+
+        <AppText as="h1" weight={600} className="our-apps-title">
+          One More Date?
+        </AppText>
+
+        <AppText className="our-apps-sub">
+          One more date is a mobile game available for both android and IOS.
+        </AppText>
+
+        <div className="our-apps-links">
+          <Link to="/policy">Privacy Policy</Link>
+          <Link to="/support">Support</Link>
+        </div>
+
+        {/* IMAGES */}
+        <div className="our-apps-images">
+          <SmoothImage src={Icon} alt="card view" />
+          <SmoothImage src={Icon2} alt="deck view" />
+          <SmoothImage src={Icon3} alt="players view" />
+        </div>
+
+        {/* TEXT */}
+        <div className="our-apps-content">
+
+          <AppText className="our-apps-text">
+            Imagine you are on a date with someone who seems absolutely perfect – attractive, charming and even makes you laugh. But then, suddenly something happens. It turns out that your date doesn’t believe in the moon landing. Is this a dealbreaker for you, or would you consider going on One More Date?
+          </AppText>
+
+          <AppText className="our-apps-text">
+            One More Date is the perfect game to spark lively discussions and break the ice at every party!
+          </AppText>
+
+          {/* 🔥 NEW PREMIUM CARDS */}
+          <div className="our-apps-cards">
+
+            <div className="omd-card">
+              <span className="omd-card-intro">How about…</span>
+              <p>Your date only brushes their teeth once a day</p>
+            </div>
+
+            <div className="omd-card">
+              <span className="omd-card-intro">How about…</span>
+              <p>Your date was born as a different gender than they are today</p>
+            </div>
+
+          </div>
+
+          <AppText className="our-apps-text">
+            It is up to you to decide whether you would continue dating the person or if you want to move on to someone new.
+          </AppText>
+
+          <AppText className="our-apps-text">
+            One More Date promises plenty of laughs and, occasionally, a few heated discussions. It’s a perfect game for a girls night, an afterwork, or getting to know new people on a deeper level.
+          </AppText>
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}
+
+export default Ourapps

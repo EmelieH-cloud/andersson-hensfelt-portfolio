@@ -1,11 +1,36 @@
 /* ========================= */
-/* BASE */
+/* SECTION */
 /* ========================= */
 
 .join-mommi-section {
+    position: relative;
     width: 100%;
-    background: #ffffff;
-    /* 🔥 clean vit */
+  
+    /* 🔥 BACKGROUND */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* ========================= */
+/* 🔥 OVERLAY */
+/* ========================= */
+
+.join-overlay {
+    position: absolute;
+    inset: 0;
+
+    /* 🔥 Ljus premium overlay */
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.85) 0%,
+            rgba(255, 255, 255, 0.65) 40%,
+            rgba(255, 255, 255, 0.5) 70%,
+            rgba(255, 255, 255, 0.6) 100%);
+
+    z-index: 1;
 }
 
 /* ========================= */
@@ -13,10 +38,13 @@
 /* ========================= */
 
 .join-content {
+    position: relative;
+    z-index: 2;
+
     max-width: 800px;
     margin: 0 auto;
 
-    padding: 120px 20px;
+    padding: 140px 20px;
 
     text-align: center;
 }
@@ -28,7 +56,7 @@
 .join-subtitle {
     font-size: 0.75rem;
     letter-spacing: 3px;
-    color: #999;
+    color: #a94e62;
     margin-bottom: 14px;
 }
 
@@ -39,7 +67,7 @@
     color: #111;
 }
 
-/* 🔥 BESKRIVNING */
+/* DESCRIPTION */
 
 .join-description {
     font-size: 1.15rem;
@@ -69,11 +97,30 @@
         filter .3s ease;
 }
 
-/* 🔥 HOVER */
-
 .join-store-btn:hover {
     transform: translateY(-6px) scale(1.04);
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+}
+
+/* ========================= */
+/* 🔥 FADE TOP (matchar sidan snyggt) */
+/* ========================= */
+
+.join-mommi-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 140px;
+
+    background: linear-gradient(to bottom,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0) 100%);
+
+    z-index: 3;
 }
 
 /* ========================= */
@@ -83,7 +130,7 @@
 @media (max-width: 768px) {
 
     .join-content {
-        padding: 80px 20px;
+        padding: 100px 20px;
     }
 
     .join-title {

@@ -1,12 +1,14 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
 .aboutmommi-section {
     background: #fff;
-
-    /* 🔥 MER LUFT I TOPPEN */
-    padding: 160px 20px 120px;
+    padding: 140px 20px 120px;
 }
 
 /* ========================= */
-/* LAYOUT */
+/* CONTAINER */
 /* ========================= */
 
 .aboutmommi-container {
@@ -15,11 +17,10 @@
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
 
-    gap: 60px;
+    gap: 70px;
 }
 
 /* ========================= */
@@ -27,14 +28,10 @@
 /* ========================= */
 
 .aboutmommi-image-wrapper {
-    display: flex;
-    justify-content: center;
-
     perspective: 1200px;
-
-    /* 🔥 EXTRA LUFT OVANFÖR BILDEN */
-    margin-top: 20px;
 }
+
+/* LOAD EFFECT */
 
 .aboutmommi-image {
     width: 520px;
@@ -43,17 +40,25 @@
     object-fit: cover;
     border-radius: 50%;
 
-    transform: rotateX(6deg) rotateY(-6deg);
+    opacity: 0;
+    transform: scale(1.08);
+    filter: blur(12px);
+
+    transition: all 0.8s ease;
 
     box-shadow:
         0 50px 120px rgba(0, 0, 0, 0.25),
         0 20px 40px rgba(0, 0, 0, 0.15);
+}
 
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
+.aboutmommi-image.loaded {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
 }
 
 .aboutmommi-image:hover {
-    transform: rotateX(0deg) rotateY(0deg) scale(1.03);
+    transform: scale(1.03);
 }
 
 /* ========================= */
@@ -61,7 +66,7 @@
 /* ========================= */
 
 .aboutmommi-content {
-    max-width: 650px;
+    max-width: 640px;
 }
 
 .aboutmommi-title {
@@ -72,19 +77,70 @@
 .aboutmommi-intro {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .aboutmommi-text {
     font-size: 1rem;
     line-height: 1.85;
     color: #444;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* 🔥 PREMIUM HIGHLIGHT */
+/* ========================= */
+
+.aboutmommi-highlight-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.aboutmommi-highlight-box {
+    max-width: 520px;
+
+    padding: 24px 28px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(145deg, #f6e9ec, #efd9df);
+    border: 1px solid rgba(169, 78, 98, 0.2);
+
+    /* 🔥 CENTER FIX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 40px rgba(169, 78, 98, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+    transform: perspective(800px) rotateX(2deg);
+    transition: all 0.4s ease;
+}
+
+.aboutmommi-highlight-box:hover {
+    transform: perspective(800px) rotateX(0deg) translateY(-4px);
+
+    box-shadow:
+        0 30px 60px rgba(169, 78, 98, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .aboutmommi-highlight {
-    color: #b86575;
-    margin-top: 20px;
+    font-size: 1.08rem;
+
+    /* 🔥 viktig fix */
+    line-height: 1.55;
+
+    margin: 0;
+    display: block;
+}
+.aboutmommi-highlight strong {
+    color: #a94e62;
 }
 
 /* ========================= */
@@ -107,7 +163,13 @@
 }
 
 .aboutmommi-signature-img {
-    width: 140px;
+    width: 180px;
+
+    transition: transform 0.3s ease;
+}
+
+.aboutmommi-signature-img:hover {
+    transform: scale(1.05);
 }
 
 /* ========================= */
@@ -118,17 +180,17 @@
 
     .aboutmommi-section {
         padding: 120px 20px 80px;
-        /* 🔥 balanserad mobil */
     }
 
+    /* 🔥 MER LUFT OVANFÖR BILD */
     .aboutmommi-image-wrapper {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
+    /* 🔥 STÖRRE BILD */
     .aboutmommi-image {
-        width: 260px;
-        height: 260px;
-        transform: none;
+        width: 320px;
+        height: 320px;
     }
 
     .aboutmommi-title {
