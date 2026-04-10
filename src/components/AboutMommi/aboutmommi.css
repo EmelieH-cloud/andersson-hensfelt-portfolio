@@ -3,7 +3,7 @@
 /* ========================= */
 
 .aboutmommi-section {
-    background: #c87484;
+    background: linear-gradient(180deg, #d19fa9 0%, #c87484 100%);
     padding: 160px 40px 140px;
 }
 
@@ -67,11 +67,10 @@
 }
 
 .aboutmommi-image {
-    width: 520px;
+    width: 620px;
     height: 520px;
-
+   border-radius: 20%;
     object-fit: cover;
-    border-radius: 50%;
 
     opacity: 0;
     transform: scale(1.1);
@@ -106,8 +105,6 @@
     padding: 28px 32px;
 
     border-radius: 22px;
-
-    background: linear-gradient(145deg, #f8ecef, #efd9df);
 
     border: 1px solid rgba(169, 78, 98, 0.25);
 
@@ -179,38 +176,50 @@
 /* ========================= */
 
 @media (max-width: 768px) {
-
     .aboutmommi-section {
-        padding: 120px 20px 80px;
+        padding: 120px 16px 80px;
     }
 
     .aboutmommi-container {
         flex-direction: column;
-        text-align: center;
         gap: 50px;
-
         align-items: center;
-        /* 🔥 center EVERYTHING */
+        text-align: center;
+        width: 100%;
     }
 
-    /* 🔥 IMAGE FIRST + RESET OFFSET */
+    .aboutmommi-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .aboutmommi-image-wrapper {
         order: -1;
         margin-top: 0;
-        /* 🔥 viktigt: ta bort desktop offset */
+        width: 100%;
         justify-content: center;
+    }
+
+    .aboutmommi-image {
+        width: min(320px, 100%);
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .aboutmommi-title {
         font-size: 2.2rem;
-    }
-
-    .aboutmommi-image {
-        width: 320px;
-        height: 320px;
+        word-break: break-word;
     }
 
     .aboutmommi-signatures {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .aboutmommi-signature-img {
+        width: min(140px, 42vw);
+        max-width: 100%;
     }
 }

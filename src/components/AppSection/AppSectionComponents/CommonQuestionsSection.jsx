@@ -1,5 +1,6 @@
 import './commonquestions.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import AppText from '../../Font/AppText'
 
 const questions = [
@@ -12,9 +13,16 @@ const questions = [
     a: "Ja, appen är gratis att använda. Njut!"
   },
   {
-    q: "Hur hanteras personuppgifter?",
-    a: "Vi följer GDPR och delar aldrig dina personuppgifter med tredje part."
-  },
+  q: "Hur hanteras personuppgifter?",
+  a: (
+    <>
+      Vi hanterar dina uppgifter enligt vår{" "}
+      <Link to="/integrity" className="faq-link">integritetspolicy</Link>{" "}
+      . Vänligen läs även igenom våra {" "}
+      <Link to="/terms" className="faq-link">användarvillkor</Link>.
+    </>
+  )
+},
   {
     q: "Kontakt & support",
     a: "Du når oss på info@anderssonhensfelt@gmail.se"

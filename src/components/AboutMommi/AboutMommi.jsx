@@ -5,7 +5,7 @@ import AppText from "../Font/AppText";
 
 import Signatur1 from "../../assets/founders/alinia_sign.png";
 import Signatur2 from "../../assets/founders/emelie_sign.png";
-import founders from "../../assets/founders/founders.png";
+import founders from "../../assets/founders/founderspic2.png";
 
 function AboutMommi() {
 
@@ -28,7 +28,7 @@ function AboutMommi() {
         {/* 🔥 TEXT */}
         <div className="aboutmommi-content">
 
-          <AppText as="h1" weight={600} className="aboutmommi-title">
+          <AppText as="h1" weight={400} className="aboutmommi-title">
             Grundarna och utvecklarna bakom mommi
           </AppText>
 

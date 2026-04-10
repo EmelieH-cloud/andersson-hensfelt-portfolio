@@ -1,5 +1,5 @@
 import './herostyle.css'
-import { useState, useRef, useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import HERO_VIDEO from '../../assets/mommi/mommivideo.mp4'
 import MOMMI_LOGO from '../../assets/mommi/mommi-logo.png'
@@ -7,24 +7,23 @@ import MOMMI_LOGO from '../../assets/mommi/mommi-logo.png'
 import AppText from '../Font/AppText'
 
 const Hero = () => {
-  const [videoReady, setVideoReady] = useState(false)
   const videoRef = useRef(null)
+  const [videoReady, setVideoReady] = useState(false)
 
   useEffect(() => {
     const video = videoRef.current
-
     if (!video) return
 
-    // Försök spela först när videon KAN spelas smooth
-    const handleCanPlay = () => {
+    // 🔥 loadeddata = snabbaste “safe play”
+    const handleLoaded = () => {
       video.play().catch(() => {})
       setVideoReady(true)
     }
 
-    video.addEventListener('canplaythrough', handleCanPlay)
+    video.addEventListener('loadeddata', handleLoaded)
 
     return () => {
-      video.removeEventListener('canplaythrough', handleCanPlay)
+      video.removeEventListener('loadeddata', handleLoaded)
     }
   }, [])
 
@@ -34,17 +33,18 @@ const Hero = () => {
       {/* VIDEO */}
       <video
         ref={videoRef}
-        className={`hero-video ${videoReady ? 'loaded' : ''}`}
+        className={`hero-video ${videoReady ? 'visible' : ''}`}
         muted
         loop
         playsInline
-        preload="metadata"
+        autoPlay
+        preload="auto"
       >
         <source src={HERO_VIDEO} type="video/mp4" />
       </video>
 
-      {/* OVERLAY */}
-      <div className="hero-overlay"></div>
+      {/* 🔥 VIT OVERLAY */}
+      <div className="hero-overlay" />
 
       {/* CONTENT */}
       <div className="hero-content">
@@ -57,7 +57,8 @@ const Hero = () => {
 
         <AppText weight={400} className="hero-intro">
           Oavsett om du är gravid, nybliven mamma eller har barn som
-          blivit lite större – mommi är för mammor som vill träffa mammor, med eller utan barn.
+          blivit lite större – mommi är för mammor som vill träffa mammor,
+          med eller utan barn.
         </AppText>
 
       </div>

@@ -1,5 +1,5 @@
 /* =====================================================
-   HERO CONTAINER
+   BASE
    ===================================================== */
 
 .hero-container {
@@ -11,108 +11,94 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: #f5eaea;
 }
 
 /* =====================================================
-   VIDEO (PERFORMANCE FIRST)
+   VIDEO
    ===================================================== */
 
 .hero-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    inset: 0;
 
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 
-    /* 🔥 mindre scale = mindre GPU load */
-    transform: translate(-50%, -50%) scale(1.02);
-
-    z-index: -2;
-
     opacity: 0;
-    transition: opacity 1.2s ease;
+    transition: opacity 1s ease;
 
-    /* 🔥 performance boost */
-    will-change: opacity, transform;
-
-    /* 🔥 mindre aggressiv filter = mindre GPU */
-    filter: brightness(0.9) contrast(1.02);
-
-    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: opacity;
 }
 
-/* Fade in först när video är redo */
-.hero-video.loaded {
+.hero-video.visible {
     opacity: 1;
 }
 
 /* =====================================================
-   OVERLAY
+   WHITE OVERLAY
    ===================================================== */
 
 .hero-overlay {
     position: absolute;
     inset: 0;
 
-    background:
-        linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.45) 0%,
-            rgba(160, 123, 123, 0.4) 30%,
-            rgba(203, 158, 158, 0.25) 60%,
-            rgba(0, 0, 0, 0.1) 80%,
-            rgba(0, 0, 0, 0) 100%),
+    background: linear-gradient(to bottom,
+            rgba(91, 83, 83, 0.45) 0%,
+            rgba(134, 110, 110, 0.55) 40%,
+            rgba(112, 107, 107, 0.55) 100%);
 
-        radial-gradient(circle at 50% 45%,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.03) 70%,
-            rgba(0, 0, 0, 0) 90%);
-
-    z-index: -1;
+    z-index: 1;
 }
 
 /* =====================================================
-   CONTENT
+   CONTENT (🔥 FIXAD CENTERING)
    ===================================================== */
 
 .hero-content {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* 🔥 viktig */
     justify-content: center;
+
     text-align: center;
 
-    color: white;
+    max-width: 800px;
+    width: 100%;
 
-    width: 70%;
-    margin: 0 auto;
+    padding: 20px;
 
-    opacity: 0;
-    transform: translateY(30px);
-
-    animation: heroFadeIn 1.2s ease forwards;
-    animation-delay: 0.3s;
-
-    backdrop-filter: blur(2px);
+    animation: fadeUp 1s ease forwards;
 }
 
 /* =====================================================
-   LOGO
+   LOGO (🔥 FIXAD)
    ===================================================== */
 
 .hero-logo {
-    width: 600px;
+    width: 700px;
     max-width: 90vw;
-    margin-bottom: 20px;
 
-    background-color: white;
+    display: block;
 
-    box-shadow: 0 8px 20px rgba(203, 158, 158, 0.8);
-    border-radius: 100px;
-    padding: 6px;
+    margin: 0 auto 30px auto;
+    /* 🔥 riktig centrering */
+
+    padding: 10px 20px;
+    border-radius: 80px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.15),
+        0 0 30px rgba(255, 255, 255, 0.5);
 }
 
 /* =====================================================
@@ -120,17 +106,23 @@
    ===================================================== */
 
 .hero-intro {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.7;
     max-width: 700px;
-    opacity: 0.95;
+    margin: 0 auto;
+    color: white;
 }
 
 /* =====================================================
    ANIMATION
    ===================================================== */
 
-@keyframes heroFadeIn {
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -138,26 +130,27 @@
 }
 
 /* =====================================================
-   MOBILE
+   MOBILE (🔥 EXTRA FIX)
    ===================================================== */
 
 @media (max-width: 768px) {
 
-    .hero-container {
-        height: 100vh;
-    }
-
     .hero-content {
-        width: 90%;
+        padding: 20px 16px;
     }
 
     .hero-logo {
-        width: 280px;
-        margin-bottom: 16px;
+        width: 320px;
+
+        /* 🔥 säker centrering */
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 8px 16px;
     }
 
     .hero-intro {
-        font-size: 1rem;
-        max-width: 95%;
+        font-size: 1.5rem;
+        padding: 20px;
     }
 }
