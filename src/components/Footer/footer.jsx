@@ -66,10 +66,6 @@ function Footer() {
               <AppText>Bakom mommi</AppText>
             </Link>
 
-            <Link to="/support" className="footer-link">
-              <AppText>Pressrum</AppText>
-            </Link>
-
           </div>
 
         </FooterColumn>

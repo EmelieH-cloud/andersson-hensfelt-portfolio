@@ -1,0 +1,63 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+.mommi-video-hero {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    /* 🔥 MATCHAR VIDEON PERFEKT */
+    background: #c06f7e;
+}
+
+/* ========================= */
+/* WRAPPER */
+/* ========================= */
+
+.mommi-video-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+overflow: hidden;
+    /* 🔥 VIKTIG */
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
+.mommi-video {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.mommi-video.visible {
+    opacity: 1;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .mommi-video-hero {
+        padding: 60px 16px;
+    }
+
+    .mommi-video-wrapper {
+        max-width: 100%;
+    }
+
+}

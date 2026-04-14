@@ -1,0 +1,61 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+.mommivent-video-hero {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    background: #c06f7e;
+}
+
+/* ========================= */
+/* WRAPPER */
+/* ========================= */
+
+.mommivent-video-wrapper {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
+.mommivent-video {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.mommivent-video.visible {
+    opacity: 1;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .mommivent-video-hero {
+        padding: 60px 16px;
+    }
+
+    .mommivent-video-wrapper {
+        max-width: 100%;
+    }
+
+}

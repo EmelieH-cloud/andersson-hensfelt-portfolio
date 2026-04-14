@@ -60,7 +60,7 @@ function NavBar({ variant = "dark" }) {
 
             <Nav.Link as={Link} to="/guide">
               <AppText as="span" weight={500}>
-                Så funkar det
+              Så funkar det
               </AppText>
             </Nav.Link>
 

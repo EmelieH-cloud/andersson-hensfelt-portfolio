@@ -57,7 +57,7 @@ const Hero = () => {
 
         <AppText weight={400} className="hero-intro">
           Oavsett om du är gravid, nybliven mamma eller har barn som
-          blivit lite större – mommi är för mammor som vill träffa mammor,
+          blivit lite större – mommi är appen för mammor som vill träffa mammor,
           med eller utan barn.
         </AppText>
 

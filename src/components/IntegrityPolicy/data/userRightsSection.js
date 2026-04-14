@@ -29,8 +29,11 @@ export const userRightsSection = {
         "Du har rätt att få dina personuppgifter raderade utan onödigt dröjsmål.",
         "Du kan när som helst begära att vi raderar uppgifter om dig.",
         "Du kan själv radera ditt konto via inställningarna i appen.",
+        "Vid radering av ditt konto tas dina personuppgifter bort, inklusive profilinformation och kopplingar till ditt konto.",
+        "Inlägg och kommenterarer som du har skapat kan komma att behållas, men anonymiseras så att de inte längre kan kopplas till dig.",
+        "Meddelanden i chattar raderas från ditt konto, men kan fortfarande vara synliga för andra deltagare i samma konversation.",
         "Det kan ta upp till två veckor innan dina uppgifter är fullständigt raderade från våra system eftersom vi under en begränsad tid behöver kunna hantera och utreda eventuella modereringsärenden.",
-        "Om du önskar att dina uppgifter raderas omedelbart kan du kontakta oss via e-postadressen ovan."
+        "Om du önskar att dina uppgifter raderas omedelbart kan du kontakta oss via e-postadressen info@anderssonhensfelt@gmail.se."
       ]
     },
 
