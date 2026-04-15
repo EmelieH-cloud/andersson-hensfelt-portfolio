@@ -1,49 +1,89 @@
 /* ========================= */
-/* BASE */
+/* SECTION */
 /* ========================= */
 
-.mommi-video-hero {
+.mommihero-section {
     width: 100%;
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 80px 20px;
-
-    /* 🔥 MATCHAR VIDEON PERFEKT */
     background: #c06f7e;
-}
 
-/* ========================= */
-/* WRAPPER */
-/* ========================= */
+    padding: 50px 32px 50px;
 
-.mommi-video-wrapper {
-    width: 100%;
-    max-width: 400px;
+    border-radius: 32px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 30px auto;
+
     position: relative;
-overflow: hidden;
-    /* 🔥 VIKTIG */
 }
 
 /* ========================= */
-/* VIDEO */
+/* CONTAINER */
 /* ========================= */
 
-.mommi-video {
-    width: 100%;
+.mommihero-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* ========================= */
+/* VIDEO (vänster) */
+/* ========================= */
+
+.mommihero-video-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mommihero-video {
+    width: 260px;
+    max-width: 100%;
     height: auto;
+
+    border-radius: 28px;
 
     object-fit: contain;
 
     opacity: 0;
-    transition: opacity 1s ease;
+    transform: scale(0.95);
+    transition: all 0.8s ease;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25),
+        0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.mommi-video.visible {
+.mommihero-video.visible {
     opacity: 1;
+    transform: scale(1);
+}
+
+/* ========================= */
+/* TEXT (höger) */
+/* ========================= */
+
+.mommihero-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.mommihero-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 2.4rem;
+    color: white;
+}
+
+.mommihero-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 16px;
 }
 
 /* ========================= */
@@ -52,12 +92,27 @@ overflow: hidden;
 
 @media (max-width: 768px) {
 
-    .mommi-video-hero {
-        padding: 60px 16px;
+    .mommihero-section {
+        padding: 30px 16px 60px;
+        border-radius: 24px;
     }
 
-    .mommi-video-wrapper {
+    .mommihero-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .mommihero-content {
         max-width: 100%;
+        text-align: center;
     }
 
+    .mommihero-title {
+        text-align: center;
+    }
+
+    .mommihero-video {
+        width: 260px;
+    }
 }
