@@ -13,7 +13,7 @@ import { howDataIsSharedTable } from "./data/howDataIsSharedTable";
 import { userProvidedData } from "./data/userProvidedData";
 import { automaticCollectedData } from "./data/automaticCollectedData";
 import { consentCollectedData } from "./data/consentCollectedData";
-
+import { Link } from "react-router-dom";
 import { userRightsSection } from "./data/userRightsSection";
 
 import {
@@ -77,6 +77,30 @@ function Integrity() {
         {introductionSection.text.map((p, i) => (
           <AppText key={i} className="policy-text">{p}</AppText>
         ))}
+
+        <div className="child-safety-highlight">
+
+<AppText weight={600} className="policy-text">
+  Barns säkerhet och skydd av minderåriga
+</AppText>
+  <AppText className="policy-text">
+    På mommi är säkerheten för våra användare av högsta prioritet.
+    Vi arbetar aktivt för att skapa en trygg och respektfull miljö för alla som använder tjänsten.
+  </AppText>
+
+  <AppText className="policy-text">
+    I enlighet med Google Plays riktlinjer för barnsäkerhet har vi etablerat tydliga policyer och rutiner
+    för att förebygga och hantera risker kopplade till minderåriga samt säkerställa efterlevnad av gällande lagstiftning.
+  </AppText>
+
+  <AppText className="policy-text">
+    Du kan läsa mer om detta i vår{" "}
+    <Link to="/child-safety-policy" className="policy-link">
+      policy för barnsäkerhet (Child Safety Standards)
+    </Link>.
+  </AppText>
+
+</div>
 
         <AppText className="integrity-date">
           Effektivt datum: {introductionSection.date}
