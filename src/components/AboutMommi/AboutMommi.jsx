@@ -5,39 +5,38 @@ import AppText from "../Font/AppText";
 
 import Signatur1 from "../../assets/founders/alinia_sign.png";
 import Signatur2 from "../../assets/founders/emelie_sign.png";
-import founders from "../../assets/founders/founders.png";
+import founders from "../../assets/founders/founderspic2.png";
 
 function AboutMommi() {
-
   const [loaded, setLoaded] = useState(false);
 
   return (
     <section className="aboutmommi-section">
-
       <div className="aboutmommi-container">
 
-        {/* 🔥 IMAGE */}
+        {/* IMAGE */}
         <div className="aboutmommi-image-wrapper">
           <img
             src={founders}
             className={`aboutmommi-image ${loaded ? "loaded" : ""}`}
             onLoad={() => setLoaded(true)}
+            alt="Founders"
           />
         </div>
 
-        {/* 🔥 TEXT */}
+        {/* TEXT */}
         <div className="aboutmommi-content">
 
-          <AppText as="h1" weight={600} className="aboutmommi-title">
-            Grundarna och utvecklarna bakom mommi
+          <AppText as="h1" weight={400} className="aboutmommi-title">
+            Grundarna bakom mommi
           </AppText>
 
           <AppText className="aboutmommi-intro">
-            Hej och välkommen till hemsidan för vår app!
+            Hej och välkommen till vår app!
           </AppText>
 
           <AppText className="aboutmommi-text">
-            Grundarna och utvecklarna bakom <strong>mommi</strong> är vi – Emelie och Alinia.
+            Vi är Emelie och Alinia – grundarna bakom <strong>mommi</strong>.
             Vi skapade appen med en enkel tanke:
             att det ska vara lättare för mammor att hitta varandra.
           </AppText>
@@ -54,10 +53,10 @@ function AboutMommi() {
             Vi ville göra det enklare att hitta någon att dela det med.
           </AppText>
 
-            <AppText className="aboutmommi-text">
-                Därför skapade vi <strong>mommi</strong> – en plats där du kan hitta,
-                prata med och träffa andra mommis.
-              </AppText>
+          <AppText className="aboutmommi-text">
+            Därför skapade vi <strong>mommi</strong> – en plats där du kan hitta,
+            prata med och träffa andra mommis.
+          </AppText>
 
           <AppText className="aboutmommi-text">
             Vi hoppas att du gillar appen!
@@ -65,18 +64,14 @@ function AboutMommi() {
 
           {/* SIGNATURE */}
           <div className="aboutmommi-signature-area">
-
             <div className="aboutmommi-signatures">
               <img src={Signatur1} className="aboutmommi-signature-img" />
               <img src={Signatur2} className="aboutmommi-signature-img" />
             </div>
-
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }

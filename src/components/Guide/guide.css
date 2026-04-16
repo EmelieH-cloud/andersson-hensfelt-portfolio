@@ -1,0 +1,192 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.guide-section {
+    width: 100%;
+    padding: 180px 20px 120px;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.guide-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.guide-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.guide-title {
+    font-size: 3.4rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+    color:#d3aabb;
+}
+
+.guide-intro {
+    font-size: 1.2rem;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* ========================= */
+/* VIDEO LIST */
+/* ========================= */
+
+.guide-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* ========================= */
+/* VIDEO CARD */
+/* ========================= */
+
+.guide-video-card {
+    background: white;
+    padding: 46px 22px 3px;
+    text-align: center;
+    border-top: 1px solid #e9bcbc;
+}
+
+/* ========================= */
+/* HEADER IMAGE */
+/* ========================= */
+
+.guide-video-header-img {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 🔥 FIX: endast mommiTräff */
+.guide-video-card--vent .guide-video-header-img {
+    margin-bottom: 0px;
+    
+}
+
+.guide-video-card--vent .guide-video-text {
+    margin-top: 0;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.guide-video-text {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 620px;
+    margin: 0 auto 34px;
+}
+
+/* ========================= */
+/* VIDEO WRAPPER */
+/* ========================= */
+
+.guide-video-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================= */
+/* VIDEO STYLE */
+/* ========================= */
+
+.guide-video-embed video {
+    border-radius: 18px;
+}
+
+/* ========================= */
+/* OVERRIDE VIDEO SECTION */
+/* ========================= */
+
+.guide-video-embed .mommi-video-hero,
+.guide-video-embed .mommivent-video-hero,
+.guide-video-embed .mommigrupp-video-hero {
+    min-height: auto;
+    padding: 0;
+    background: transparent;
+}
+
+.guide-video-embed .mommi-video-wrapper,
+.guide-video-embed .mommivent-video-wrapper,
+.guide-video-embed .mommigrupp-video-wrapper {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .guide-section {
+        padding: 150px 16px 80px;
+    }
+
+    .guide-title {
+        font-size: 2.6rem;
+    }
+
+    .guide-intro {
+        font-size: 1.05rem;
+    }
+
+    .guide-video-card {
+        padding: 34px 18px 36px;
+    }
+
+    .guide-video-header-img {
+        width: 240px;
+        max-width: 100%;
+        margin-bottom: 18px;
+    }
+
+    /* 🔥 FIX även på mobil */
+    .guide-video-card--vent .guide-video-header-img {
+        margin-bottom: 8px;
+    }
+
+    .guide-video-text {
+        font-size: 0.95rem;
+        margin-bottom: 26px;
+    }
+
+    .guide-video-embed .mommi-video-wrapper,
+    .guide-video-embed .mommivent-video-wrapper,
+    .guide-video-embed .mommigrupp-video-wrapper {
+        max-width: 100%;
+    }
+
+    .guide-video-embed video {
+        border-radius: 16px;
+    }
+}

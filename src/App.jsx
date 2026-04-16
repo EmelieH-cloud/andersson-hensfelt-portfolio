@@ -10,6 +10,8 @@ import Termsspage from './pages/Termspage';
 import AboutMommiPage from './pages/AboutMommiPage';
 import SecurityPage from './pages/SecurityPage';
 import FAQpage from './pages/FAQpage';
+import GuidePage from './pages/GuidePage';
+import ChildSafetyPolicyPage from './pages/ChildSafetyPolicypage';
 import ScrollToTop from './components/Helpers/ScrollToTop';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/safety" element={<SecurityPage />} />
         <Route path="/about-mommi" element={<AboutMommiPage />} />
         <Route path="/faq" element={<FAQpage/>}/>
+        <Route path="/guide" element={<GuidePage/>}/>
+        <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage/>}/>
       </Routes>
 
     </div>

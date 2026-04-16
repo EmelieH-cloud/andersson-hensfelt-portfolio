@@ -3,8 +3,9 @@
 /* ========================= */
 
 .aboutmommi-section {
-    background: #c87484;
-    padding: 160px 40px 140px;
+    background: linear-gradient(180deg, #d19fa9 0%, #c87484 100%);
+    padding: 120px 32px 100px;
+    /* 🔥 mindre */
 }
 
 /* ========================= */
@@ -12,14 +13,15 @@
 /* ========================= */
 
 .aboutmommi-container {
-    max-width: 1200px;
+    max-width: 1100px;
+    /* 🔥 lite mindre */
     margin: 0 auto;
 
     display: flex;
     align-items: flex-start;
-    /* 🔥 align top */
     justify-content: space-between;
-    gap: 80px;
+    gap: 60px;
+    /* 🔥 mindre gap */
 }
 
 /* ========================= */
@@ -28,29 +30,31 @@
 
 .aboutmommi-content {
     flex: 1;
-    max-width: 520px;
+    max-width: 480px;
+    /* 🔥 mindre textblock */
 }
 
 .aboutmommi-title {
-    font-size: 3.6rem;
-    line-height: 1.05;
-    margin-bottom: 24px;
-    margin-top: 0;
+    font-size: 2.6rem;
+    /* 🔥 mindre */
+    line-height: 1.1;
+    margin-bottom: 20px;
     color: white;
-    /* 🔥 bättre alignment */
 }
 
 .aboutmommi-intro {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    /* 🔥 mindre */
+    margin-bottom: 18px;
     color: white;
-    margin-bottom: 24px;
 }
 
 .aboutmommi-text {
-    font-size: 1.05rem;
-    line-height: 1.85;
+    font-size: 0.95rem;
+    /* 🔥 mindre */
+    line-height: 1.7;
+    margin-bottom: 16px;
     color: white;
-    margin-bottom: 20px;
 }
 
 /* ========================= */
@@ -61,27 +65,25 @@
     flex: 1;
     display: flex;
     justify-content: center;
-
-    margin-top: 20px;
-    /* 🔥 subtil desktop alignment */
+    margin-top: 10px;
 }
 
 .aboutmommi-image {
-    width: 520px;
-    height: 520px;
-
+    width: 480px;
+    /* 🔥 mindre */
+    height: 420px;
+    border-radius: 20%;
     object-fit: cover;
-    border-radius: 50%;
 
     opacity: 0;
-    transform: scale(1.1);
-    filter: blur(14px);
+    transform: scale(1.08);
+    filter: blur(12px);
 
     transition: all 0.8s ease;
 
     box-shadow:
-        0 60px 140px rgba(0, 0, 0, 0.25),
-        0 20px 40px rgba(0, 0, 0, 0.15);
+        0 40px 100px rgba(0, 0, 0, 0.25),
+        0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .aboutmommi-image.loaded {
@@ -91,60 +93,7 @@
 }
 
 .aboutmommi-image:hover {
-    transform: scale(1.05) rotate(1deg);
-}
-
-/* ========================= */
-/* 🔥 3D PREMIUM BOX */
-/* ========================= */
-
-.aboutmommi-highlight-wrapper {
-    margin: 50px 0;
-}
-
-.aboutmommi-highlight-box {
-    padding: 28px 32px;
-
-    border-radius: 22px;
-
-    background: linear-gradient(145deg, #f8ecef, #efd9df);
-
-    border: 1px solid rgba(169, 78, 98, 0.25);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    min-height: 120px;
-
-    transform: perspective(1000px) rotateX(4deg) rotateY(-2deg);
-
-    box-shadow:
-        0 40px 80px rgba(169, 78, 98, 0.2),
-        0 10px 20px rgba(0, 0, 0, 0.05),
-        inset 0 2px 0 rgba(255, 255, 255, 0.6);
-
-    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.aboutmommi-highlight-box:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-6px);
-
-    box-shadow:
-        0 60px 120px rgba(169, 78, 98, 0.25),
-        0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-.aboutmommi-highlight {
-    font-size: 1.12rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.aboutmommi-highlight strong {
-    color: #a94e62;
+    transform: scale(1.03);
 }
 
 /* ========================= */
@@ -152,21 +101,17 @@
 /* ========================= */
 
 .aboutmommi-signature-area {
-    margin-top: 40px;
-}
-
-.aboutmommi-sign-text {
-    margin-bottom: 10px;
-    color: white;
+    margin-top: 30px;
 }
 
 .aboutmommi-signatures {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .aboutmommi-signature-img {
-    width: 180px;
+    width: 140px;
+    /* 🔥 mindre */
     transition: transform 0.3s ease;
 }
 
@@ -179,38 +124,28 @@
 /* ========================= */
 
 @media (max-width: 768px) {
-
     .aboutmommi-section {
-        padding: 120px 20px 80px;
+        padding: 100px 16px 70px;
     }
 
     .aboutmommi-container {
         flex-direction: column;
-        text-align: center;
-        gap: 50px;
-
+        gap: 40px;
         align-items: center;
-        /* 🔥 center EVERYTHING */
-    }
-
-    /* 🔥 IMAGE FIRST + RESET OFFSET */
-    .aboutmommi-image-wrapper {
-        order: -1;
-        margin-top: 0;
-        /* 🔥 viktigt: ta bort desktop offset */
-        justify-content: center;
-    }
-
-    .aboutmommi-title {
-        font-size: 2.2rem;
+        text-align: center;
     }
 
     .aboutmommi-image {
-        width: 320px;
-        height: 320px;
+        width: min(300px, 100%);
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
-    .aboutmommi-signatures {
-        justify-content: center;
+    .aboutmommi-title {
+        font-size: 2rem;
+    }
+
+    .aboutmommi-signature-img {
+        width: 120px;
     }
 }

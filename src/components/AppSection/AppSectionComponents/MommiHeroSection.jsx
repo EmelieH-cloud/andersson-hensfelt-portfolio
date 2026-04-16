@@ -18,7 +18,7 @@ const MommiHeroSection = () => {
 
         <div className="mommi-hero-text">
 
-          <AppText as="h1" weight={300} className="mommi-hero-title">
+          <AppText as="h1" weight={400} className="mommi-hero-title">
             För mammor som vill träffa mammor
           </AppText>
 

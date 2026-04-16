@@ -1,0 +1,119 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.mommigrupp-section {
+    width: 100%;
+    background: #c06f7e;
+
+    padding: 50px 32px 50px;
+
+    border-radius: 32px;
+    overflow: hidden;
+
+    max-width: 1200px;
+    margin: 30px auto;
+
+    position: relative;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.mommigrupp-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
+.mommigrupp-video-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mommigrupp-video {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 28px;
+
+    object-fit: contain;
+
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.8s ease;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25),
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mommigrupp-video.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.mommigrupp-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.mommigrupp-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 2.4rem;
+    color: white;
+}
+
+.mommigrupp-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 16px;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .mommigrupp-section {
+        padding: 30px 16px 60px;
+        border-radius: 24px;
+    }
+
+    .mommigrupp-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .mommigrupp-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .mommigrupp-title {
+        text-align: center;
+    }
+
+    .mommigrupp-video {
+        width: 260px;
+    }
+}
