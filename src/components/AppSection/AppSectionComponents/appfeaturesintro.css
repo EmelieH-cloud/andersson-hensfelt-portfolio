@@ -1,0 +1,150 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+.app-features-intro {
+    width: 100%;
+    background: white;
+
+    padding: 110px 20px 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.app-features-intro-container {
+    max-width: 860px;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========================= */
+/* ACCENT LINE */
+/* ========================= */
+
+.accent-line {
+    width: 60px;
+    height: 2px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(to right, #a95c6a, #c87484);
+    border-radius: 2px;
+}
+
+.accent-line.bottom {
+    margin-top: 30px;
+}
+
+/* ========================= */
+/* TYPOGRAPHY */
+/* ========================= */
+
+.intro-heading {
+    font-size: 2.2rem;
+    line-height: 1.22;
+    color: #111;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -0.025em;
+    /* 🔥 mer editorial */
+}
+
+.intro-paragraph {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #555;
+
+    max-width: 720px;
+}
+
+/* ========================= */
+/* 🔥 ANIMATIONS */
+/* ========================= */
+
+/* Line animation */
+.animate-line {
+    opacity: 0;
+    transform: scaleX(0.6);
+
+    animation: lineReveal 0.7s ease forwards;
+}
+
+.animate-line.delay {
+    animation-delay: 0.4s;
+}
+
+/* Heading */
+.animate-heading {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeUp 0.7s ease forwards;
+    animation-delay: 0.15s;
+}
+
+/* Paragraph */
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeUp 0.7s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes lineReveal {
+    from {
+        opacity: 0;
+        transform: scaleX(0.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .app-features-intro {
+        padding: 80px 16px 40px;
+    }
+
+    .intro-heading {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .intro-paragraph {
+        font-size: 17.5px;
+        line-height: 1.75;
+    }
+}
