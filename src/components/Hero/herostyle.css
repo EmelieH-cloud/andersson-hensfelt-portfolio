@@ -11,12 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background: #f5eaea;
 }
 
 /* =====================================================
-   VIDEO
+   VIDEO (🔥 SHARP AGAIN)
    ===================================================== */
 
 .hero-video {
@@ -29,9 +27,6 @@
 
     opacity: 0;
     transition: opacity 1s ease;
-
-    transform: translateZ(0);
-    will-change: opacity;
 }
 
 .hero-video.visible {
@@ -39,23 +34,23 @@
 }
 
 /* =====================================================
-   WHITE OVERLAY
+   🔥 CLEAN OVERLAY (NO BLUR)
    ===================================================== */
 
 .hero-overlay {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(to bottom,
-            rgba(91, 83, 83, 0.45) 0%,
-            rgba(134, 110, 110, 0.55) 40%,
-            rgba(112, 107, 107, 0.55) 100%);
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.55) 100%);
 
     z-index: 1;
 }
 
 /* =====================================================
-   CONTENT (🔥 FIXAD CENTERING)
+   CONTENT
    ===================================================== */
 
 .hero-content {
@@ -65,52 +60,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 🔥 viktig */
-    justify-content: center;
 
     text-align: center;
 
-    max-width: 800px;
-    width: 100%;
-
+    max-width: 900px;
     padding: 20px;
 
     animation: fadeUp 1s ease forwards;
 }
 
 /* =====================================================
-   LOGO (🔥 FIXAD)
+   🔥 LOGO (BÄTTRE POSITION)
    ===================================================== */
 
-.hero-logo {
-    width: 700px;
-    max-width: 90vw;
+.hero-logo-wrapper {
+    margin-bottom: 40px;
 
-    display: block;
-
-    margin: 0 auto 30px auto;
-    /* 🔥 riktig centrering */
-
-    padding: 10px 20px;
+    /* 👇 gör att den känns mer "designad" */
+    padding: 12px 28px;
     border-radius: 80px;
 
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.75);
 
     box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.15),
-        0 0 30px rgba(255, 255, 255, 0.5);
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-logo {
+    width: 520px;
+    max-width: 85vw;
+    display: block;
 }
 
 /* =====================================================
-   TEXT
+   TEXT (RENARE & TYDLIGARE)
    ===================================================== */
 
 .hero-intro {
-    font-size: 1.8rem;
-    line-height: 1.7;
-    max-width: 700px;
-    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 1.6;
+
     color: white;
+    font-weight: 500;
+
+    max-width: 720px;
+}
+
+/* highlight */
+
+.hero-highlight {
+    color: #ffb3c1;
+    font-weight: 600;
 }
 
 /* =====================================================
@@ -130,27 +130,22 @@
 }
 
 /* =====================================================
-   MOBILE (🔥 EXTRA FIX)
+   MOBILE
    ===================================================== */
 
 @media (max-width: 768px) {
 
-    .hero-content {
-        padding: 20px 16px;
+    .hero-logo {
+        width: 300px;
     }
 
-    .hero-logo {
-        width: 320px;
-
-        /* 🔥 säker centrering */
-        margin-left: auto;
-        margin-right: auto;
-
-        padding: 8px 16px;
+    .hero-logo-wrapper {
+        margin-bottom: 30px;
+        padding: 10px 20px;
     }
 
     .hero-intro {
         font-size: 1.5rem;
-        padding: 20px;
+        padding: 10px;
     }
 }

@@ -14,7 +14,6 @@ const Hero = () => {
     const video = videoRef.current
     if (!video) return
 
-    // 🔥 loadeddata = snabbaste “safe play”
     const handleLoaded = () => {
       video.play().catch(() => {})
       setVideoReady(true)
@@ -30,7 +29,6 @@ const Hero = () => {
   return (
     <section className="hero-container">
 
-      {/* VIDEO */}
       <video
         ref={videoRef}
         className={`hero-video ${videoReady ? 'visible' : ''}`}
@@ -43,21 +41,22 @@ const Hero = () => {
         <source src={HERO_VIDEO} type="video/mp4" />
       </video>
 
-      {/* 🔥 VIT OVERLAY */}
       <div className="hero-overlay" />
 
-      {/* CONTENT */}
       <div className="hero-content">
 
-        <img
-          src={MOMMI_LOGO}
-          alt="Mommi logo"
-          className="hero-logo"
-        />
+        {/* 🔥 NY LOGO WRAPPER */}
+        <div className="hero-logo-wrapper">
+          <img
+            src={MOMMI_LOGO}
+            alt="Mommi logo"
+            className="hero-logo"
+          />
+        </div>
 
-        <AppText weight={400} className="hero-intro">
-          Oavsett om du är gravid, nybliven mamma eller har barn som
-          blivit lite större – mommi är appen för mammor som vill träffa mammor,
+        <AppText weight={500} className="hero-intro">
+          Oavsett om du är gravid, nybliven mamma eller har barn som blivit lite större –  
+          <span className="hero-highlight"> mommi är appen för mammor som vill träffa mammor</span>,  
           med eller utan barn.
         </AppText>
 
