@@ -14,7 +14,6 @@ const AppSection = () => {
     <section className="app-section">
 
      
-      
       <AppFeaturesSection />
       <MommiHeroVideoSection />
       <MommiventVideoSection />

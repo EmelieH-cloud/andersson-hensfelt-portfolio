@@ -45,9 +45,9 @@ const MommiGruppVideoSection = () => {
 
         {/* TEXT */}
         <div className="mommigrupp-content">
-          <h2 className="mommigrupp-title">
+          <AppText className="mommigrupp-title">
             Skapa och gå med i mommiGrupper
-          </h2>
+          </AppText>
 
           <AppText className="mommigrupp-text">
            Skapa eller gå med i mommiGrupper som passar just dig – från graviditet och småbarnsliv till träning, karriär och intressen.

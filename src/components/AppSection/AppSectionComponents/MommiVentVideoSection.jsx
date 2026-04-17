@@ -45,9 +45,9 @@ const MommiventVideoSection = () => {
 
         {/* TEXT */}
         <div className="mommivent-content">
-          <h2 className="mommivent-title">
+          <AppText className="mommivent-title">
             Upptäck mommiTräffar
-          </h2>
+          </AppText>
 
           <AppText className="mommivent-text">
             Vill du hitta på något tillsammans med andra mommis? Oavsett om du vill planera en afterwork utan barn, hitta sällskap till gravidyogan eller någon att ta en löprunda med – kan du enkelt skapa en mommiTräff.

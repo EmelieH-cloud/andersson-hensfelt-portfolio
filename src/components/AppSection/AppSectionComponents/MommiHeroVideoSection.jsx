@@ -45,9 +45,9 @@ const MommiHeroVideoSection = () => {
 
         {/* TEXT (höger) */}
         <div className="mommihero-content">
-          <h2 className="mommihero-title">
+          <AppText className="mommihero-title">
             Kom igång med mommiSök
-          </h2>
+          </AppText>
 
           <AppText className="mommihero-text">
             Kom igång med mommi på bara några minuter - skapa din profil och börja utforska allt som appen har att erbjuda!
