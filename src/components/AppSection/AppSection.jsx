@@ -7,19 +7,23 @@ import CommonQuestionsSection from './AppSectionComponents/CommonQuestionsSectio
 import MommiHeroVideoSection from './AppSectionComponents/MommiHeroVideoSection'
 import MommiventVideoSection from './AppSectionComponents/MommiVentVideoSection'
 import MommiGruppVideoSection from './AppSectionComponents/MommiGruppVideoSection'
+import AppFeaturesIntro from './AppSectionComponents/AppFeaturesIntro'
 
 const AppSection = () => {
-
   return (
     <section className="app-section">
 
-     
-      
+      <AppFeaturesIntro />
       <AppFeaturesSection />
-      <MommiHeroVideoSection />
-      <MommiventVideoSection />
-      <MommiGruppVideoSection />
-       <MommiHeroSection />
+
+      {/* 🔥 NY WRAPPER */}
+      <div className="video-sections-wrapper">
+        <MommiHeroVideoSection />
+        <MommiventVideoSection />
+        <MommiGruppVideoSection />
+      </div>
+
+      <MommiHeroSection />
       <CommonQuestionsSection />
       <JoinMommiSection />
 
