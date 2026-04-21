@@ -91,7 +91,7 @@ function Footer() {
           <div className="footer-download">
 
             <a
-              href="https://play.google.com/store/apps/details?id=com.anderssonhensfelt.onemoredate"
+              href="https://play.google.com/store/apps/details?id=com.anderssonhensfelt.mommi1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -99,7 +99,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://apps.apple.com/us/app/one-more-date/id6651834743"
+              href="https://apps.apple.com/us/app/mommi/id6760843244"
               target="_blank"
               rel="noopener noreferrer"
             >
