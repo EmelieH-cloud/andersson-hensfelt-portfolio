@@ -14,7 +14,7 @@
 }
 
 /* =====================================================
-   VIDEO (🔥 SHARP AGAIN)
+   VIDEO
    ===================================================== */
 
 .hero-video {
@@ -34,7 +34,7 @@
 }
 
 /* =====================================================
-   🔥 CLEAN OVERLAY (NO BLUR)
+   OVERLAY
    ===================================================== */
 
 .hero-overlay {
@@ -67,33 +67,37 @@
     padding: 20px;
 
     animation: fadeUp 1s ease forwards;
+
+    /* 👇 flyttar ner allt lite (enkelt & stabilt) */
+    margin-top: 80px;
 }
 
 /* =====================================================
-   🔥 LOGO (BÄTTRE POSITION)
+   LOGO (FIXAD)
    ===================================================== */
 
 .hero-logo-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
-    /* 👇 gör att den känns mer "designad" */
-    padding: 12px 28px;
-    border-radius: 80px;
+    /* 👇 mindre bakgrund */
+    padding: 8px 20px;
+    border-radius: 60px;
 
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.7);
 
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.2);
+        0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero-logo {
-    width: 520px;
+    width: 480px;
+    /* lite mindre = bättre balans */
     max-width: 85vw;
     display: block;
 }
 
 /* =====================================================
-   TEXT (RENARE & TYDLIGARE)
+   TEXT
    ===================================================== */
 
 .hero-intro {
@@ -105,8 +109,6 @@
 
     max-width: 720px;
 }
-
-/* highlight */
 
 .hero-highlight {
     color: #ffb3c1;
@@ -135,13 +137,18 @@
 
 @media (max-width: 768px) {
 
+    .hero-content {
+        margin-top: 60px;
+        /* lite mindre offset på mobil */
+    }
+
     .hero-logo {
-        width: 300px;
+        width: 260px;
     }
 
     .hero-logo-wrapper {
-        margin-bottom: 30px;
-        padding: 10px 20px;
+        margin-bottom: 25px;
+        padding: 6px 16px;
     }
 
     .hero-intro {
