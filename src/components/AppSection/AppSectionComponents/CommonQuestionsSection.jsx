@@ -25,7 +25,7 @@ const questions = [
 },
   {
     q: "Kontakt & support",
-    a: "Du når oss på info@anderssonhensfelt@gmail.se"
+    a: "Du når oss på info@anderssonhensfelt.se"
   }
 ]
 
