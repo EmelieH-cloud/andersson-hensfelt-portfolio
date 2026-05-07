@@ -77,7 +77,7 @@ function Footer() {
 
           <AppText className="footer-contact">
             <MdEmail className="footer-icon"/>
-            info@anderssonhensfelt@gmail.se
+            info@anderssonhensfelt.se
           </AppText>
 
 
