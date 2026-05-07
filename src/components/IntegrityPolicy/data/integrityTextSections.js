@@ -38,7 +38,7 @@ export const contactSection = {
     "Andersson & Hensfelt Handelsbolag",
     "Organisationsnummer: 969801-6434",
     "Trollebergsvägen 24D 222 30 Lund",
-    "E-post: info@anderssonhensfelt@gmail.se"
+    "E-post: info@anderssonhensfelt.se"
   ]
 };
 
