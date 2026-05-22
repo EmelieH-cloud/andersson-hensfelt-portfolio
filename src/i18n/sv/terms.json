@@ -1,0 +1,278 @@
+{
+"contentRulesData": {
+
+  "id": "content",
+
+  "title": "Innehåll",
+
+  "userContentTitle": "Ditt innehåll",
+
+  "userContentText": [
+    "Du ansvarar själv för det innehåll du publicerar i mommi, till exempel bilder, inlägg, kommentarer och meddelanden.",
+
+    "Publicera inte innehåll som bryter mot dessa användarvillkor, är olagligt eller kan orsaka skada för andra personer. Du ansvarar också för att den information du delar i din profil eller i appen är korrekt och uppdaterad.",
+
+    "Innehåll som du publicerar kan vara synligt för andra användare. Var därför försiktig med att dela personlig information.",
+
+    "Genom att publicera innehåll i mommi bekräftar du att du har rätt att dela det och ger oss rätt att lagra, visa och använda innehållet i syfte att tillhandahålla och driva appens funktioner.",
+
+    "Vi kan granska, begränsa eller ta bort innehåll som vi bedömer bryter mot dessa användarvillkor eller som kan skada andra användare eller tjänsten."
+  ],
+
+  "otherUsersTitle": "Andra användares innehåll",
+
+  "otherUsersText": [
+    "mommi lagrar och visar innehåll som publicerats av andra användare, men vi ansvarar inte för att informationen är korrekt, fullständig eller aktuell.",
+
+    "Innehåll som delas av andra användare kan vara felaktigt, vinklat, stötande eller vilseledande. Du ansvarar själv för att bedöma och kontrollera information innan du fattar beslut baserat på den.",
+
+    "Användare får endast använda medlemsinnehåll i enlighet med appens syfte - att kommunicera, skapa kontakter och delta i aktiviteter inom mommi.",
+
+    "Du får inte kopiera, sprida, sälja, använda i marknadsföring, trakassera eller på annat sätt missbruka andras innehåll.",
+
+    "Missbruk av medlemsinnehåll kan leda till att ditt konto begränsas eller stängs av."
+  ],
+
+  "platformContentTitle": "Vårt innehåll",
+
+  "platformContentText": [
+    "Allt innehåll i mommi, inklusive men inte begränsat till logotyper, varumärken, design, grafik, texter, bilder, funktioner och programkod, ägs av Andersson & Hensfelt HB eller licensieras till oss och skyddas av tillämplig lag.",
+
+    "Du får inte utan vårt skriftliga tillstånd kopiera, ändra, distribuera, reproducera, vidareanvända eller på annat sätt utnyttja vårt innehåll utöver vad som krävs för att använda tjänsten enligt dessa villkor.",
+
+    "Alla rättigheter som inte uttryckligen beviljas i dessa villkor förbehålls oss."
+  ],
+
+  "reportingTitle": "Rapportering av innehåll och beteende",
+
+  "reportingText": [
+    "Vi accepterar inte olämpligt innehåll eller beteende i mommi.",
+
+    "Om du upptäcker innehåll eller beteende som bryter mot våra regler uppmuntrar vi dig att rapportera detta via appens rapporteringsfunktion eller genom att kontakta oss.",
+
+    "Vi kan med omedelbart verkan ta bort innehåll, begränsa funktioner eller stänga av konton som vi bedömer bryter mot våra användarvillkor."
+  ]
+
+},
+
+  "generalTermsData": {
+
+    "id": "general",
+    "title": "Integritet och övriga villkor",
+
+    "sections": [
+
+      {
+        "id": "privacy",
+        "subtitle": "Integritet",
+        "text": [
+          "Din integritet är viktig för oss - vi har därför en separat integritetspolicy som vi rekommenderar alla våra användare att läsa.",
+          "För information om hur Mommi samlar in, använder och delar dina personuppgifter, vänligen ta del av nämnd integritetspolicy.",
+          "Genom att använda våra tjänster godkänner du att vi behandlar dina personuppgifter i enlighet med integritetspolicyn."
+        ]
+      },
+
+      {
+        "id": "children-privacy",
+        "subtitle": "Barns integritet",
+        "text": [
+          "Appen riktar sig till mammor och användare kan därför välja att dela innehåll som rör sina barn, till exempel genom bilder eller inlägg.",
+          "När du publicerar innehåll som rör ett barn ansvarar du för att detta sker på ett respektfullt sätt och att barnets integritet värnas.",
+          "Du får endast dela innehåll som du har rätt att publicera och som inte kan vara skadligt, kränkande eller olämpligt för barnet."
+        ]
+      },
+
+      {
+        "id": "license",
+        "subtitle": "Rättigheter du ger mommi",
+        "text": [
+          "Du äger det innehåll som du publicerar i mommi.",
+          "Genom att publicera innehåll i tjänsten ger du oss en icke-exklusiv och royaltyfri rätt att lagra, visa och behandla innehållet i syfte att tillhandahålla och utveckla tjänsten.",
+          "Licensen gäller så länge innehållet finns tillgängligt i tjänsten och upphör när det tas bort, med undantag för rimlig lagring i säkerhetskopior under en begränsad tid.",
+          "Du ansvarar för att det innehåll du publicerar inte kränker någon annans rättigheter eller bryter mot lag."
+        ]
+      },
+
+      {
+        "id": "termination",
+        "subtitle": "Avslut av konto",
+        "text": [
+          "Du kan när som helst avsluta ditt konto via inställningarna i appen.",
+          "Vi förbehåller oss rätten att stänga av eller avsluta konton som bryter mot dessa villkor eller på annat sätt missbrukar tjänsten.",
+          "Vissa bestämmelser i dessa villkor fortsätter att gälla även efter att kontot avslutats.",
+          "Behandling och radering av personuppgifter sker i enlighet med vår integritetspolicy."
+        ]
+      },
+
+      {
+        "id": "security",
+        "subtitle": "Säkerhet och ansvar",
+        "text": [
+          "mommi genomför inga bakgrunds- eller identitetskontroller av användare.",
+          "Du ansvarar själv för dina interaktioner med andra användare och bör alltid använda gott omdöme när du kommunicerar eller träffar personer genom tjänsten.",
+          "Vi ansvarar inte för andra användares beteende inom eller utanför tjänsten.",
+          "Om du upplever olämpligt beteende uppmanar vi dig att använda våra rapporteringsfunktioner.",
+          "Vi förbehåller oss rätten att vidta åtgärder, inklusive att stänga av eller avsluta konton som bryter mot våra villkor eller agerar på ett sätt som strider mot tjänstens syfte."
+        ]
+      },
+
+      {
+        "id": "liability",
+        "subtitle": "Ansvarsfriskrivning",
+        "text": [
+          "mommi tillhandahålls i befintligt skick och i mån av tillgång.",
+          "Vi strävar efter att tjänsten ska fungera på ett tillförlitligt och säkert sätt, men vi kan inte garantera att tjänsten alltid är fri från avbrott, fel eller tekniska störningar.",
+          "Vi lämnar inga garantier avseende innehållets korrekthet, fullständighet eller lämplighet för ett visst syfte.",
+          "Användning av tjänsten sker på egen risk.",
+          "mommi ansvarar inte för innehåll som publiceras av användare eller för andra användares beteende inom eller utanför tjänsten.",
+          "Vi ansvarar inte heller för indirekta skador eller förluster som uppstår till följd av användningen av tjänsten, i den utsträckning detta är tillåtet enligt tillämplig lag.",
+          "Inget i dessa villkor begränsar ansvar som inte får begränsas enligt lag."
+        ]
+      },
+
+      {
+        "id": "ads",
+        "subtitle": "Annonser och innehåll från tredje part",
+        "text": [
+          "mommi kan visa annonser eller annat innehåll från tredje part inom tjänsten.",
+          "Vi ansvarar inte för innehåll, erbjudanden eller tjänster som tillhandahålls av tredje part.",
+          "Om du väljer att interagera med en annonsör eller lämna tjänsten via en extern länk gäller den tredje partens egna villkor och integritetspolicy."
+        ]
+      },
+
+      {
+        "id": "law",
+        "subtitle": "Tillämplig lag och tvist",
+        "text": [
+          "Dessa villkor regleras av svensk lag.",
+          "Om en tvist uppstår ska parterna i första hand försöka lösa den genom dialog.",
+          "Om tvisten inte kan lösas i samförstånd ska den prövas av svensk allmän domstol.",
+          "Konsumenter har även rätt att vända sig till Allmänna reklamationsnämnden (ARN) för prövning av tvisten."
+        ]
+      },
+
+      {
+        "id": "changes",
+        "subtitle": "Ändringar av användarvillkoren",
+        "text": [
+          "Vi kan komma att uppdatera dessa användarvillkor för att spegla förändringar i våra tjänster, lagkrav eller hur vi bedriver verksamheten.",
+          "Vid mindre ändringar publiceras den uppdaterade versionen i appen.",
+          "Vid väsentliga förändringar informerar vi dig genom appen eller via e-post innan ändringarna träder i kraft.",
+          "Den senaste versionen av villkoren finns alltid tillgänglig i appen.",
+          "Genom att fortsätta använda mommi efter att ändringarna har trätt i kraft accepterar du de uppdaterade villkoren."
+        ]
+      }
+
+    ]
+
+  },
+  
+  "userResponsibilitiesData": {
+
+    "id": "responsibility",
+    "title": "Ditt ansvar",
+
+    "intro": [
+      "Innan du skapar ett konto i mommi måste du säkerställa att du är behörig att använda våra tjänster. Detta avsnitt beskriver vem som får använda appen samt vilket ansvar du har när du använder mommi.",
+      "Du får inte skapa ett konto eller använda mommi om inte alla följande villkor är uppfyllda."
+    ],
+
+    "confirmTitle": "Genom att använda appen bekräftar du att:",
+
+    "confirmList": [
+      "Du är en fysisk person (inte ett företag eller annan juridisk person).",
+      "Du är minst 18 år gammal.",
+      "Du är juridiskt behörig att ingå ett bindande avtal med Andersson & Hensfelt Handelsbolag.",
+      "Du inte tidigare har blivit avstängd eller borttagen från applikationen mommi på grund av överträdelser av våra regler, om du inte har erhållit ett uttryckligt tillstånd att skapa ett nytt konto.",
+      "Du inte har begått eller dömts för allvarliga brott som innefattar våld, hot om våld eller sexualbrott.",
+      "Den information du anger när du skapar ditt konto är korrekt och uppdaterad."
+    ],
+
+    "confirmText": [
+      "Om du vid något tillfälle inte längre uppfyller dessa krav upphör din rätt att använda mommi. Vi förbehåller oss rätten att begränsa eller avsluta din tillgång till tjänsten utan förvarning om vi bedömer att dessa villkor inte uppfylls."
+    ],
+
+    "agreeTitle": "När du använder mommi samtycker du till att:",
+
+    "agreeList": [
+      "Följa tillämpliga lagar och regler, inklusive lagar om integritet, immaterialrätt och trakasserier.",
+      "Använda appen på ett respektfullt och ansvarsfullt sätt.",
+      "Behandla andra användare vänligt och respektfullt, både i appen och vid eventuella träffar som organiseras via mommi.",
+      "Inte använda appen för trakasserier, hot, diskriminering eller annat olämpligt beteende.",
+      "Omedelbart meddela oss om du misstänker obehörig användning av ditt konto.",
+      "Presentera dig själv på ett korrekt och respektfullt sätt i din profil.",
+      "Du är ansvarig för all aktivitet som sker via ditt konto."
+    ],
+
+    "revokeText": [
+      "Om du inte längre uppfyller dessa krav återkallas automatiskt hela din behörighet att få tillgång till applikationen mommi. Du måste då omedelbart radera ditt konto från appen."
+    ],
+
+    "prohibitedTitle": "När du använder mommi godkänner du att du inte kommer att:",
+
+    "prohibitedList": [
+      "Publicera bilder eller annat innehåll som utsätter barn för fara.",
+      "Publicera innehåll som sexualiserar barn.",
+      "Lämna falska eller vilseledande uppgifter om din identitet.",
+      "Uppmuntra eller underlätta aktiviteter som kan orsaka skada för andra användare, inklusive men inte begränsat till självskadebeteende, ätstörningar, farliga utmaningar, extremism eller spridning av skadlig eller vilseledande information.",
+      "Ladda upp innehåll som kan anses stötande eller kränka någon annan person, är pornografiskt, våldsamt eller innehåller nakenhet.",
+      "Ladda upp innehåll som innefattar rasism, sexism eller hat.",
+      "Publicera innehåll för kommersiella syften, inklusive reklam, marknadsföring, säljinlägg, rekrytering, spam eller samarbeten utan vårt uttryckliga godkännande. Kommersiell användning av appen får endast ske genom ett godkänt samarbete med mommi.",
+      "Trakassera, mobba eller förfölja andra användare.",
+      "Skapa ett konto efter att vi stängt av eller avslutat ditt konto.",
+      "Skicka in en rapport som berör en annan användare eller dennes innehåll som är felaktig eller vilseledande.",
+      "Ladda upp, dela eller sprida innehåll som innehåller virus, skadlig kod eller annan teknik som kan skada, störa eller påverka appens funktion, våra system eller andra användares enheter."
+    ]
+
+  },
+  
+  "introductionTermsData": {
+
+    "id": "introduction",
+
+    "title": "Inledning",
+
+    "text": [
+
+      "Genom att använda applikationen mommi samtycker du till följande användarvillkor, inklusive vår integritetspolicy och säkerhetsråd. Det är därför viktigt att du läser igenom detta noggrant innan du skapar ditt konto.",
+
+      "Dessa användarvillkor reglerar din användning av mobilapplikationen mommi och de tjänster som tillhandahålls genom den.",
+
+      "Om du inte accepterar villkoren ska du inte använda applikationen.",
+
+      "Vi uppmuntrar alla användare att vara uppmärksamma på sin egen säkerhet när de använder mommi och när de träffar andra medlemmar. Vi rekommenderar därför att du tar del av våra säkerhetsråd innan du använder appen.",
+
+      "Applikationen tillhandahålls av Andersson & Hensfelt Handelsbolag (org.nr 969801-6434)."
+
+    ],
+
+    "definitionsTitle": "Definitioner",
+
+    "definitions": [
+
+      "I dessa användarvillkor avser \"mommi\", \"appen\", \"applikationen\" eller \"tjänsten\" mobilapplikationen mommi som tillhandahålls av Andersson & Hensfelt Handelsbolag.",
+
+      "När vi använder \"vi\", \"oss\" eller \"vår\" syftar detta på Andersson & Hensfelt Handelsbolag.",
+
+      "När vi använder \"du\", \"din\" eller \"användare\" syftar detta på den person som använder appen mommi."
+
+    ]
+
+  },
+  "pageTitle": "Användarvillkor",
+
+"toc": {
+  "title": "Innehåll",
+  "responsibilities": "Ditt ansvar",
+  "content": "Innehåll",
+  "privacy": "Integritet",
+  "license": "Rättigheter du ger mommi",
+  "termination": "Avslut av konto",
+  "security": "Säkerhet och ansvar",
+  "liability": "Ansvarsfriskrivning",
+  "ads": "Annonser och innehåll från tredje part",
+  "law": "Tillämplig lag och tvist",
+  "changes": "Ändringar av användarvillkoren"
+}
+
+}

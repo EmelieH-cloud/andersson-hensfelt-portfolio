@@ -13,16 +13,24 @@ const questions = [
     a: "Ja, appen är gratis att använda. Njut!"
   },
   {
-  q: "Hur hanteras personuppgifter?",
-  a: (
-    <>
-      Vi hanterar dina uppgifter enligt vår{" "}
-      <Link to="/integrity" className="faq-link">integritetspolicy</Link>{" "}
-      . Vänligen läs även igenom våra {" "}
-      <Link to="/terms" className="faq-link">användarvillkor</Link>.
-    </>
-  )
-},
+    q: "Hur hanteras personuppgifter?",
+    a: (
+      <>
+        Vi hanterar dina uppgifter enligt vår{" "}
+        <Link to="/integrity" className="faq-link">
+          integritetspolicy
+        </Link>{" "}
+        . Vänligen läs även igenom våra{" "}
+        <Link to="/terms" className="faq-link">
+          användarvillkor
+        </Link>.
+      </>
+    )
+  },
+  {
+    q: "Får jag marknadsföra produkter eller tjänster i appen?",
+    a: "Nej, marknadsföring, reklam eller spridning av aktiviteter som kostar får endast ske efter via ett aktivt samarbete med mommi. Kontakta oss gärna på info@anderssonhensfelt.se."
+  },
   {
     q: "Kontakt & support",
     a: "Du når oss på info@anderssonhensfelt.se"
@@ -38,7 +46,6 @@ const CommonQuestionsSection = () => {
 
   return (
     <section className="faq-section">
-
 
       <div className="faq-container">
 

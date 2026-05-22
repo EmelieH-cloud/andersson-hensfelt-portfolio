@@ -1,22 +1,42 @@
 import { useEffect } from "react";
 import "./termsstyle.css";
-
+import { useTranslation }
+from "react-i18next";
 import AppText from "../Font/AppText";
 import ContentRulesSection from "./TermsComponents/ContentRulesSection";
 import GeneralTermsSection from "./TermsComponents/GeneralTermsSection";
 import UserResponsibilitiesSection from "./TermsComponents/UserResponsibilitesSection";
-import { introductionTermsData } from "./data/introductionTermsData";
 import IntroductionTermsSection from "./TermsComponents/IntroductionTermsSection";
-import { contentRulesData } from "./data/contentRulesData";
-import {generalTermsData} from "./data/generalTermsData";
-import {userResponsibilitiesData} from "./data/userResponsibilitesData";
 
 function Terms() {
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const { t } =
+  useTranslation("terms");
+
+  const contentRulesData =
+  t("contentRulesData", {
+    returnObjects: true,
+  });
+
+  const generalTermsData =
+  t("generalTermsData", {
+    returnObjects: true,
+  });
+
+  const userResponsibilitiesData =
+  t("userResponsibilitiesData", {
+    returnObjects: true,
+  });
+
+  const introductionTermsData =
+  t("introductionTermsData", {
+    returnObjects: true,
+  });
 
   const scrollToSection = (id) => {
 

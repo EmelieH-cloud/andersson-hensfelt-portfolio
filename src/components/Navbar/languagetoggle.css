@@ -1,0 +1,101 @@
+.language-toggle-wrapper {
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 18px;
+}
+
+.language-toggle {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 82px;
+    height: 38px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    overflow: hidden;
+}
+
+/* SLIDING PILL */
+
+.language-slider {
+
+    position: absolute;
+
+    left: 4px;
+    top: 4px;
+
+    width: 35px;
+    height: 28px;
+
+    border-radius: 999px;
+
+    background: white;
+
+    transition: transform 0.25s ease;
+}
+
+.language-slider.right {
+
+    transform: translateX(39px);
+}
+
+/* BUTTONS */
+
+.language-btn {
+
+    position: relative;
+    z-index: 2;
+
+    width: 50%;
+
+    border: none;
+    background: transparent;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.25s ease;
+}
+
+.language-btn.active {
+
+    color: black;
+}
+
+/* LIGHT NAVBAR */
+
+.navbar-light-mode .language-toggle {
+
+    background: rgba(0, 0, 0, 0.05);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.navbar-light-mode .language-slider {
+
+    background: black;
+}
+
+.navbar-light-mode .language-btn {
+
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.navbar-light-mode .language-btn.active {
+
+    color: white;
+}

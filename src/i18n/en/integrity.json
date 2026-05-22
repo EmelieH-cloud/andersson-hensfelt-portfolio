@@ -1,0 +1,534 @@
+{
+  "introductionSection": {
+    "title": "Privacy Policy",
+    "text": [
+      "Welcome to mommi’s privacy policy! We at Andersson & Hensfelt HB, who developed the mommi app, value your privacy in accordance with the General Data Protection Regulation (GDPR).",
+
+      "In this privacy policy, we explain which personal data we collect, how we use it, and how we protect it when you use our app and services. The policy also describes your rights regarding your personal data and how you can contact us if you have questions.",
+
+      "By using the mommi app, you agree that your personal data is processed in accordance with this privacy policy."
+    ],
+    "date": "2026-03-01"
+  },
+
+  "definitionClauseSection": {
+    "title": "Definitions",
+    "text": [
+      "In this privacy policy, \"mommi\", \"the app\" or \"the service\" refers to the mommi mobile application provided by Andersson & Hensfelt Handelsbolag.",
+
+      "When we use \"we\", \"us\" or \"our\", this refers to Andersson & Hensfelt Handelsbolag.",
+
+      "When we use \"you\", \"your\" or \"user\", this refers to the person using the mommi app."
+    ]
+  },
+
+  "whoAreWeSection": {
+    "title": "Who are we?",
+    "text": [
+      "The company behind the mommi application is Andersson & Hensfelt Handelsbolag (company registration number 969801-6434).",
+
+      "Andersson & Hensfelt Handelsbolag is the data controller responsible for the processing of personal data that takes place in connection with the use of the mommi mobile application."
+    ]
+  },
+
+  "contactSection": {
+    "title": "Contact Information",
+    "text": [
+      "If you have questions or concerns regarding our processing of personal data, you are welcome to contact us.",
+
+      "Andersson & Hensfelt Handelsbolag",
+
+      "Company registration number: 969801-6434",
+
+      "Trollebergsvägen 24D 222 30 Lund",
+
+      "Email: info@anderssonhensfelt.se"
+    ]
+  },
+
+  "appliesToSection": {
+    "title": "Where this privacy policy applies",
+    "text": [
+      "This privacy policy applies to the mommi mobile application and the services provided through the app."
+    ]
+  },
+
+  "howDataIsCollectedSection": {
+    "title": "How we collect personal data",
+    "text": [
+      "Personal data is collected in three different ways through the app:",
+
+      "1) Personal data that you provide to us yourself",
+
+      "2) Personal data that is collected automatically when you use the app",
+
+      "3) Personal data that is collected with your consent"
+    ]
+  },
+
+  "whyAndHowSection": {
+    "title": "Why and how we use your personal data",
+    "text": [
+      "The primary reason why we process your personal data is to provide and operate the mommi app. This includes, among other things, making it possible for you to create a profile, connect with other users, participate in activities, and use the app’s features.",
+
+      "We also use information to create a safe and secure environment for all users. This includes work to prevent misuse, handle reports, and moderate content when necessary.",
+
+      "Our goal is to process personal data only to the extent necessary for the app to function, improve, and be experienced as safe and relevant for you as a user."
+    ]
+  },
+
+  "howIsSharedSection": {
+    "title": "How we share personal data",
+    "text": [
+      "For mommi to function as a social meeting place, certain information that you choose to share is visible to other users in the app.",
+
+      "We may also share information with suppliers who help us operate the service, as well as when required by law or to maintain security within the app."
+    ]
+  },
+
+  "dataRetentionSection": {
+    "title": "How long we store your data",
+    "text": [
+      "We only retain personal data for as long as necessary to provide the service.",
+
+      "When an account or content is deleted, certain data may be retained for up to one month for security and moderation purposes before being permanently deleted.",
+
+      "In certain cases, for example if a user is suspended from the app due to violations of our rules, some data may need to be retained for a longer period in order to prevent the user from continuing to use the app."
+    ]
+  },
+
+  "childrenPrivacySection": {
+    "title": "Children’s privacy",
+    "text": [
+      "Our app is intended for individuals who are 18 years of age or older.",
+
+      "If we become aware that we have collected personal data from a person under the age of 18, we will take measures to delete such data as soon as possible.",
+
+      "If you suspect that a user is under the age of 18, we ask that you use the reporting function in the app.",
+
+      "The app is intended for parents, and users may therefore choose to share images or information relating to their children.",
+
+      "We encourage users to only share content that they have the right to share and to respect children’s privacy when publishing images and information."
+    ]
+  },
+
+  "thirdCountryTransfersSection": {
+    "title": "Third country transfers",
+    "text": [
+      "We use third-party services, such as Supabase (database storage) or Ably (real-time communication), which means that personal data is processed by service providers outside the EU/EEA.",
+
+      "This may occur when we use external services for app features such as map services and chat communication.",
+
+      "In such cases, we ensure that the transfer takes place in accordance with applicable data protection legislation.",
+
+      "When personal data is transferred to a country outside the EU/EEA, we use appropriate safeguards, such as the European Commission’s Standard Contractual Clauses or other mechanisms approved under GDPR, to ensure an adequate level of protection."
+    ]
+  },
+
+  "thirdPartyLoginSection": {
+    "title": "Login via third party",
+    "text": [
+      "You may choose to create an account or log in to the app via a third-party service (Facebook, Apple or Google).",
+
+      "If you choose to log in through such a service, we may gain access to certain account information from that service, such as your name and email address associated with your account with the third-party service.",
+
+      "We use this information to create and administer your account in the mommi app and to enable you to log in securely."
+    ]
+  },
+
+  "securitySection": {
+    "title": "Security",
+    "text": [
+      "We want you to feel safe when we process your personal data.",
+
+      "Therefore, we use both technical and organisational security measures to protect the data against unauthorised access, alteration, loss or disclosure.",
+
+      "Examples of such measures include access restrictions, encrypted communication, and internal security controls.",
+
+      "If a personal data breach were to occur that could affect you or your personal data, we will take appropriate measures to manage the situation.",
+
+      "If there is a risk that the incident may have consequences for you, we will inform you and, when required by law, also report the incident to the relevant supervisory authority."
+    ]
+  },
+
+  "automatedDecisionSection": {
+    "title": "Automated decision-making",
+    "text": [
+      "We do not use automated decision-making that has legal or similarly significant consequences for you."
+    ]
+  },
+
+  "policyChangesSection": {
+    "title": "Changes to the privacy policy",
+    "text": [
+      "This privacy policy may be updated.",
+
+      "If we make changes, the updated version will be published here on our website and in the app.",
+
+      "We recommend that you regularly review this policy to stay informed about how we process personal data."
+    ]
+  },
+  "userProvidedData": [
+    {
+      "title": "Account information",
+      "text": [
+        "email address and authentication credentials."
+      ]
+    },
+
+    {
+      "title": "Profile information",
+      "text": [
+        "When you complete your profile, you provide information such as your name, profile picture and city.",
+        "Certain information is required in order to use the app, while other information is optional.",
+        "For example, it is optional to provide your children's age ranges or information about your life situation."
+      ]
+    },
+
+    {
+      "title": "Content that you publish in the app",
+      "text": [
+        "Such as posts, comments, images or messages to other users.",
+        "We process the content of messages sent through the app’s chat function.",
+        "This includes text, images or other information that you share in private conversations.",
+        "This processing is necessary in order to enable communication between users and maintain the security of the service."
+      ]
+    },
+
+    {
+      "title": "Participation in meetups",
+      "text": [
+        "Information connected to meetups that you create or participate in, such as participation status and the geographical location of the meetup."
+      ]
+    },
+
+    {
+      "title": "Participation in groups",
+      "text": [
+        "Information connected to groups that you create or are a member of."
+      ]
+    },
+
+    {
+      "title": "Customer support data",
+      "text": [
+        "Information that you provide when contacting support or reporting other users or content."
+      ]
+    }
+  ],
+  "automaticCollectedData": [
+  {
+    "title": "Usage data",
+    "text": [
+      "Information about how you use the app, for example when you were last active and which features you use.",
+      "We also process information about relationships between users in the app, for example whether a friend request has been sent, accepted or declined.",
+      "This also includes whether you have blocked another user.",
+      "This information is used to manage functions related to contacts in the app and is only visible to you."
+    ]
+  },
+  {
+    "title": "Technical data",
+    "text": [
+      "Information about the device you use to access the app, such as IP address, device type, operating system and which version of the app you are using."
+    ]
+  }
+],
+"legalMotivationTable": {
+  "headers": [
+    "Categories being processed",
+    "Purpose",
+    "Legal basis"
+  ],
+
+  "rows": [
+    {
+      "category": "Account information",
+      "purpose":
+        "This is used to ensure that you can log in to your account securely and protect your account from unauthorized access.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Profile information",
+      "purpose":
+        "Collected in order for you to create and use an account in the app. Also used so that other users can find you and to enable filtering of other members in the app.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Content that you publish in the app",
+      "purpose":
+        "This data is processed in order to enable and maintain features in the app such as mommiMeet, mommiGroup and chat functionality. The purpose is to enable users to interact with each other.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Participation in meetups",
+      "purpose":
+        "This data is processed in order to enable and maintain features in the app such as mommiMeet, mommiGroup and chat functionality. The purpose is to enable users to interact with each other.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Participation in groups",
+      "purpose":
+        "This data is processed in order to enable and maintain features in the app such as mommiMeet, mommiGroup and chat functionality. The purpose is to enable users to interact with each other.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Location information",
+      "purpose":
+        "To enable location-based features in the app such as displaying meetups, groups and users nearby.",
+      "legalBasis": "Consent"
+    },
+
+    {
+      "category": "Images from the device",
+      "purpose":
+        "To allow you to select and upload images to your profile and share images within the app’s features.",
+      "legalBasis": "Consent"
+    },
+
+    {
+      "category": "Push notifications",
+      "purpose":
+        "To send notifications regarding activity in the app, such as messages, interactions or updates related to your account.",
+      "legalBasis": "Consent"
+    },
+
+    {
+      "category": "Technical data",
+      "purpose":
+        "To ensure that the app can function technically, communicate with our systems and enable troubleshooting, operations and security.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Usage data",
+      "purpose":
+        "To show other users when you have been active in the app and process information related to your friendship status with other users in order to promote social interaction.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    },
+
+    {
+      "category": "Customer support data",
+      "purpose":
+        "To answer questions, investigate reports regarding users or content and maintain the security of the service.",
+      "legalBasis":
+        "Performance of a contract (to provide the app’s functionality)."
+    }
+  ]
+},
+"consentCollectedData": [
+  {
+    "title": "Location information",
+    "text": [
+      "If you grant permission, we collect geographical location information for your location with limited precision."
+    ]
+  },
+
+  {
+    "title": "Images from the device",
+    "text": [
+      "If you choose to upload images from your device, you consent to the app accessing your photo library."
+    ]
+  },
+
+  {
+    "title": "Push notifications",
+    "text": [
+      "If you choose to allow push notifications, we process the information required to send notifications to your device."
+    ]
+  }
+],
+"howDataIsSharedTable": {
+  "headers": [
+    "Recipients",
+    "Reason for sharing",
+    "Categories of personal data"
+  ],
+
+  "rows": [
+    {
+      "category": "Other members",
+
+      "purpose":
+        "You share information with other users, for example through your profile, posts, comments or participation in groups and meetups. If someone reports content or behaviour related to you, we may, where applicable, inform the person who made the report that actions have been taken as a result of the report. The same applies if you yourself report another user or content within the service. We do not share your exact geographical location with other users. Location information is instead used to enable functions such as displaying nearby users, groups and meetups.",
+
+      "legalBasis":
+        "Profile information, content that you publish in the app, participation in meetups, participation in groups and usage data."
+    },
+
+    {
+      "category": "Service providers",
+
+      "purpose":
+        "We use external services to provide the app’s functionality, for example data storage, authentication and real-time communication. Examples of such services include Supabase and Ably.",
+
+      "legalBasis":
+        "Personal data required to deliver and operate the app’s functionality."
+    },
+
+    {
+      "category": "Law enforcement authorities",
+
+      "purpose":
+        "We may disclose personal data to law enforcement authorities or other public authorities if we are required to do so by law or pursuant to a valid governmental decision.",
+
+      "legalBasis":
+        "Personal data required by law or governmental decision."
+    }
+  ]
+},
+"userRightsSection": {
+
+  "title": "Your rights",
+
+  "intro": [
+    "If you wish to exercise any of your rights, you may contact us at info@anderssonhensfelt.se."
+  ],
+
+  "rights": [
+
+    {
+      "title": "Right of access to your personal data",
+      "text": [
+        "You may request a copy of all data we process about you. Contact the email address above to exercise your right of access."
+      ]
+    },
+
+    {
+      "title": "Right to rectification of personal data",
+      "text": [
+        "You have the right to request that we correct or supplement information that is inaccurate or misleading.",
+        "You may also edit your profile information yourself from your profile page."
+      ]
+    },
+
+    {
+      "title": "Right to erasure of personal data",
+      "text": [
+        "You have the right to have your personal data erased without undue delay.",
+        "You may request that we delete information about you at any time.",
+        "You may delete your account yourself through the settings in the app.",
+        "When your account is deleted, your personal data is removed, including profile information and connections linked to your account.",
+        "Posts and comments that you have created may be retained, but anonymised so that they can no longer be linked to you.",
+        "Messages in chats are deleted from your account, but may still remain visible to other participants in the same conversation.",
+        "It may take up to two weeks before your data is completely deleted from our systems because, for a limited period of time, we need to be able to manage and investigate potential moderation matters.",
+        "If you wish for your data to be deleted immediately, you may contact us via the email address info@anderssonhensfelt.se."
+      ]
+    },
+
+    {
+      "title": "Restriction of processing of personal data",
+      "text": [
+        "In certain situations, you may request that we restrict the processing of information about you.",
+        "You do this by managing consents or reservations in our solutions."
+      ]
+    },
+
+    {
+      "title": "Object to processing of personal data",
+      "text": [
+        "If we process information about you on the basis of a balancing of interests, you have the right to object to the processing.",
+        "You do this by managing consents or reservations in our solutions."
+      ]
+    },
+
+    {
+      "title": "Data portability",
+      "text": [
+        "You have the right to receive your personal data in a structured, commonly used and machine-readable format.",
+        "Contact the email address above to receive your personal data."
+      ]
+    },
+
+    {
+      "title": "You may complain about our processing of personal data",
+      "text": [
+        "If you believe that we process your personal data in violation of applicable data protection legislation, you have the right to file a complaint with the Swedish Authority for Privacy Protection (IMY), which is the supervisory authority in Sweden."
+      ]
+    }
+
+  ],
+
+  "withdrawConsent": {
+
+    "title": "Right to withdraw consent",
+
+    "text": [
+      "If the processing of your personal data is based on your consent, you have the right to withdraw this consent at any time.",
+
+      "For example, you may withdraw consent by disabling permissions in your device settings (such as location access or push notifications).",
+
+      "You may also contact us via email.",
+
+      "Please note that certain features in the app may stop functioning or become limited if you withdraw consent required for those features to function."
+    ]
+
+  }
+
+},
+"toc": {
+  "title": "Contents",
+  "definitions": "Definitions",
+  "whoWeAre": "Who we are",
+  "contact": "Contact information",
+  "applies": "Where the policy applies",
+  "collection": "How we collect data",
+  "usage": "Why we use data",
+  "legalBasis": "How we process personal data",
+  "sharingText": "How we share data",
+  "sharingTable": "Recipients of data",
+  "rights": "Your rights",
+  "storage": "How long we store data",
+  "children": "Children's privacy",
+  "transfers": "Third countries",
+  "thirdParty": "Third-party login",
+  "security": "Security",
+  "automated": "Automated decision-making",
+  "changes": "Changes to the policy"
+},
+"childSafety": {
+  "title": "Child safety and protection of minors",
+
+  "text1":
+    "At mommi, the safety of our users is our highest priority. We actively work to create a safe and respectful environment for everyone using the service.",
+
+  "text2":
+    "In accordance with Google Play’s child safety guidelines, we have established clear policies and procedures to prevent and manage risks related to minors and ensure compliance with applicable legislation.",
+
+  "text3":
+    "You can read more about this in our",
+
+  "link":
+    "Child Safety Policy (Child Safety Standards)"
+},
+"sectionTitles": {
+  "providedData":
+    "1. Personal data you provide to us yourself",
+
+  "automaticData":
+    "2. Personal data collected automatically",
+
+  "consentData":
+    "3. Personal data collected with your consent",
+
+  "legalBasis":
+    "How we process personal data",
+
+  "sharingRecipients":
+    "Recipients of personal data",
+
+  "effectiveDate":
+    "Effective date:"
+}
+}

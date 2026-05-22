@@ -1,44 +1,142 @@
 import { useEffect } from "react";
 import "./integritystyle.css";
 import AppText from "../Font/AppText";
-
+import { useTranslation }
+from "react-i18next";
 import IntegrityTableSection from "./IntegrityComponents/IntegrityTableSection";
 import CollectedDataSection from "./IntegrityComponents/CollectedDataSection";
 import IntegrityTextSection from "./IntegrityComponents/IntegrityTextSection";
 import UserRightsSection from "./IntegrityComponents/UserRightsSection";
-
-import { legalMotivationTable } from "./data/legalMotivationTable";
-import { howDataIsSharedTable } from "./data/howDataIsSharedTable";
-
-import { userProvidedData } from "./data/userProvidedData";
-import { automaticCollectedData } from "./data/automaticCollectedData";
-import { consentCollectedData } from "./data/consentCollectedData";
 import { Link } from "react-router-dom";
-import { userRightsSection } from "./data/userRightsSection";
-
-import {
-  introductionSection,
-  definitionClauseSection,
-  whoAreWeSection,
-  contactSection,
-  appliesToSection,
-  howDataIsCollectedSection,
-  whyAndHowSection,
-  howIsSharedSection,
-  dataRetentionSection,
-  childrenPrivacySection,
-  thirdCountryTransfersSection,
-  thirdPartyLoginSection,
-  securitySection,
-  automatedDecisionSection,
-  policyChangesSection
-} from "./data/integrityTextSections";
 
 function Integrity() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { t } =
+  useTranslation("integrity");
+
+  const introductionSection =
+  t("introductionSection", {
+    returnObjects: true,
+  });
+
+  const definitionClauseSection =
+  t("definitionClauseSection", {
+    returnObjects: true,
+  });
+
+const whoAreWeSection =
+  t("whoAreWeSection", {
+    returnObjects: true,
+  });
+
+const contactSection =
+  t("contactSection", {
+    returnObjects: true,
+  });
+
+const appliesToSection =
+  t("appliesToSection", {
+    returnObjects: true,
+  });
+
+const howDataIsCollectedSection =
+  t("howDataIsCollectedSection", {
+    returnObjects: true,
+  });
+
+const whyAndHowSection =
+  t("whyAndHowSection", {
+    returnObjects: true,
+  });
+
+const howIsSharedSection =
+  t("howIsSharedSection", {
+    returnObjects: true,
+  });
+
+const dataRetentionSection =
+  t("dataRetentionSection", {
+    returnObjects: true,
+  });
+
+const childrenPrivacySection =
+  t("childrenPrivacySection", {
+    returnObjects: true,
+  });
+
+const thirdCountryTransfersSection =
+  t("thirdCountryTransfersSection", {
+    returnObjects: true,
+  });
+
+const thirdPartyLoginSection =
+  t("thirdPartyLoginSection", {
+    returnObjects: true,
+  });
+
+const securitySection =
+  t("securitySection", {
+    returnObjects: true,
+  });
+
+const automatedDecisionSection =
+  t("automatedDecisionSection", {
+    returnObjects: true,
+  });
+
+const policyChangesSection =
+  t("policyChangesSection", {
+    returnObjects: true,
+  });
+
+  const userProvidedData =
+  t("userProvidedData", {
+    returnObjects: true,
+  });
+
+  const automaticCollectedData =
+  t("automaticCollectedData", {
+    returnObjects: true,
+  });
+
+  const legalMotivationTable =
+  t("legalMotivationTable", {
+    returnObjects: true,
+  });
+
+  const consentCollectedData =
+  t("consentCollectedData", {
+    returnObjects: true,
+  });
+
+  const howDataIsSharedTable =
+  t("howDataIsSharedTable", {
+    returnObjects: true,
+  });
+
+  const userRightsSection =
+  t("userRightsSection", {
+    returnObjects: true,
+  });
+
+  const toc =
+  t("toc", {
+    returnObjects: true,
+  });
+
+  const childSafety =
+  t("childSafety", {
+    returnObjects: true,
+  });
+
+  const sectionTitles =
+  t("sectionTitles", {
+    returnObjects: true,
+  });
 
   const scrollToSection = (id) => {
 
@@ -78,25 +176,24 @@ function Integrity() {
           <AppText key={i} className="policy-text">{p}</AppText>
         ))}
 
-        <div className="child-safety-highlight">
+       <div className="child-safety-highlight">
 
-<AppText weight={600} className="policy-text">
-  Barns säkerhet och skydd av minderåriga
-</AppText>
-  <AppText className="policy-text">
-    På mommi är säkerheten för våra användare av högsta prioritet.
-    Vi arbetar aktivt för att skapa en trygg och respektfull miljö för alla som använder tjänsten.
+  <AppText weight={600} className="policy-text">
+    {childSafety.title}
   </AppText>
 
   <AppText className="policy-text">
-    I enlighet med Google Plays riktlinjer för barnsäkerhet har vi etablerat tydliga policyer och rutiner
-    för att förebygga och hantera risker kopplade till minderåriga samt säkerställa efterlevnad av gällande lagstiftning.
+    {childSafety.text1}
   </AppText>
 
   <AppText className="policy-text">
-    Du kan läsa mer om detta i vår{" "}
+    {childSafety.text2}
+  </AppText>
+
+  <AppText className="policy-text">
+    {childSafety.text3}{" "}
     <Link to="/child-safety-policy" className="policy-link">
-      policy för barnsäkerhet (Child Safety Standards)
+      {childSafety.link}
     </Link>.
   </AppText>
 
@@ -111,76 +208,76 @@ function Integrity() {
 
         <div className="toc">
 
-          <AppText weight={600}>Innehåll</AppText>
+          <AppText weight={600}>  {toc.title}</AppText>
 
           <ol>
 
             <li onClick={() => scrollToSection("definitioner")}>
-              Definitioner
+              {toc.definitions}
             </li>
 
             <li onClick={() => scrollToSection("vi")}>
-              Vilka är vi
+              {toc.whoWeAre}
             </li>
 
             <li onClick={() => scrollToSection("kontakt")}>
-              Kontaktuppgifter
+              {toc.contact}
             </li>
 
             <li onClick={() => scrollToSection("galler")}>
-              Där policyn gäller
+              {toc.applies}
             </li>
 
             <li onClick={() => scrollToSection("insamling")}>
-              Hur vi samlar in uppgifter
+              {toc.collection}
             </li>
 
             <li onClick={() => scrollToSection("anvandning")}>
-              Varför vi använder uppgifter
+              {toc.usage}
             </li>
 
             <li onClick={() => scrollToSection("lagliggrund")}>
-              Hur vi behandlar personuppgifter
+              {toc.legalBasis}
             </li>
 
             <li onClick={() => scrollToSection("delning-text")}>
-              Hur vi delar uppgifter
+              {toc.sharingText}
             </li>
 
             <li onClick={() => scrollToSection("delning-tabell")}>
-              Mottagare av uppgifter
+              {toc.sharingTable}
             </li>
 
             <li onClick={() => scrollToSection("rattigheter")}>
-              Dina rättigheter
+              {toc.rights}
             </li>
 
             <li onClick={() => scrollToSection("lagring")}>
-              Hur länge vi lagrar uppgifter
+              {toc.storage}
             </li>
 
             <li onClick={() => scrollToSection("barn")}>
-              Barns integritet
+              {toc.children}
             </li>
 
             <li onClick={() => scrollToSection("overforingar")}>
-              Tredje land
+              {toc.transfers}
             </li>
 
             <li onClick={() => scrollToSection("tredjepart")}>
-              Inloggning via tredje part
+              {toc.thirdParty}
             </li>
 
             <li onClick={() => scrollToSection("sakerhet")}>
-              Säkerhet
+              {toc.security}
             </li>
 
             <li onClick={() => scrollToSection("automatiserade-beslut")}>
-              Automatiserat beslutsfattande
+              {toc.automated}
             </li>
 
             <li onClick={() => scrollToSection("policy-andringar")}>
-              Ändringar av policyn
+              {toc.changes}
             </li>
 
           </ol>
@@ -211,19 +308,19 @@ function Integrity() {
         {/* DATA TYPES */}
 
       <CollectedDataSection
-  title="1. Personuppgifter du själv lämnar till oss"
+  title={sectionTitles.providedData}
   items={userProvidedData}
   type="letters"
 />
 
 <CollectedDataSection
-  title="2. Personuppgifter som samlas in automatiskt"
+  title={sectionTitles.automaticData}
   items={automaticCollectedData}
   type="letters"
 />
 
 <CollectedDataSection
-  title="3. Personuppgifter som samlas in med ditt samtycke"
+  title={sectionTitles.consentData}
   items={consentCollectedData}
   type="letters"
 />
@@ -240,7 +337,7 @@ function Integrity() {
 
         <IntegrityTableSection
           id="lagliggrund"
-          title="Hur vi behandlar personuppgifter"
+          title={sectionTitles.legalBasis}
           headers={legalMotivationTable.headers}
           rows={legalMotivationTable.rows}
         />
@@ -258,7 +355,7 @@ function Integrity() {
 
         <IntegrityTableSection
           id="delning-tabell"
-          title="Mottagare av personuppgifter"
+          title={sectionTitles.sharingRecipients}
           headers={howDataIsSharedTable.headers}
           rows={howDataIsSharedTable.rows}
         />

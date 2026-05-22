@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+import { useTranslation } from "react-i18next";
+
+import LanguageToggle from "./LanguageToggle";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -13,15 +17,19 @@ import LogoDark from "../../assets/founders/signature-logo.png";
 import "./navbarstyle.css";
 
 import { Link } from "react-router-dom";
+
 import AppText from "../Font/AppText";
 
 function NavBar({ variant = "dark" }) {
+
+  const { t } = useTranslation("navbar");
 
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
 
     const handleScroll = () => {
+
       if (window.scrollY > 60) {
         setScrolled(true);
       } else {
@@ -30,57 +38,106 @@ function NavBar({ variant = "dark" }) {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () =>
+      window.removeEventListener(
+        "scroll",
+        handleScroll
+      );
 
   }, []);
 
-  const logoSrc = variant === "light" ? LogoDark : LogoWhite;
+  const logoSrc =
+    variant === "light"
+      ? LogoDark
+      : LogoWhite;
 
   return (
+
     <Navbar
       expand="lg"
       className={`
         navbar-custom
-        ${variant === "light" ? "navbar-light-mode" : ""}
-        ${scrolled ? "navbar-scrolled" : ""}
+        ${variant === "light"
+          ? "navbar-light-mode"
+          : ""
+        }
+        ${scrolled
+          ? "navbar-scrolled"
+          : ""
+        }
       `}
     >
 
       <Container>
 
+        {/* LOGO */}
+
         <Navbar.Brand as={Link} to="/">
-          <img src={logoSrc} alt="logo" className="logo-navbar" />
+
+          <img
+            src={logoSrc}
+            alt="logo"
+            className="logo-navbar"
+          />
+
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* MOBILE TOGGLE */}
+
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+        />
+
+        {/* NAV LINKS */}
 
         <Navbar.Collapse id="basic-navbar-nav">
 
           <Nav className="ms-auto navlinks">
 
+            {/* GUIDE */}
+
             <Nav.Link as={Link} to="/guide">
+
               <AppText as="span" weight={500}>
-              Så funkar det
+                {t("guide")}
               </AppText>
+
             </Nav.Link>
+
+            {/* ABOUT */}
 
             <Nav.Link as={Link} to="/about-mommi">
+
               <AppText as="span" weight={500}>
-                Bakom mommi
+                {t("aboutMommi")}
               </AppText>
+
             </Nav.Link>
 
-               <Nav.Link as={Link} to="/faq">
+            {/* FAQ */}
+
+            <Nav.Link as={Link} to="/faq">
+
               <AppText as="span" weight={500}>
-               Vanliga frågor
+                {t("faq")}
               </AppText>
+
             </Nav.Link>
+
+            {/* APPS */}
 
             <Nav.Link as={Link} to="/apps">
+
               <AppText as="span" weight={500}>
-                Andra appar
+                {t("otherApps")}
               </AppText>
+
             </Nav.Link>
+
+            {/* LANGUAGE TOGGLE */}
+
+            <LanguageToggle />
 
           </Nav>
 
@@ -93,7 +150,10 @@ function NavBar({ variant = "dark" }) {
 }
 
 NavBar.propTypes = {
-  variant: PropTypes.oneOf(["dark", "light"]),
+  variant: PropTypes.oneOf([
+    "dark",
+    "light",
+  ]),
 };
 
 export default NavBar;
