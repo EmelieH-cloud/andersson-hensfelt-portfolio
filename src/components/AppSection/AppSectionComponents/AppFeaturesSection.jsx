@@ -2,10 +2,19 @@ import './appfeaturessection.css'
 import MOMMIGROUP from '../../../assets/mommi/group.png'
 import MOMMIVENT from '../../../assets/mommi/traff.png'
 import MOMMISOK from '../../../assets/mommi/sok.png'
+import { useTranslation }
+from "react-i18next";
 
 import AppText from '../../Font/AppText'
 
 const AppFeaturesSection = () => {
+  const { t } =
+  useTranslation("general");
+
+const appFeaturesSection =
+  t("appFeaturesSection", {
+    returnObjects: true,
+  });
   return (
     <section className="app-features">
 
@@ -19,10 +28,10 @@ const AppFeaturesSection = () => {
             <div className="feature-card">
               <h3 className="feature-title">
                 <span className="bullet" />
-                Träffas en och en
+                {appFeaturesSection.oneToOne.title}
               </h3>
               <AppText className="feature-desc" weight={400}>
-                Hitta mommis utifrån de filter du själv väljer. Perfekt om du vill träffas en och en för playdates, barnvagnspromenader eller varför inte en barnfri kväll?
+             {appFeaturesSection.oneToOne.text}
               </AppText>
             </div>
           </div>
@@ -33,10 +42,10 @@ const AppFeaturesSection = () => {
             <div className="feature-card">
               <h3 className="feature-title">
                 <span className="bullet" />
-                Träffas flera
+           {appFeaturesSection.groupMeetups.title}
               </h3>
               <AppText className="feature-desc" weight={400}>
-                Delta i eller skapa aktiviteter tillsammans med andra mommis. Det kan vara allt från babydans, gravidyoga, picknick i parken till en afterwork.
+              {appFeaturesSection.groupMeetups.text}
               </AppText>
             </div>
           </div>
@@ -47,10 +56,10 @@ const AppFeaturesSection = () => {
             <div className="feature-card">
               <h3 className="feature-title">
                 <span className="bullet" />
-                Gå med i grupper
+              {appFeaturesSection.groups.title}
               </h3>
               <AppText className="feature-desc" weight={400}>
-                Gå med i eller skapa egna communitys där du kan diskutera, ställa frågor eller hitta mommis som delar något specifikt med dig.
+              {appFeaturesSection.groups.text}
               </AppText>
             </div>
           </div>

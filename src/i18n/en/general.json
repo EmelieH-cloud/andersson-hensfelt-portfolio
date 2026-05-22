@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "intro": "Whether you are pregnant, a new mom or have children who are a little older –",
+    "highlight": "mommi is the app for moms who want to meet other moms",
+    "ending": "with or without children."
+  },
+  "appFeaturesIntro": {
+  "heading": "Connect with mommis in the way that suits you best",
+
+  "text":
+    "When creating mommi, we kept in mind that everyone is different and wants to meet in different ways. Some prefer meeting one person at a time, while others would rather meet in groups. That is why we created three different ways for you to connect with and meet other mommis - mommiSearch, mommiMeet and mommiGroups."
+},
+"appFeaturesSection": {
+  "oneToOne": {
+    "title": "Meet one-on-one",
+
+    "text":
+      "Find mommis based on the filters you choose yourself. Perfect if you want to meet one-on-one for playdates, stroller walks or perhaps a child-free evening."
+  },
+
+  "groupMeetups": {
+    "title": "Meet in groups",
+
+    "text":
+      "Join or create activities together with other mommis. It can be anything from baby dance, pregnancy yoga and picnics in the park to an after-work."
+  },
+
+  "groups": {
+    "title": "Join groups",
+
+    "text":
+      "Join or create your own communities where you can discuss, ask questions or find mommis who share something specific with you."
+  }
+}
+}

@@ -1,6 +1,7 @@
 import './herostyle.css'
 import { useEffect, useRef, useState } from 'react'
-
+import { useTranslation }
+from "react-i18next";
 import HERO_VIDEO from '../../assets/mommi/mommivideo.mp4'
 import MOMMI_LOGO from '../../assets/mommi/mommi-logo.png'
 
@@ -9,6 +10,13 @@ import AppText from '../Font/AppText'
 const Hero = () => {
   const videoRef = useRef(null)
   const [videoReady, setVideoReady] = useState(false)
+const { t } =
+  useTranslation("general");
+
+  const hero =
+  t("hero", {
+    returnObjects: true,
+  });
 
   useEffect(() => {
     const video = videoRef.current
@@ -55,10 +63,12 @@ const Hero = () => {
         </div>
 
         <AppText weight={500} className="hero-intro">
-          Oavsett om du är gravid, nybliven mamma eller har barn som blivit lite större –  
-          <span className="hero-highlight"> mommi är appen för mammor som vill träffa mammor</span>,  
-          med eller utan barn.
-        </AppText>
+  {hero.intro}{" "}
+  <span className="hero-highlight">
+    {hero.highlight}
+  </span>,{" "}
+  {hero.ending}
+</AppText>
 
       </div>
 

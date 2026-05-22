@@ -38,6 +38,11 @@ function Terms() {
     returnObjects: true,
   });
 
+  const toc =
+  t("toc", {
+    returnObjects: true,
+  });
+
   const scrollToSection = (id) => {
 
     const element = document.getElementById(id);
@@ -71,7 +76,7 @@ function Terms() {
 
 
         <AppText as="h1" weight={600} className="terms-main-title">
-          Användarvillkor
+           {t("pageTitle")}
         </AppText>
 
 <IntroductionTermsSection
@@ -83,49 +88,49 @@ function Terms() {
         <div className="terms-toc">
 
           <AppText weight={600}>
-            Innehåll
+          {toc.title}
           </AppText>
 
           <ol>
 
             <li onClick={() => scrollToSection("responsibilities")}>
-              Ditt ansvar
+              {toc.responsibilities}
             </li>
 
             <li onClick={() => scrollToSection("content-rules")}>
-              Innehåll
+              {toc.content}
             </li>
 
             <li onClick={() => scrollToSection("privacy")}>
-              Integritet
+              {toc.privacy}
             </li>
 
             <li onClick={() => scrollToSection("license")}>
-              Rättigheter du ger mommi
+              {toc.license}
             </li>
 
             <li onClick={() => scrollToSection("termination")}>
-              Avslut av konto
+              {toc.termination}
             </li>
 
             <li onClick={() => scrollToSection("security")}>
-              Säkerhet och ansvar
+              {toc.security}
             </li>
 
             <li onClick={() => scrollToSection("liability")}>
-              Ansvarsfriskrivning
+              {toc.liability}
             </li>
 
             <li onClick={() => scrollToSection("ads")}>
-              Annonser och innehåll från tredje part
+              {toc.ads}
             </li>
 
             <li onClick={() => scrollToSection("law")}>
-              Tillämplig lag och tvist
+              {toc.law}
             </li>
 
             <li onClick={() => scrollToSection("changes")}>
-              Ändringar av användarvillkoren
+              {toc.changes}
             </li>
 
           </ol>

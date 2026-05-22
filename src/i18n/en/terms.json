@@ -259,6 +259,21 @@
 
     ]
 
-  }
+  },
+  "pageTitle": "Terms of Use",
+
+"toc": {
+  "title": "Contents",
+  "responsibilities": "Your responsibilities",
+  "content": "Content",
+  "privacy": "Privacy",
+  "license": "Rights you grant to mommi",
+  "termination": "Termination of account",
+  "security": "Security and responsibility",
+  "liability": "Disclaimer of liability",
+  "ads": "Advertisements and third-party content",
+  "law": "Applicable law and disputes",
+  "changes": "Changes to the terms of use"
+}
 
 }
