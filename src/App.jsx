@@ -12,6 +12,8 @@ import SecurityPage from './pages/SecurityPage';
 import FAQpage from './pages/FAQpage';
 import GuidePage from './pages/GuidePage';
 import ChildSafetyPolicyPage from './pages/ChildSafetyPolicypage';
+import PressRoomPage from './pages/PressRoomPage';
+import Collabspage from './pages/Collabspage';
 import ScrollToTop from './components/Helpers/ScrollToTop';
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/faq" element={<FAQpage/>}/>
         <Route path="/guide" element={<GuidePage/>}/>
         <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage/>}/>
+        <Route path="/pressroom" element={<PressRoomPage />} />
+        <Route path="/collabs" element={<Collabspage />} />
       </Routes>
 
     </div>

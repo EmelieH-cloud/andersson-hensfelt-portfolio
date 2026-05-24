@@ -1,18 +1,31 @@
 import './mommiventvideosection.css'
+
 import { useEffect, useRef, useState } from 'react'
+
+import { useTranslation } from 'react-i18next'
+
 import MOMMIVENT from '../../../assets/mommi/mommivent-video.mp4'
+
 import AppText from '../../Font/AppText'
 
 const MommiventVideoSection = () => {
+
+  const { t } = useTranslation("general")
+
   const videoRef = useRef(null)
+
   const [videoReady, setVideoReady] = useState(false)
 
   useEffect(() => {
+
     const video = videoRef.current
+
     if (!video) return
 
     const handleLoaded = () => {
+
       video.play().catch(() => {})
+
       setVideoReady(true)
     }
 
@@ -21,15 +34,19 @@ const MommiventVideoSection = () => {
     return () => {
       video.removeEventListener('loadeddata', handleLoaded)
     }
+
   }, [])
 
   return (
+
     <section className="mommivent-section">
 
       <div className="mommivent-container">
 
-        {/* 🔥 VIDEO FÖRST (EXAKT SOM HERO) */}
+        {/* VIDEO */}
+
         <div className="mommivent-video-wrapper">
+
           <video
             ref={videoRef}
             className={`mommivent-video ${videoReady ? 'visible' : ''}`}
@@ -39,23 +56,29 @@ const MommiventVideoSection = () => {
             autoPlay
             preload="auto"
           >
+
             <source src={MOMMIVENT} type="video/mp4" />
+
           </video>
+
         </div>
 
         {/* TEXT */}
+
         <div className="mommivent-content">
+
           <AppText className="mommivent-title">
-            Upptäck mommiTräffar
+            {t("mommiMeetTitle")}
           </AppText>
 
           <AppText className="mommivent-text">
-            Vill du hitta på något tillsammans med andra mommis? Oavsett om du vill planera en afterwork utan barn, hitta sällskap till gravidyogan eller någon att ta en löprunda med – kan du enkelt skapa en mommiTräff.
+            {t("mommiMeetText1")}
           </AppText>
 
           <AppText className="mommivent-text">
-            Träffen kan vara öppen för alla eller bara för dina mommivänner. Du kan även skapa återkommande träffar - perfekt om du gör något regelbundet som du vill ha sällskap till.
+            {t("mommiMeetText2")}
           </AppText>
+
         </div>
 
       </div>

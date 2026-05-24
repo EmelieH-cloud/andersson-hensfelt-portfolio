@@ -3,8 +3,16 @@
 /* ========================= */
 
 .our-apps-section {
-    background: #ffffff;
-    padding: 140px 20px 120px;
+
+    min-height: 100vh;
+
+    padding: 180px 32px 120px;
+
+    background: linear-gradient(180deg,
+            #d19fa9 0%,
+            #c87484 100%);
+
+    font-family: "Raleway", sans-serif;
 }
 
 /* ========================= */
@@ -12,23 +20,70 @@
 /* ========================= */
 
 .our-apps-container {
-    max-width: 1000px;
+
+    max-width: 1100px;
+
     margin: 0 auto;
-    text-align: center;
 }
 
 /* ========================= */
-/* TITLE */
+/* HEADER */
 /* ========================= */
 
+.our-apps-heading {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.our-apps-tag {
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.18);
+
+    color: white;
+
+    font-size: .72rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+}
+
 .our-apps-title {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    color: white;
+
+    margin-bottom: 18px;
+
+    letter-spacing: -2px;
 }
 
 .our-apps-sub {
-    color: #666;
-    margin-bottom: 20px;
+
+    max-width: 650px;
+
+    margin: 0 auto 28px;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
 }
 
 /* ========================= */
@@ -36,86 +91,153 @@
 /* ========================= */
 
 .our-apps-links {
+
     display: flex;
+
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 50px;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
 }
 
 .our-apps-links a {
-    color: #a94e62;
+
+    color: white;
+
     text-decoration: none;
+
+    font-size: .92rem;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    transition: .3s ease;
 }
 
 .our-apps-links a:hover {
-    text-decoration: underline;
+
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* ========================= */
-/* IMAGES (FIXED) */
+/* MAIN CARD */
+/* ========================= */
+
+.our-apps-card {
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 36px;
+
+    padding: 60px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+/* ========================= */
+/* IMAGES */
 /* ========================= */
 
 .our-apps-images {
+
     display: flex;
+
     justify-content: center;
-    gap: 30px;
+
+    gap: 26px;
+
     margin-bottom: 60px;
+
+    flex-wrap: wrap;
 }
 
 .our-img {
-    width: 260px;
-    /* 🔥 större igen */
 
-    border-radius: 18px;
+    width: 260px;
+
+    border-radius: 26px;
 
     object-fit: contain;
-    /* 🔥 FIX: inte beskuren */
 
     opacity: 0;
+
     transform: translateY(10px);
 
     transition:
-        opacity 0.6s ease,
-        transform 0.6s ease;
+        opacity .6s ease,
+        transform .6s ease;
 
-    background: transparent;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .our-img.loaded {
+
     opacity: 1;
+
     transform: translateY(0);
 }
 
-/* ========================= */
-/* TEXT */
-/* ========================= */
+.our-img:hover {
 
-.our-apps-text {
-    margin-bottom: 16px;
-    line-height: 1.7;
-    color: #444;
+    transform: translateY(-4px);
 }
 
 /* ========================= */
-/* 🔥 CARDS (NEW) */
+/* CONTENT */
+/* ========================= */
+
+.our-apps-content {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.our-apps-text {
+
+    margin-bottom: 24px;
+
+    line-height: 2;
+
+    color: #444;
+
+    font-size: 1rem;
+}
+
+/* ========================= */
+/* CARDS */
 /* ========================= */
 
 .our-apps-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 
-    margin: 30px 0 40px;
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    margin: 40px 0 45px;
+
     flex-wrap: wrap;
 }
 
 .omd-card {
-    background: #fff;
 
-    border-radius: 18px;
-    padding: 20px 22px;
+    background: white;
 
-    width: 260px;
+    border-radius: 24px;
+
+    padding: 24px;
+
+    width: 280px;
 
     text-align: left;
 
@@ -123,25 +245,40 @@
         0 20px 50px rgba(0, 0, 0, 0.08),
         0 5px 15px rgba(0, 0, 0, 0.05);
 
-    transition: transform 0.3s ease;
+    transition: .35s ease;
 }
 
 .omd-card:hover {
+
     transform: translateY(-6px);
 }
 
 .omd-card-intro {
+
     display: block;
-    font-size: 0.8rem;
-    color: #a94e62;
-    margin-bottom: 6px;
-    letter-spacing: 1px;
+
+    font-size: .75rem;
+
+    color: #c87484;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
 }
 
 .omd-card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
+
+    font-size: .98rem;
+
+    line-height: 1.7;
+
     color: #222;
+
+    margin: 0;
 }
 
 /* ========================= */
@@ -151,30 +288,70 @@
 @media (max-width: 768px) {
 
     .our-apps-section {
-        padding: 100px 20px 80px;
+
+        padding: 140px 20px 80px;
+    }
+
+    .our-apps-heading {
+
+        margin-bottom: 45px;
     }
 
     .our-apps-title {
-        font-size: 2rem;
+
+        font-size: 2.5rem;
+
+        line-height: 1.1;
+    }
+
+    .our-apps-sub {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+    }
+
+    .our-apps-card {
+
+        padding: 28px;
+
+        border-radius: 24px;
     }
 
     .our-apps-images {
-        flex-direction: column;
-        align-items: center;
+
+        gap: 18px;
+
+        margin-bottom: 40px;
     }
 
     .our-img {
-        width: 85%;
-        max-width: 320px;
+
+        width: 100%;
+
+        max-width: 280px;
+
+        border-radius: 20px;
+    }
+
+    .our-apps-text {
+
+        font-size: .92rem;
+
+        line-height: 1.9;
     }
 
     .our-apps-cards {
+
         flex-direction: column;
+
         align-items: center;
+
+        gap: 16px;
     }
 
     .omd-card {
-        width: 90%;
-    }
 
+        width: 100%;
+    }
 }

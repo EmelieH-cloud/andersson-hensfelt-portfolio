@@ -9,6 +9,10 @@ import svTerms from "./sv/terms.json";
 import enTerms from "./en/terms.json";
 import svGeneral from "./sv/general.json";
 import enGeneral from "./en/general.json";
+import svPressroom from "./sv/pressroom.json";
+import enPressroom from "./en/pressroom.json";
+import svCollabs from "./sv/collabs.json";
+import enCollabs from "./en/collabs.json";
 
 i18n
   .use(initReactI18next)
@@ -22,6 +26,8 @@ i18n
         integrity: svIntegrity,
         terms: svTerms,
         general: svGeneral,
+        pressroom: svPressroom,
+        collabs: svCollabs,
 
       },
 
@@ -31,6 +37,8 @@ i18n
      integrity: enIntegrity,
         terms: enTerms,
         general: enGeneral,
+        pressroom: enPressroom,
+        collabs: enCollabs,
 
       },
 

@@ -4,32 +4,138 @@
     "highlight": "mommi is the app for moms who want to meet other moms",
     "ending": "with or without children."
   },
+
   "appFeaturesIntro": {
-  "heading": "Connect with mommis in the way that suits you best",
+    "heading": "Connect with mommis in the way that suits you best",
 
-  "text":
-    "When creating mommi, we kept in mind that everyone is different and wants to meet in different ways. Some prefer meeting one person at a time, while others would rather meet in groups. That is why we created three different ways for you to connect with and meet other mommis - mommiSearch, mommiMeet and mommiGroups."
+    "text": "When creating mommi, we kept in mind that everyone is different and wants to meet in different ways. Some prefer meeting one person at a time, while others would rather meet in groups. That is why we created three different ways for you to connect with and meet other mommis - mommiSearch, mommiMeet and mommiGroups."
+  },
+
+  "appFeaturesSection": {
+
+    "oneToOne": {
+      "title": "Meet one-on-one",
+
+      "text": "Find mommis based on the filters you choose yourself. Perfect if you want to meet one-on-one for playdates, stroller walks or perhaps a child-free evening."
+    },
+
+    "groupMeetups": {
+      "title": "Meet in groups",
+
+      "text": "Join or create activities together with other mommis. It can be anything from baby dance, pregnancy yoga and picnics in the park to an after-work."
+    },
+
+    "groups": {
+      "title": "Join groups",
+
+      "text": "Join or create your own communities where you can discuss, ask questions or find mommis who share something specific with you."
+    }
+  },
+
+  "mommiHeroTitle": "For moms who want to meet other moms",
+
+  "mommiSearchTitle": "Get started with mommiSearch",
+
+  "mommiSearchText1": "Get started with mommi in just a few minutes - create your profile and begin exploring everything the app has to offer!",
+
+  "mommiSearchText2": "Use mommiSearch to find mommis near you. When you find a mommi you would like to get to know, you can send a mommi request along with a message about what caught your interest. Once she responds, you become mommi friends and a chat opens where you can plan a meetup!",
+
+  "mommiGroupTitle": "Create and join mommiGroups",
+
+  "mommiGroupText1": "Create or join mommiGroups that fit you – from pregnancy and early motherhood to fitness, career, and personal interests. Here you can talk about everything from breastfeeding and sleep to stroller tips, birth stories, or simply share everyday thoughts and experiences. Groups can also be connected to a geographic area, for example “Pregnant in Lund”.",
+
+  "mommiGroupText2": "Become part of a warm and supportive community with other mommis!",
+
+  "mommiMeetTitle": "Discover mommiMeetups",
+
+  "mommiMeetText1": "Want to do something together with other mommis? Whether you want to plan an after-work without kids, find company for prenatal yoga, or someone to go running with – you can easily create a mommiMeetup.",
+
+  "mommiMeetText2": "The meetup can be open to everyone or only to your mommi friends. You can also create recurring meetups – perfect if there is something you regularly do and would like company for.",
+
+  "faq": {
+
+    "title": "Frequently Asked Questions",
+
+    "question1": "What is mommi?",
+
+    "answer1": "mommi is an app for mothers who want to meet other mothers, connect, meet up, and build communities.",
+
+    "question2": "Is the app free?",
+
+    "answer2": "Yes, the app is free to use. Enjoy!",
+
+    "question3": "How is personal data handled?",
+
+    "answer3_1": "We handle your data according to our",
+
+    "answer3_2": ". Please also read through our",
+
+    "integrity": "privacy policy",
+
+    "terms": "terms of use",
+
+    "question4": "Am I allowed to market products or services in the app?",
+
+    "answer4": "No, all forms of marketing or advertising is only allowed through an active collaboration with mommi. It is also not permitted to encourage users to move conversations or communities to other social media platforms. Please contact us at info@anderssonhensfelt.se for collaboration requests.",
+
+    "question5": "Contact & support",
+
+    "answer5": "You can reach us at info@anderssonhensfelt.se"
+  },
+  "joinMommi": {
+
+  "subtitle": "JOIN OUR COMMUNITY",
+
+  "title": "Become a mommi too",
+
+  "description": "Download the app today and create memories together with other mommis near you."
 },
-"appFeaturesSection": {
-  "oneToOne": {
-    "title": "Meet one-on-one",
+"footer": {
 
-    "text":
-      "Find mommis based on the filters you choose yourself. Perfect if you want to meet one-on-one for playdates, stroller walks or perhaps a child-free evening."
-  },
+  "description": "mommi - for moms who want to meet other moms.",
 
-  "groupMeetups": {
-    "title": "Meet in groups",
+  "securityTitle": "Terms and safety",
 
-    "text":
-      "Join or create activities together with other mommis. It can be anything from baby dance, pregnancy yoga and picnics in the park to an after-work."
-  },
+  "integrity": "Privacy policy",
 
-  "groups": {
-    "title": "Join groups",
+  "terms": "Terms of use",
 
-    "text":
-      "Join or create your own communities where you can discuss, ask questions or find mommis who share something specific with you."
-  }
+  "safety": "Safety advice",
+
+  "pages": "Pages",
+
+  "about": "Behind mommi",
+
+  "contact": "Contact us",
+
+  "download": "Download mommi",
+  "pressroom": "Pressroom",
+
+"otherApps": "Other apps"
+},
+"aboutMommi": {
+
+  "tag": "FOUNDERS OF MOMMI",
+
+  "title": "The founders behind mommi",
+
+  "intro": "Hi and welcome to our app!",
+
+  "text1": "We are Emelie and Alinia – the founders behind mommi. We created the app with one simple idea: to make it easier for mothers to find each other.",
+
+  "text2": "The idea started when Alinia was pregnant. In the middle of all the thoughts about life soon changing, a question appeared – why is there no simple way to find others in the same situation?",
+
+  "text3": "Becoming a mother is amazing – but it can also feel lonely. We wanted to make it easier to find someone to share it with.",
+
+  "text4": "That is why we created mommi – a place where you can find, talk to, and meet other mommis.",
+
+  "text5": "We hope you enjoy the app!"
+},
+"guide": {
+
+  "title": "Discover mommi",
+
+  "intro": "With our features mommiSearch, mommiMeet and mommiGroups, we have created everything you need to connect with and meet other mommis – in the way that suits you best."
+
 }
 }

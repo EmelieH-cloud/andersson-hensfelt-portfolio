@@ -127,13 +127,23 @@ function NavBar({ variant = "dark" }) {
 
             {/* APPS */}
 
-            <Nav.Link as={Link} to="/apps">
+                <Nav.Link as={Link} to="/pressroom">
 
               <AppText as="span" weight={500}>
-                {t("otherApps")}
+                {t("pressroom")}
               </AppText>
 
             </Nav.Link>
+
+            
+                <Nav.Link as={Link} to="/collabs">
+
+              <AppText as="span" weight={500}>
+                {t("collabs")}
+              </AppText>
+
+            </Nav.Link>
+
 
             {/* LANGUAGE TOGGLE */}
 

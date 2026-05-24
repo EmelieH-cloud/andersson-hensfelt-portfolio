@@ -1,5 +1,9 @@
 import "./footerstyle.css";
+
+import { useTranslation } from "react-i18next";
+
 import { MdEmail } from "react-icons/md";
+
 import { Link } from "react-router-dom";
 
 import GOOGLE from "../../assets/appStore/googlebtn.png";
@@ -10,6 +14,8 @@ import AppText from "../Font/AppText";
 import FooterColumn from "./FooterComponents/FooterColumn";
 
 function Footer() {
+
+  const { t } = useTranslation("general");
 
   return (
 
@@ -28,65 +34,114 @@ function Footer() {
           />
 
           <AppText className="footer-text">
-            mommi - för mammor som vill träffa mammor.
+            {t("footer.description")}
           </AppText>
 
         </FooterColumn>
-
 
         {/* COLUMN 2 */}
 
-        <FooterColumn title="Villkor och säkerhet">
+        <FooterColumn title={t("footer.securityTitle")}>
 
           <div className="footer-links">
 
-            <Link to="/integrity" className="footer-link">
-              <AppText>Integritetspolicy</AppText>
+            <Link
+              to="/integrity"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.integrity")}
+              </AppText>
+
             </Link>
 
-            <Link to="/terms" className="footer-link">
-  <AppText>Användarvillkor</AppText>
-</Link>
- <Link to="/safety" className="footer-link">
-  <AppText>Säkerhetsråd</AppText>
-</Link>
+            <Link
+              to="/terms"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.terms")}
+              </AppText>
+
+            </Link>
+
+            <Link
+              to="/safety"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.safety")}
+              </AppText>
+
+            </Link>
 
           </div>
 
         </FooterColumn>
-
 
         {/* COLUMN 3 */}
 
-        <FooterColumn title="Sidor">
+        <FooterColumn title={t("footer.pages")}>
 
           <div className="footer-links">
 
-            <Link to="/about-mommi" className="footer-link">
-              <AppText>Bakom mommi</AppText>
+            <Link
+              to="/about-mommi"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.about")}
+              </AppText>
+
+            </Link>
+
+            <Link
+              to="/pressroom"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.pressroom")}
+              </AppText>
+
+            </Link>
+
+            <Link
+              to="/apps"
+              className="footer-link"
+            >
+
+              <AppText>
+                {t("footer.otherApps")}
+              </AppText>
+
             </Link>
 
           </div>
 
         </FooterColumn>
 
-
         {/* COLUMN 4 */}
 
-        <FooterColumn title="Kontakta oss">
+        <FooterColumn title={t("footer.contact")}>
 
           <AppText className="footer-contact">
-            <MdEmail className="footer-icon"/>
-            info@anderssonhensfelt.se
-          </AppText>
 
+            <MdEmail className="footer-icon" />
+
+            info@anderssonhensfelt.se
+
+          </AppText>
 
         </FooterColumn>
 
-
         {/* COLUMN 5 */}
 
-        <FooterColumn title="Ladda ner mommi">
+        <FooterColumn title={t("footer.download")}>
 
           <div className="footer-download">
 
@@ -95,7 +150,13 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={GOOGLE} alt="Google Play" className="store-btn"/>
+
+              <img
+                src={GOOGLE}
+                alt="Google Play"
+                className="store-btn"
+              />
+
             </a>
 
             <a
@@ -103,7 +164,13 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={IOS} alt="App Store" className="store-btn"/>
+
+              <img
+                src={IOS}
+                alt="App Store"
+                className="store-btn"
+              />
+
             </a>
 
           </div>
@@ -111,7 +178,6 @@ function Footer() {
         </FooterColumn>
 
       </div>
-
 
       <div className="footer-bottom">
 
@@ -122,9 +188,7 @@ function Footer() {
       </div>
 
     </footer>
-
   );
-
 }
 
 export default Footer;
