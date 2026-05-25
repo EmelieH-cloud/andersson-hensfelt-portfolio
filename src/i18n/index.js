@@ -13,6 +13,8 @@ import svPressroom from "./sv/pressroom.json";
 import enPressroom from "./en/pressroom.json";
 import svCollabs from "./sv/collabs.json";
 import enCollabs from "./en/collabs.json";
+import svSecurity from "./sv/security.json"
+import enSecurity from "./en/security.json"
 
 i18n
   .use(initReactI18next)
@@ -28,7 +30,7 @@ i18n
         general: svGeneral,
         pressroom: svPressroom,
         collabs: svCollabs,
-
+        security: svSecurity
       },
 
       en: {
@@ -39,6 +41,7 @@ i18n
         general: enGeneral,
         pressroom: enPressroom,
         collabs: enCollabs,
+        security: enSecurity
 
       },
 

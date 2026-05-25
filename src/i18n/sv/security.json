@@ -1,0 +1,64 @@
+{
+  "title": "Säkerhetsråd",
+
+  "intro": "Att lära känna andra mammor och skapa nya kontakter för både dig och ditt barn kan vara roligt och värdefullt. Samtidigt är det viktigt att alltid sätta din och ditt barns säkerhet först – både online och när ni träffas i verkligheten. Var uppmärksam och försiktig i dina kontakter.",
+
+  "appUsageTitle": "När du använder appen",
+
+  "appUsage": {
+    "money": {
+      "title": "Skicka aldrig pengar eller ekonomisk information",
+      "text": "till någon du lärt känna via appen. Dela inte bankuppgifter eller annan finansiell information."
+    },
+
+    "personalInfo": {
+      "title": "Skydda din och ditt barns personliga information.",
+      "text": "Undvik att dela adress, förskola/skola, dagliga rutiner eller annan känslig information med personer du inte känner väl."
+    },
+
+    "photos": {
+      "title": "Var försiktig med bilder på barn.",
+      "text": "Tänk igenom vilken information som syns i bakgrunden och undvik att dela detaljer som kan identifiera plats eller rutiner."
+    },
+
+    "chat": {
+      "title": "Håll konversationen i appen",
+      "text": "tills du känner dig trygg. Det är säkrare än att snabbt flytta kontakten till sms eller andra plattformar."
+    },
+
+    "warning": {
+      "title": "Var uppmärksam på varningssignaler.",
+      "text": "Undvik personer som ber om pengar, ger motsägelsefull information eller pressar dig på olika sätt."
+    }
+  },
+
+  "realLifeTitle": "När ni träffas i verkligheten",
+
+  "realLife": {
+    "slow": {
+      "title": "Stressa inte.",
+      "text": "Ta tid på dig att lära känna personen innan ni bestämmer att ses."
+    },
+
+    "publicPlace": {
+      "title": "Träffas första gången på en offentlig och barnvänlig plats om du träffas med barn",
+      "text": "till exempel ett café, lekplats eller annat öppet område med människor i närheten."
+    },
+
+    "tellSomeone": {
+      "title": "Berätta gärna för någon",
+      "text": "var ni ska vara och hur länge."
+    },
+
+    "leave": {
+      "title": "Avsluta träffen om något känns fel.",
+      "text": "Lita på din magkänsla – din och ditt barns trygghet går alltid först."
+    }
+  },
+
+  "report": {
+    "text1": "Om du upplever att en annan användare beter sig olämpligt, inom eller utanför appen, uppmanar vi dig att rapportera personen eller innehållet via appens rapporteringsfunktion.",
+
+    "text2": "Vi tar alla sådana ärenden på allvar och arbetar för att skapa en trygg och respektfull miljö för alla mammor och barn i mommi."
+  }
+}

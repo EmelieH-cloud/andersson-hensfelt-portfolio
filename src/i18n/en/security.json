@@ -1,0 +1,64 @@
+{
+  "title": "Safety Advice",
+
+  "intro": "Meeting other mothers and creating new connections for both you and your child can be fun and meaningful. At the same time, it is important to always put your own and your child’s safety first — both online and when meeting in real life. Stay aware and cautious in your interactions.",
+
+  "appUsageTitle": "When using the app",
+
+  "appUsage": {
+    "money": {
+      "title": "Never send money or financial information",
+      "text": "to someone you met through the app. Do not share bank details or other financial information."
+    },
+
+    "personalInfo": {
+      "title": "Protect your and your child’s personal information.",
+      "text": "Avoid sharing your address, preschool/school, daily routines, or other sensitive information with people you do not know well."
+    },
+
+    "photos": {
+      "title": "Be careful with photos of children.",
+      "text": "Think about what is visible in the background and avoid sharing details that could identify locations or routines."
+    },
+
+    "chat": {
+      "title": "Keep conversations inside the app",
+      "text": "until you feel comfortable. This is safer than quickly moving the conversation to text messages or other platforms."
+    },
+
+    "warning": {
+      "title": "Pay attention to warning signs.",
+      "text": "Avoid people who ask for money, provide inconsistent information, or pressure you in different ways."
+    }
+  },
+
+  "realLifeTitle": "When meeting in real life",
+
+  "realLife": {
+    "slow": {
+      "title": "Do not rush.",
+      "text": "Take your time getting to know the person before deciding to meet."
+    },
+
+    "publicPlace": {
+      "title": "Meet for the first time in a public and child-friendly place if children are involved",
+      "text": "for example a café, playground, or another open area with people nearby."
+    },
+
+    "tellSomeone": {
+      "title": "Tell someone",
+      "text": "where you are going and how long you plan to stay."
+    },
+
+    "leave": {
+      "title": "Leave if something feels wrong.",
+      "text": "Trust your instincts — your and your child’s safety always comes first."
+    }
+  },
+
+  "report": {
+    "text1": "If you experience another user behaving inappropriately, either inside or outside the app, we encourage you to report the person or content using the app’s reporting feature.",
+
+    "text2": "We take all such matters seriously and work to create a safe and respectful environment for all mothers and children in mommi."
+  }
+}

@@ -4,13 +4,14 @@
 
 .collabs-section {
 
+    padding: 180px 24px 120px;
+
+    background:
+        linear-gradient(180deg,
+            #f8f3f4 0%,
+            #ffffff 100%);
+
     min-height: 100vh;
-
-    padding: 180px 32px 120px;
-
-    background: linear-gradient(180deg,
-            #d19fa9 0%,
-            #c87484 100%);
 
     font-family: "Raleway", sans-serif;
 }
@@ -21,7 +22,7 @@
 
 .collabs-container {
 
-    max-width: 1050px;
+    max-width: 1180px;
 
     margin: 0 auto;
 }
@@ -34,30 +35,28 @@
 
     text-align: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 
 .collabs-tag {
 
     display: inline-block;
 
-    margin-bottom: 18px;
-
     padding: 8px 18px;
 
     border-radius: 999px;
 
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(200, 116, 132, 0.1);
 
-    color: white;
+    color: #c87484;
 
     font-size: .72rem;
 
+    font-weight: 700;
+
     letter-spacing: 2px;
 
-    font-weight: 600;
-
-    backdrop-filter: blur(10px);
+    margin-bottom: 24px;
 }
 
 .collabs-title {
@@ -66,53 +65,49 @@
 
     font-weight: 300;
 
-    color: white;
+    color: #1f1f1f;
 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+
+    line-height: 1;
 
     letter-spacing: -2px;
 }
 
 .collabs-subtitle {
 
-    max-width: 650px;
+    max-width: 720px;
 
     margin: 0 auto;
 
-    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.05rem;
 
-    font-size: 1rem;
+    line-height: 2;
 
-    line-height: 1.9;
+    color: #5f5f5f;
 }
 
 /* ========================= */
-/* CARD */
+/* MAIN CARD */
 /* ========================= */
 
-.collabs-card,
-.collabs-partners-card {
+.collabs-card {
 
-    background: rgba(255, 255, 255, 0.96);
+    background: white;
 
     border-radius: 36px;
 
     padding: 70px;
 
+    margin-bottom: 60px;
+
     box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.12);
-}
-
-.collabs-card {
-
-    margin-bottom: 40px;
+        0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .collabs-card-content {
 
     max-width: 760px;
-
-    margin: 0 auto;
 }
 
 .collabs-small-tag {
@@ -125,7 +120,7 @@
 
     border-radius: 999px;
 
-    background: rgba(200, 116, 132, 0.12);
+    background: rgba(200, 116, 132, 0.1);
 
     color: #c87484;
 
@@ -138,26 +133,26 @@
 
 .collabs-card-title {
 
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 
     font-weight: 300;
 
-    color: #1d1d1d;
+    line-height: 1.1;
 
     margin-bottom: 28px;
 
-    line-height: 1.1;
+    color: #1f1f1f;
 }
 
 .collabs-text {
 
-    color: #444;
+    font-size: 1rem;
 
     line-height: 2;
 
-    font-size: 1rem;
+    color: #555;
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 /* ========================= */
@@ -174,7 +169,7 @@
 
     margin-top: 20px;
 
-    padding: 14px 24px;
+    padding: 16px 30px;
 
     border-radius: 999px;
 
@@ -182,92 +177,107 @@
 
     color: white;
 
-    text-decoration: none;
-
     font-weight: 600;
 
-    transition: .3s ease;
+    text-decoration: none;
 
-    box-shadow:
-        0 8px 20px rgba(200, 116, 132, 0.25);
+    transition: .3s ease;
 }
 
 .collabs-button:hover {
 
-    background: #b56473;
+    background: #b86474;
 
     transform: translateY(-2px);
-
-    color: white;
 }
 
 /* ========================= */
 /* PARTNERS */
 /* ========================= */
 
+.collabs-partners-card {
+
+    background: white;
+
+    border-radius: 36px;
+
+    padding: 60px;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
 .collabs-partners-header {
 
     text-align: center;
 
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .collabs-partners-title {
 
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 
     font-weight: 300;
 
-    color: #1d1d1d;
+    color: #1f1f1f;
 
-    margin-top: 8px;
+    margin-top: 18px;
 }
+
+/* ========================= */
+/* LOGOS */
+/* ========================= */
 
 .collabs-logos-grid {
 
-    display: grid;
+    display: flex;
 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-    gap: 30px;
+    justify-content: center;
 
     align-items: center;
 }
 
 .collabs-logo-item {
 
-    background: #fff;
-
-    border-radius: 24px;
-
-    padding: 30px;
-
-    min-height: 180px;
-
     display: flex;
+
+    flex-direction: column;
 
     align-items: center;
 
     justify-content: center;
 
-    box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.06);
-
-    transition: .3s ease;
-}
-
-.collabs-logo-item:hover {
-
-    transform: translateY(-4px);
+    gap: 20px;
 }
 
 .collabs-logo {
 
-    width: 100%;
+    width: 220px;
 
-    max-width: 180px;
+    max-width: 100%;
 
     object-fit: contain;
+
+    transition: transform .3s ease;
+}
+
+.collabs-logo:hover {
+
+    transform: scale(1.04);
+}
+
+.collabs-company-name {
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    color: #1f1f1f;
+
+    letter-spacing: .5px;
+
+    margin: 0;
 }
 
 /* ========================= */
@@ -278,67 +288,53 @@
 
     .collabs-section {
 
-        padding: 140px 20px 80px;
+        padding: 140px 18px 90px;
     }
 
     .collabs-heading {
 
-        margin-bottom: 45px;
+        margin-bottom: 60px;
     }
 
     .collabs-title {
 
-        font-size: 2.6rem;
+        font-size: 2.8rem;
 
         line-height: 1.1;
     }
 
     .collabs-subtitle {
 
-        font-size: .92rem;
+        font-size: .96rem;
 
-        line-height: 1.8;
+        line-height: 1.9;
     }
 
     .collabs-card,
     .collabs-partners-card {
 
-        padding: 30px;
+        padding: 34px 24px;
 
-        border-radius: 24px;
+        border-radius: 26px;
     }
 
     .collabs-card-title {
 
-        font-size: 1.9rem;
-    }
-
-    .collabs-text {
-
-        font-size: .93rem;
-
-        line-height: 1.9;
-    }
-
-    .collabs-button {
-
-        width: 100%;
+        font-size: 2rem;
     }
 
     .collabs-partners-title {
 
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
-    .collabs-logos-grid {
+    .collabs-logo {
 
-        grid-template-columns: 1fr;
+        width: 170px;
     }
 
-    .collabs-logo-item {
+    .collabs-company-name {
 
-        min-height: 140px;
-
-        padding: 24px;
+        font-size: 1rem;
     }
 }

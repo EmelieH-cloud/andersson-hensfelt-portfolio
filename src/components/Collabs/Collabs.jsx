@@ -95,6 +95,10 @@ const Collabs = () => {
                 className='collabs-logo'
               />
 
+              <h3 className='collabs-company-name'>
+                Mammasnack
+              </h3>
+
             </div>
 
           </div>

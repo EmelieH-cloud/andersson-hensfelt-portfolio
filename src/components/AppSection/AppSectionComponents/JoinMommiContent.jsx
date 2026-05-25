@@ -37,7 +37,7 @@ const JoinMommiContent = () => {
       <div className="join-buttons">
 
         <a
-          href="https://play.google.com"
+          href="https://play.google.com/store/apps/details?id=com.anderssonhensfelt.mommi1"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -51,7 +51,7 @@ const JoinMommiContent = () => {
         </a>
 
         <a
-          href="https://apps.apple.com"
+          href="https://apps.apple.com/us/app/mommi/id6760843244"
           target="_blank"
           rel="noopener noreferrer"
         >

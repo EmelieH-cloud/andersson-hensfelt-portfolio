@@ -89,13 +89,51 @@ body {
 
     max-width: 720px;
 
-    margin: 0 auto;
+    margin: 0 auto 38px;
 
     font-size: 1.05rem;
 
     line-height: 2;
 
     color: rgba(255, 255, 255, 0.92);
+}
+
+/* ========================= */
+/* DOWNLOAD BUTTONS */
+/* ========================= */
+
+.guide-download-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.guide-store-link {
+
+    transition: transform .25s ease;
+}
+
+.guide-store-link:hover {
+
+    transform: translateY(-3px) scale(1.03);
+}
+
+.guide-store-btn {
+
+    height: 58px;
+
+    width: auto;
+
+    display: block;
+
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
 }
 
 /* ========================= */
@@ -229,6 +267,18 @@ body {
         font-size: .96rem;
 
         line-height: 1.9;
+
+        margin-bottom: 30px;
+    }
+
+    .guide-download-buttons {
+
+        gap: 14px;
+    }
+
+    .guide-store-btn {
+
+        height: 50px;
     }
 
     .guide-video-card {

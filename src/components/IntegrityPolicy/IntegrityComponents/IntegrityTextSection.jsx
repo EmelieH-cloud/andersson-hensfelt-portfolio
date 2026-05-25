@@ -4,19 +4,30 @@ import AppText from "../../Font/AppText";
 function IntegrityTextSection({ id, title, text }) {
 
   return (
-    <section id={id} className="policy-section">
 
-      <AppText as="h2" weight={600}>
+    <section id={id} className="integrity-section">
+
+      <AppText
+        as="h2"
+        weight={600}
+        className="integrity-section-title"
+      >
         {title}
       </AppText>
 
       {text.map((paragraph, index) => (
-        <AppText key={index} className="policy-text">
+
+        <AppText
+          key={index}
+          className="policy-text"
+        >
           {paragraph}
         </AppText>
+
       ))}
 
     </section>
+
   );
 
 }

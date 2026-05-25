@@ -4,24 +4,39 @@ import AppText from "../../Font/AppText";
 function IntegrityTableSection({ id, title, headers, rows }) {
 
   return (
-    <section id={id} className="policy-section">
 
-      <AppText as="h2" weight={600}>
+    <section id={id} className="integrity-section">
+
+      <AppText
+        as="h2"
+        weight={600}
+        className="integrity-section-title"
+      >
         {title}
       </AppText>
 
-      <div className="policy-table-wrapper">
+      <div className="integrity-table-wrapper">
 
-        <table className="policy-table">
+        <table className="integrity-table">
 
           <thead>
+
             <tr>
+
               {headers.map((header, index) => (
+
                 <th key={index}>
-                  <AppText weight={600}>{header}</AppText>
+
+                  <AppText weight={600}>
+                    {header}
+                  </AppText>
+
                 </th>
+
               ))}
+
             </tr>
+
           </thead>
 
           <tbody>
@@ -31,21 +46,27 @@ function IntegrityTableSection({ id, title, headers, rows }) {
               <tr key={index}>
 
                 <td>
+
                   <AppText weight={600}>
                     {row.category}
                   </AppText>
+
                 </td>
 
                 <td>
-                  <AppText className="policy-text">
+
+                  <AppText className="integrity-text">
                     {row.purpose}
                   </AppText>
+
                 </td>
 
                 <td>
-                  <AppText className="policy-text">
+
+                  <AppText className="integrity-text">
                     {row.legalBasis}
                   </AppText>
+
                 </td>
 
               </tr>
@@ -59,6 +80,7 @@ function IntegrityTableSection({ id, title, headers, rows }) {
       </div>
 
     </section>
+
   );
 
 }
