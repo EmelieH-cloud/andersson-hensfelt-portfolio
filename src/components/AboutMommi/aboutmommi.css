@@ -29,7 +29,7 @@
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
     justify-content: space-between;
 
@@ -49,6 +49,8 @@
     justify-content: center;
 
     position: relative;
+
+    padding-top: 30px;
 }
 
 .aboutmommi-image-wrapper::before {
@@ -82,6 +84,8 @@
 
     object-fit: cover;
 
+    object-position: center top;
+
     border-radius: 34px;
 
     opacity: 0;
@@ -92,7 +96,7 @@
 
     transition:
         all 0.9s ease,
-        transform .35s ease;
+        transform 0.35s ease;
 
     box-shadow:
         0 25px 60px rgba(0, 0, 0, 0.22),
@@ -138,7 +142,7 @@
 
     color: white;
 
-    font-size: .72rem;
+    font-size: 0.72rem;
 
     letter-spacing: 2px;
 
@@ -206,9 +210,9 @@
 
     width: 150px;
 
-    opacity: .95;
+    opacity: 0.95;
 
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 .aboutmommi-signature-img:hover {
@@ -224,8 +228,7 @@
 
     .aboutmommi-section {
 
-        padding:
-            140px 20px 90px;
+        padding: 140px 20px 90px;
     }
 
     .aboutmommi-container {
@@ -235,6 +238,8 @@
         gap: 60px;
 
         text-align: center;
+
+        align-items: center;
     }
 
     .aboutmommi-content {
@@ -251,14 +256,19 @@
 
     .aboutmommi-intro {
 
-        font-size: .98rem;
+        font-size: 0.98rem;
     }
 
     .aboutmommi-text {
 
-        font-size: .95rem;
+        font-size: 0.95rem;
 
         line-height: 1.9;
+    }
+
+    .aboutmommi-image-wrapper {
+
+        padding-top: 0;
     }
 
     .aboutmommi-image-wrapper::before {

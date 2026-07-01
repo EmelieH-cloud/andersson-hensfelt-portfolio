@@ -114,22 +114,25 @@
 "otherApps": "Andra appar"
 },
 "aboutMommi": {
-
   "tag": "FOUNDERS OF MOMMI",
 
   "title": "Grundarna bakom mommi",
 
-  "intro": "Hej och välkommen till vår app!",
+  "intro": "Vi som står bakom mommi heter Emelie Hensfelt och Alinia Andersson.",
 
-  "text1": "Vi är Emelie och Alinia – grundarna bakom mommi. Vi skapade appen med en enkel tanke: att det ska vara lättare för mammor att hitta varandra.",
+  "text1": "Efter att ha arbetat som ekonom respektive radioreporter möttes vi av en slump på systemutvecklarutbildningen. Efter att ha gått i samma klass i några veckor upptäckte vi att vi inte bara delade klassrum, utan även innergård. Vi var grannar!",
 
-  "text2": "Idén började när Alinia var gravid. Mitt i alla tankar kring livet som snart skulle förändras dök en fråga upp – varför finns det inget enkelt sätt att hitta andra i samma situation?",
+  "text2": "En vänskap växte fram i takt med en växande förälskelse i programmering. Mitt i detta upptäckte Alinia att hon var gravid. Under graviditeten började hon reflektera över mammaskapet. Hon kände en oro för hur mammalivet skulle bli och vem hon skulle umgås med under mammaledigheten. I samband med detta började hon fundera över hur värdefullt det hade varit om det funnits en plats där gravida och mammalediga mammor kunde hitta varandra, träffas och dela erfarenheter.",
 
-  "text3": "Att bli mamma är fantastiskt – men det kan också kännas ensamt. Vi ville göra det enklare att hitta någon att dela det med.",
+  "text3": "En tidig morgon ringde Alinia till Emelie och sa: “Vi borde göra en app för mammor!” Det blev startskottet för mommi. Under mammaledigheten påbörjades planeringen av appen, och i augusti 2025 skrevs den första raden kod.",
 
-  "text4": "Därför skapade vi mommi – en plats där du kan hitta, prata med och träffa andra mommis.",
+  "text4": "Efter det ägnade vi oräkneliga timmar i Emelies kök åt att utveckla appen. I många månader träffades vi där på kvällar och helger och kämpade för att få ihop mommi. Ibland fanns det tvivel på om vi skulle få ihop appen, men också om någon faktiskt skulle vilja använda den. Motivationen då var hela tiden att skapa en plats som kan bidra till att bryta den ensamhet som många mammor kan känna under olika delar av mammaskapet.",
 
-  "text5": "Vi hoppas att du gillar appen!"
+  "text5": "Under våren 2026 släpptes mommi på App Store och Google Play – en app som vänder sig till mammor i alla faser av livet. I appen kan man bland annat filtrera på mammaledig, ensamstående, regnbågsfamilj, har barn med särskilda behov eller har barn i en viss ålder. Tanken är att göra det enklare för mammor att hitta andra mammor i liknande situationer.",
+
+  "text6": "Idag har mommi användare från hela landet – från Kalix till Trelleborg. Mammor som hittar varandra, blir mommivänner och får dela alla de fantastiska, fina stunder som mammalivet innebär, men också de perioder som kan kännas ensamma och tuffa.",
+
+  "text7": "Vi är så glada över att så många har hittat till mommi. Tack."
 },
 "guide": {
 

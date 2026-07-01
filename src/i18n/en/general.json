@@ -114,22 +114,25 @@
 "otherApps": "Other apps"
 },
 "aboutMommi": {
-
   "tag": "FOUNDERS OF MOMMI",
 
   "title": "The founders behind mommi",
 
-  "intro": "Hi and welcome to our app!",
+  "intro": "The people behind mommi are Emelie Hensfelt and Alinia Andersson.",
 
-  "text1": "We are Emelie and Alinia – the founders behind mommi. We created the app with one simple idea: to make it easier for mothers to find each other.",
+  "text1": "After working as an economist and a radio reporter respectively, we met by chance during our software development studies. After just a few weeks in the same class, we discovered that we not only shared a classroom — we also shared a courtyard. We were neighbors!",
 
-  "text2": "The idea started when Alinia was pregnant. In the middle of all the thoughts about life soon changing, a question appeared – why is there no simple way to find others in the same situation?",
+  "text2": "A friendship grew alongside a growing love for programming. In the middle of all this, Alinia found out she was pregnant. During her pregnancy, she began reflecting on motherhood. She felt worried about what life as a mom would be like and who she would spend time with during maternity leave. At the same time, she started thinking about how valuable it would have been if there had been a place where pregnant women and mothers on maternity leave could find each other, meet, and share experiences.",
 
-  "text3": "Becoming a mother is amazing – but it can also feel lonely. We wanted to make it easier to find someone to share it with.",
+  "text3": "One early morning, Alinia called Emelie and said: “We should create an app for moms!” That became the starting point for mommi. During maternity leave, the planning of the app began, and in August 2025, the very first line of code was written.",
 
-  "text4": "That is why we created mommi – a place where you can find, talk to, and meet other mommis.",
+  "text4": "After that, we spent countless hours in Emelie’s kitchen developing the app. For many months, we met there during evenings and weekends, working hard to bring mommi to life. At times, we doubted whether we would actually manage to finish the app — and whether anyone would even want to use it. What kept motivating us was the desire to create a place that could help break the loneliness many mothers experience during different stages of motherhood.",
 
-  "text5": "We hope you enjoy the app!"
+  "text5": "In spring 2026, mommi was launched on the App Store and Google Play — an app for mothers in every stage of life. In the app, you can filter by maternity leave, single motherhood, rainbow families, children with special needs, or children of a certain age. The idea is to make it easier for mothers to find others in similar situations.",
+
+  "text6": "Today, mommi has users from all across Sweden — from Kalix to Trelleborg. Mothers who find each other, become mommi friends, and get to share all the amazing and beautiful moments motherhood brings, but also the periods that can feel lonely and difficult.",
+
+  "text7": "We are so happy that so many people have found mommi. Thank you."
 },
 "guide": {
 
