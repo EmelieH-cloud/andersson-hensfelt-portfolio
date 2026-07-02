@@ -4,8 +4,8 @@
 
     background: linear-gradient(to bottom,
             #e6d7dd 0%,
-            #e5c4d3 35%,
-            #ffffff 75%);
+            #f4e5e7 35%,
+            #f0cbd3 75%);
 }
 
 .app-features-container {
@@ -47,7 +47,7 @@
 /* CARD */
 
 .feature-card {
-    background: linear-gradient(135deg, #f8edef, #ffffff);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     padding: 28px 24px;
     border-radius: 18px;
 

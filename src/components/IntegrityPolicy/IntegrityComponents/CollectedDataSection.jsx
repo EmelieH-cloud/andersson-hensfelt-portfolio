@@ -6,34 +6,54 @@ function CollectedDataSection({ title, items, type = "number" }) {
   const listType = type === "letters" ? "a" : undefined;
 
   return (
-    <div className="policy-subsection">
 
-      <AppText as="h3" weight={600} className="policy-subtitle">
+    <div className="integrity-subsection">
+
+      <AppText
+        as="h3"
+        weight={600}
+        className="integrity-subtitle"
+      >
         {title}
       </AppText>
 
-      <ol type={listType} className="policy-letter-list">
+      <ol
+        type={listType}
+        className="integrity-letter-list"
+      >
 
         {items.map((item, index) => (
-          <li key={index} className="policy-item">
+
+          <li
+            key={index}
+            className="integrity-item"
+          >
 
             <AppText weight={600}>
               {item.title}
             </AppText>
 
             {item.text.map((paragraph, i) => (
-              <AppText key={i} className="policy-text">
+
+              <AppText
+                key={i}
+                className="integrity-text"
+              >
                 {paragraph}
               </AppText>
+
             ))}
 
           </li>
+
         ))}
 
       </ol>
 
     </div>
+
   );
+
 }
 
 CollectedDataSection.propTypes = {

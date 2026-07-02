@@ -5,37 +5,48 @@ function UserRightsSection({ id, data }) {
 
   return (
 
-    <section id={id} className="policy-section">
+    <section id={id} className="integrity-section">
 
-      {/* TITLE */}
-
-      <AppText as="h2" weight={600}>
+      <AppText
+        as="h2"
+        weight={600}
+        className="integrity-section-title"
+      >
         {data.title}
       </AppText>
 
-      {/* INTRO */}
-
       {data.intro.map((paragraph, index) => (
 
-        <AppText key={index} className="policy-text">
+        <AppText
+          key={index}
+          className="integrity-text"
+        >
           {paragraph}
         </AppText>
 
       ))}
 
-      {/* RIGHTS */}
-
       {data.rights.map((right, index) => (
 
-        <div key={index} className="policy-subsection">
+        <div
+          key={index}
+          className="integrity-subsection"
+        >
 
-          <AppText as="h3" weight={600} className="policy-subtitle">
+          <AppText
+            as="h3"
+            weight={600}
+            className="integrity-subtitle"
+          >
             {right.title}
           </AppText>
 
           {right.text.map((paragraph, i) => (
 
-            <AppText key={i} className="policy-text">
+            <AppText
+              key={i}
+              className="integrity-text"
+            >
               {paragraph}
             </AppText>
 
@@ -45,17 +56,22 @@ function UserRightsSection({ id, data }) {
 
       ))}
 
-      {/* WITHDRAW CONSENT */}
+      <div className="integrity-subsection">
 
-      <div className="policy-subsection">
-
-        <AppText as="h3" weight={600} className="policy-subtitle">
+        <AppText
+          as="h3"
+          weight={600}
+          className="integrity-subtitle"
+        >
           {data.withdrawConsent.title}
         </AppText>
 
         {data.withdrawConsent.text.map((paragraph, index) => (
 
-          <AppText key={index} className="policy-text">
+          <AppText
+            key={index}
+            className="integrity-text"
+          >
             {paragraph}
           </AppText>
 

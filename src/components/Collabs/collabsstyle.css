@@ -1,0 +1,340 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.collabs-section {
+
+    padding: 180px 24px 120px;
+
+    background:
+        linear-gradient(180deg,
+            #f8f3f4 0%,
+            #ffffff 100%);
+
+    min-height: 100vh;
+
+    font-family: "Raleway", sans-serif;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.collabs-container {
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.collabs-heading {
+
+    text-align: center;
+
+    margin-bottom: 90px;
+}
+
+.collabs-tag {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(200, 116, 132, 0.1);
+
+    color: #c87484;
+
+    font-size: .72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 24px;
+}
+
+.collabs-title {
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    color: #1f1f1f;
+
+    margin-bottom: 24px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.collabs-subtitle {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+
+    line-height: 2;
+
+    color: #5f5f5f;
+}
+
+/* ========================= */
+/* MAIN CARD */
+/* ========================= */
+
+.collabs-card {
+
+    background: white;
+
+    border-radius: 36px;
+
+    padding: 70px;
+
+    margin-bottom: 60px;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.collabs-card-content {
+
+    max-width: 760px;
+}
+
+.collabs-small-tag {
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    background: rgba(200, 116, 132, 0.1);
+
+    color: #c87484;
+
+    font-size: .72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.collabs-card-title {
+
+    font-size: 2.8rem;
+
+    font-weight: 300;
+
+    line-height: 1.1;
+
+    margin-bottom: 28px;
+
+    color: #1f1f1f;
+}
+
+.collabs-text {
+
+    font-size: 1rem;
+
+    line-height: 2;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.collabs-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 20px;
+
+    padding: 16px 30px;
+
+    border-radius: 999px;
+
+    background: #c87484;
+
+    color: white;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+.collabs-button:hover {
+
+    background: #b86474;
+
+    transform: translateY(-2px);
+}
+
+/* ========================= */
+/* PARTNERS */
+/* ========================= */
+
+.collabs-partners-card {
+
+    background: white;
+
+    border-radius: 36px;
+
+    padding: 60px;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.collabs-partners-header {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.collabs-partners-title {
+
+    font-size: 2.5rem;
+
+    font-weight: 300;
+
+    color: #1f1f1f;
+
+    margin-top: 18px;
+}
+
+/* ========================= */
+/* LOGOS */
+/* ========================= */
+
+.collabs-logos-grid {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.collabs-logo-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.collabs-logo {
+
+    width: 220px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    transition: transform .3s ease;
+}
+
+.collabs-logo:hover {
+
+    transform: scale(1.04);
+}
+
+.collabs-company-name {
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    color: #1f1f1f;
+
+    letter-spacing: .5px;
+
+    margin: 0;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .collabs-section {
+
+        padding: 140px 18px 90px;
+    }
+
+    .collabs-heading {
+
+        margin-bottom: 60px;
+    }
+
+    .collabs-title {
+
+        font-size: 2.8rem;
+
+        line-height: 1.1;
+    }
+
+    .collabs-subtitle {
+
+        font-size: .96rem;
+
+        line-height: 1.9;
+    }
+
+    .collabs-card,
+    .collabs-partners-card {
+
+        padding: 34px 24px;
+
+        border-radius: 26px;
+    }
+
+    .collabs-card-title {
+
+        font-size: 2rem;
+    }
+
+    .collabs-partners-title {
+
+        font-size: 2rem;
+    }
+
+    .collabs-logo {
+
+        width: 170px;
+    }
+
+    .collabs-company-name {
+
+        font-size: 1rem;
+    }
+}

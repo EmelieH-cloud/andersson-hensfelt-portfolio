@@ -1,0 +1,533 @@
+{
+  "introductionSection": {
+    "title": "Integritetspolicy",
+    "text": [
+      "Välkommen till mommis integritetspolicy! Vi på Andersson & Hensfelt HB som har utvecklat appen mommi värnar om din integritet enligt dataskyddsförordningen (GDPR).",
+
+      "I denna integritetspolicy förklarar vi vilka personuppgifter vi samlar in, hur vi använder dem och hur vi skyddar dem när du använder vår app och våra tjänster. Policyn beskriver också vilka rättigheter du har när det gäller dina personuppgifter och hur du kan kontakta oss om du har frågor.",
+
+      "Genom att använda appen mommi godkänner du att dina personuppgifter behandlas i enlighet med denna integritetspolicy."
+    ],
+    "date": "2026-03-01"
+  },
+
+  "definitionClauseSection": {
+    "title": "Definitioner",
+    "text": [
+      "I denna integritetspolicy avser \"mommi\", \"appen\" eller \"tjänsten\" mobilapplikationen mommi som tillhandahålls av Andersson & Hensfelt Handelsbolag.",
+
+      "När vi använder \"vi\", \"oss\" eller \"vår\" syftar detta på Andersson & Hensfelt Handelsbolag.",
+
+      "När vi använder \"du\", \"din\" eller \"användare\" syftar detta på den person som använder appen mommi."
+    ]
+  },
+
+  "whoAreWeSection": {
+    "title": "Vilka är vi?",
+    "text": [
+      "Företaget bakom applikationen mommi är Andersson & Hensfelt Handelsbolag (orgnr 969801-6434).",
+
+      "Andersson & Hensfelt Handelsbolag är personuppgiftsansvariga för behandlingen av personuppgifter som sker i samband med användning av mobilapplikationen mommi."
+    ]
+  },
+
+  "contactSection": {
+    "title": "Kontaktuppgifter",
+    "text": [
+      "Har du frågor eller funderingar som berör vår hantering av personuppgifter är du välkommen att kontakta oss.",
+
+      "Andersson & Hensfelt Handelsbolag",
+
+      "Organisationsnummer: 969801-6434",
+
+      "Trollebergsvägen 24D 222 30 Lund",
+
+      "E-post: info@anderssonhensfelt.se"
+    ]
+  },
+
+  "appliesToSection": {
+    "title": "Där denna integritetspolicy gäller",
+    "text": [
+      "Denna integritetspolicy gäller för mobilapplikationen mommi samt för de tjänster som tillhandahålls genom appen."
+    ]
+  },
+
+  "howDataIsCollectedSection": {
+    "title": "Hur vi samlar in personuppgifter",
+    "text": [
+      "Personuppgifter samlas in på tre olika sätt genom appen:",
+
+      "1) Personuppgifter som du själv lämnar till oss",
+
+      "2) Personuppgifter som samlas in automatiskt när du använder appen",
+
+      "3) Personuppgifter som samlas in med ditt samtycke"
+    ]
+  },
+
+  "whyAndHowSection": {
+    "title": "Varför och hur använder vi dina personuppgifter",
+    "text": [
+      "Den främsta anledningen till att vi behandlar dina personuppgifter är att kunna tillhandahålla och driva appen mommi. Det innebär bland annat att göra det möjligt för dig att skapa en profil, komma i kontakt med andra användare, delta i aktiviteter och använda appens funktioner.",
+
+      "Vi använder också uppgifter för att skapa en trygg och säker miljö för alla användare. Detta inkluderar arbete med att förebygga missbruk, hantera rapporter och moderera innehåll när det behövs.",
+
+      "Vårt mål är att behandla personuppgifter endast i den utsträckning som krävs för att appen ska fungera, förbättras och upplevas som säker och relevant för dig som användare."
+    ]
+  },
+
+  "howIsSharedSection": {
+    "title": "Hur vi delar personuppgifter",
+    "text": [
+      "För att mommi ska fungera som en social mötesplats är viss information du väljer att dela synlig för andra användare i appen.",
+
+      "Vi kan också dela uppgifter med leverantörer som hjälper oss att driva tjänsten samt när det krävs enligt lag eller för att upprätthålla säkerheten i appen."
+    ]
+  },
+
+  "dataRetentionSection": {
+    "title": "Hur länge vi lagrar dina uppgifter",
+    "text": [
+      "Vi behåller endast personuppgifter så länge det är nödvändigt för att tillhandahålla tjänsten.",
+
+      "När ett konto eller innehåll raderas kan vissa uppgifter sparas i upp till en månad av säkerhets- och modereringsskäl innan de raderas permanent.",
+
+      "I vissa fall, till exempel om en användare stängs av från appen på grund av överträdelser av våra regler, kan vissa uppgifter behöva sparas under en längre tid för att förhindra att användaren fortsätter använda appen."
+    ]
+  },
+
+  "childrenPrivacySection": {
+    "title": "Barns integritet",
+    "text": [
+      "Vår app riktar sig till dig som är 18 år eller äldre.",
+
+      "Om vi får kännedom om att vi har samlat in personuppgifter från en person under 18 år kommer vi att vidta åtgärder för att radera dessa uppgifter så snart som möjligt.",
+
+      "Om du misstänker att en användare är under 18 år ber vi dig att använda rapporteringsfunktionen i appen.",
+
+      "Appen riktar sig till föräldrar, och användare kan därför välja att dela bilder eller information som rör sina barn.",
+
+      "Vi uppmanar användare att endast dela innehåll som de har rätt att dela och att visa hänsyn till barns integritet vid publicering av bilder och information."
+    ]
+  },
+
+  "thirdCountryTransfersSection": {
+    "title": "Tredje land",
+    "text": [
+      "Vi använder tredjepartstjänster, exempelvis Supabase (databaslagring) eller Ably (realtidskommunikation), som innebär att personuppgifter behandlas av tjänsteleverantörer utanför EU/EES.",
+
+      "Detta kan förekomma när vi använder externa tjänster för appens funktioner såsom karttjänster och chattkommunikation.",
+
+      "I sådana fall säkerställer vi att överföringen sker i enlighet med gällande dataskyddslagstiftning.",
+
+      "När personuppgifter överförs till ett land utanför EU/EES använder vi lämpliga skyddsåtgärder, såsom EU-kommissionens standardavtalsklausuler eller andra mekanismer som godkänts enligt GDPR, för att säkerställa en adekvat skyddsnivå."
+    ]
+  },
+
+  "thirdPartyLoginSection": {
+    "title": "Inloggning via tredje part",
+    "text": [
+      "Du kan välja att skapa ett konto eller logga in i appen via en tredjepartstjänst (Facebook, Apple eller Google).",
+
+      "Om du väljer att logga in via en sådan tjänst kan vi få tillgång till vissa kontouppgifter från den tjänsten, såsom ditt namn och e-postadress kopplat till ditt konto hos tredjepartstjänsten.",
+
+      "Vi använder dessa uppgifter för att skapa och administrera ditt konto i appen mommi samt för att göra det möjligt för dig att logga in på ett säkert sätt."
+    ]
+  },
+
+  "securitySection": {
+    "title": "Säkerhet",
+    "text": [
+      "Vi vill att du ska känna dig trygg när vi behandlar dina personuppgifter.",
+
+      "Därför använder vi både tekniska och organisatoriska säkerhetsåtgärder för att skydda uppgifterna mot obehörig åtkomst, ändring, förlust eller spridning.",
+
+      "Exempel på sådana åtgärder är åtkomstbegränsningar, krypterad kommunikation och interna säkerhetskontroller.",
+
+      "Om en personuppgiftsincident skulle inträffa som kan påverka dig eller dina personuppgifter kommer vi att vidta lämpliga åtgärder för att hantera situationen.",
+
+      "Om det finns en risk för att incidenten kan få konsekvenser för dig kommer vi att informera dig och, när det krävs enligt lag, även rapportera händelsen till relevant tillsynsmyndighet."
+    ]
+  },
+
+  "automatedDecisionSection": {
+    "title": "Automatiserat beslutsfattande",
+    "text": [
+      "Vi använder inte automatiserat beslutsfattande som har rättsliga eller liknande betydande konsekvenser för dig."
+    ]
+  },
+
+  "policyChangesSection": {
+    "title": "Ändringar av integritetspolicy",
+    "text": [
+      "Denna integritetspolicy kan komma att uppdateras.",
+
+      "Om vi gör ändringar kommer den uppdaterade versionen att publiceras här på vår hemsida och i appen.",
+
+      "Vi rekommenderar att du regelbundet granskar denna policy för att hålla dig informerad om hur vi behandlar personuppgifter."
+    ]
+  },
+  "userProvidedData": [
+    {
+      "title": "Kontouppgifter",
+      "text": [
+        "e-postadress och autentiseringsuppgifter."
+      ]
+    },
+
+    {
+      "title": "Profilinformation",
+      "text": [
+        "När du fyller i din profil anger du information som namn, profilbild och stad.",
+        "Vissa uppgifter är obligatoriska för att använda appen medan andra är frivilliga.",
+        "Till exempel är det frivilligt att ange dina barns åldersintervall eller din information om din livssituation."
+      ]
+    },
+
+    {
+      "title": "Innehåll som du publicerar i appen",
+      "text": [
+        "Såsom inlägg, kommentarer, bilder eller meddelanden till andra användare.",
+        "Vi behandlar innehållet i meddelanden som skickas via appens chattfunktion.",
+        "Detta inkluderar text, bilder eller annan information som du delar i privata konversationer.",
+        "Denna behandling är nödvändig för att möjliggöra kommunikation mellan användare och upprätthålla säkerheten i tjänsten."
+      ]
+    },
+
+    {
+      "title": "Deltagande i träffar",
+      "text": [
+        "Information kopplad till träffar du skapar eller deltar i, till exempel deltagarstatus och geografisk plats för träffen."
+      ]
+    },
+
+    {
+      "title": "Deltagande i grupper",
+      "text": [
+        "Information kopplad till grupper du skapar eller är med i."
+      ]
+    },
+    {
+      "title": "Kundsupportdata",
+      "text": [
+        "Information du lämnar när du kontaktar supporten eller rapporterar andra användare eller innehåll."
+      ]
+    }
+  ],
+"automaticCollectedData": [
+  {
+    "title": "Användningsdata",
+    "text": [
+      "Information om hur du använder appen, till exempel när du senast var aktiv och vilka funktioner du använder.",
+      "Vi behandlar även information om relationer mellan användare i appen, till exempel om en vänförfrågan har skickats, accepterats eller avböjts.",
+      "Detta innefattar även om du blockerat en annan användare.",
+      "Denna information används för att hantera funktioner kopplade till kontakter i appen och är endast synlig för dig."
+    ]
+  },
+  {
+    "title": "Teknisk data",
+    "text": [
+      "Information om den enhet du använder för att komma åt appen, till exempel IP-adress, enhetstyp, operativsystem och vilken version av appen du använder."
+    ]
+  }
+],
+"legalMotivationTable": {
+  "headers": [
+    "Kategorier som behandlas",
+    "Syfte",
+    "Rättslig grund"
+  ],
+
+  "rows": [
+    {
+      "category": "Kontouppgifter",
+      "purpose":
+        "Detta används för att säkerställa att du kan logga in på ditt konto på ett säkert sätt och skydda ditt konto från obehörig åtkomst.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Profilinformation",
+      "purpose":
+        "Samlas in för att du ska kunna skapa och använda ett konto i appen. Används även för att andra användare ska kunna hitta dig samt möjliggöra filtrering av andra medlemmar i appen.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Innehåll som du publicerar i appen",
+      "purpose":
+        "Dessa uppgifter behandlas för att möjliggöra och upprätthålla funktioner i appen såsom mommiTräff, mommiGrupp och chattfunktionalitet. Syftet är att göra det möjligt för användare att interagera med varandra.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Deltagande i träffar",
+      "purpose":
+        "Dessa uppgifter behandlas för att möjliggöra och upprätthålla funktioner i appen såsom mommiTräff, mommiGrupp och chattfunktionalitet. Syftet är att göra det möjligt för användare att interagera med varandra.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Deltagande i grupper",
+      "purpose":
+        "Dessa uppgifter behandlas för att möjliggöra och upprätthålla funktioner i appen såsom mommiTräff, mommiGrupp och chattfunktionalitet. Syftet är att göra det möjligt för användare att interagera med varandra.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Platsinformation",
+      "purpose":
+        "För att möjliggöra platsbaserade funktioner i appen såsom att visa träffar, grupper och användare i närheten.",
+      "legalBasis": "Samtycke"
+    },
+
+    {
+      "category": "Bilder från enheten",
+      "purpose":
+        "För att du ska kunna välja och ladda upp bilder till din profil samt dela bilder i appens funktioner.",
+      "legalBasis": "Samtycke"
+    },
+
+    {
+      "category": "Push-notiser",
+      "purpose":
+        "För att kunna skicka notiser om aktivitet i appen, exempelvis meddelanden, interaktioner eller uppdateringar som berör ditt konto.",
+      "legalBasis": "Samtycke"
+    },
+
+    {
+      "category": "Teknisk data",
+      "purpose":
+        "För att appen ska kunna fungera tekniskt, kommunicera med våra system samt möjliggöra felsökning, drift och säkerhet.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Användningsdata",
+      "purpose":
+        "För att visa andra användare när du har varit aktiv i appen samt behandla information kopplad till din vänstatus med andra användare för att främja social interaktion.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    },
+
+    {
+      "category": "Kundsupportdata",
+      "purpose":
+        "För att kunna besvara frågor, utreda rapporter om användare eller innehåll samt upprätthålla säkerheten i tjänsten.",
+      "legalBasis":
+        "Fullföljande av avtal (för att tillhandahålla appens funktioner)."
+    }
+  ]
+},
+"consentCollectedData": [
+  {
+    "title": "Platsinformation",
+    "text": [
+      "Om du ger tillstånd samlar vi in geografisk platsinformation för din plats med begränsad precision."
+    ]
+  },
+
+  {
+    "title": "Bilder från enheten",
+    "text": [
+      "Om du väljer att ladda upp bilder från din enhet godkänner du att appen får tillgång till ditt kamerabibliotek."
+    ]
+  },
+
+  {
+    "title": "Push-notiser",
+    "text": [
+      "Om du väljer att godkänna push-notiser behandlar vi uppgifter som krävs för att skicka notiser till din enhet."
+    ]
+  }
+],
+"howDataIsSharedTable": {
+  "headers": [
+    "Mottagare",
+    "Skäl till att dela",
+    "Kategorier av personuppgifter"
+  ],
+
+  "rows": [
+    {
+      "category": "Övriga medlemmar",
+
+      "purpose":
+        "Du delar information med andra användare till exempel genom din profil, inlägg, kommentarer eller deltagande i grupper och träffar. Om någon rapporterar innehåll eller beteende som rör dig kan vi, i förekommande fall, informera den som gjort rapporten om att åtgärder har vidtagits med anledning av rapporten. Detsamma gäller om du själv rapporterar en annan användare eller innehåll i tjänsten. Vi delar inte din exakta geografiska plats med andra användare. Platsinformation används istället för att möjliggöra funktioner som att visa användare, grupper och träffar i närheten.",
+
+      "legalBasis":
+        "Profilinformation, innehåll som du publicerar i appen, deltagande i träffar, deltagande i grupper samt användningsdata."
+    },
+
+    {
+      "category": "Tjänsteleverantörer",
+
+      "purpose":
+        "Vi använder externa tjänster för att tillhandahålla appens funktioner, till exempel datalagring, autentisering och realtidskommunikation. Exempel på sådana tjänster är Supabase och Ably.",
+
+      "legalBasis":
+        "Personuppgifter som krävs för att leverera och driva appens funktioner."
+    },
+
+    {
+      "category": "Brottsbekämpande myndigheter",
+
+      "purpose":
+        "Vi kan komma att lämna ut personuppgifter till brottsbekämpande myndigheter eller andra offentliga myndigheter om vi är skyldiga att göra det enligt lag eller efter ett giltigt myndighetsbeslut.",
+
+      "legalBasis":
+        "Personuppgifter som krävs enligt lag eller myndighetsbeslut."
+    }
+  ]
+},
+"userRightsSection": {
+
+  "title": "Dina rättigheter",
+
+  "intro": [
+    "Om du vill utöva några av dina rättigheter kan du kontakta oss på info@anderssonhensfelt.se."
+  ],
+
+  "rights": [
+
+    {
+      "title": "Rätt till insyn i egna uppgifter",
+      "text": [
+        "Du kan begära en kopia av alla uppgifter vi behandlar om dig. Kontakta e-postadressen ovan för att utnyttja din insynsrätt."
+      ]
+    },
+
+    {
+      "title": "Rätt till rättelse av personuppgifter",
+      "text": [
+        "Du har rätt att begära att vi rättar eller kompletterar uppgifter som är felaktiga eller vilseledande.",
+        "Profilinformationen kan du även själv redigera från din profilsida."
+      ]
+    },
+
+    {
+      "title": "Rätt till radering av personuppgifter",
+      "text": [
+        "Du har rätt att få dina personuppgifter raderade utan onödigt dröjsmål.",
+        "Du kan när som helst begära att vi raderar uppgifter om dig.",
+        "Du kan själv radera ditt konto via inställningarna i appen.",
+        "Vid radering av ditt konto tas dina personuppgifter bort, inklusive profilinformation och kopplingar till ditt konto.",
+        "Inlägg och kommenterarer som du har skapat kan komma att behållas, men anonymiseras så att de inte längre kan kopplas till dig.",
+        "Meddelanden i chattar raderas från ditt konto, men kan fortfarande vara synliga för andra deltagare i samma konversation.",
+        "Det kan ta upp till två veckor innan dina uppgifter är fullständigt raderade från våra system eftersom vi under en begränsad tid behöver kunna hantera och utreda eventuella modereringsärenden.",
+        "Om du önskar att dina uppgifter raderas omedelbart kan du kontakta oss via e-postadressen info@anderssonhensfelt.se"
+      ]
+    },
+
+    {
+      "title": "Begränsning av behandling av personuppgifter",
+      "text": [
+        "I vissa situationer kan du begära att vi begränsar behandlingen av uppgifter om dig.",
+        "Du gör detta genom att administrera samtycken eller reservationer i våra lösningar."
+      ]
+    },
+
+    {
+      "title": "Protestera mot behandling av personuppgifter",
+      "text": [
+        "Om vi behandlar uppgifter om dig med stöd av en intresseavvägning har du rätt att protestera mot behandlingen.",
+        "Du gör detta genom att administrera samtycken eller reservationer i våra lösningar."
+      ]
+    },
+
+    {
+      "title": "Dataportabilitet",
+      "text": [
+        "Du har rätt att få ut dina personuppgifter i ett strukturerat, allmänt använt och maskinläsbart format.",
+        "Kontakta e-postadressen ovan för att få ut dina personuppgifter."
+      ]
+    },
+
+    {
+      "title": "Du kan klaga på vår behandling av personuppgifter",
+      "text": [
+        "Om du anser att vi behandlar dina personuppgifter i strid med gällande dataskyddslagstiftning har du rätt att lämna in ett klagomål till Integritetsskyddsmyndigheten (IMY), som är tillsynsmyndighet i Sverige."
+      ]
+    }
+
+  ],
+
+  "withdrawConsent": {
+
+    "title": "Rätt att återkalla samtycke",
+
+    "text": [
+      "Om behandlingen av dina personuppgifter baseras på ditt samtycke har du rätt att när som helst återkalla detta samtycke.",
+
+      "Du kan till exempel återkalla samtycke genom att stänga av behörigheter i dina enhetsinställningar (till exempel platsåtkomst eller push-notiser).",
+
+      "Du kan även kontakta oss via e-post.",
+
+      "Observera att vissa funktioner i appen kan sluta fungera eller bli begränsade om du återkallar samtycke som krävs för att dessa funktioner ska fungera."
+    ]
+
+  }
+
+},
+"toc": {
+  "title": "Innehåll",
+  "definitions": "Definitioner",
+  "whoWeAre": "Vilka är vi",
+  "contact": "Kontaktuppgifter",
+  "applies": "Där policyn gäller",
+  "collection": "Hur vi samlar in uppgifter",
+  "usage": "Varför vi använder uppgifter",
+  "legalBasis": "Hur vi behandlar personuppgifter",
+  "sharingText": "Hur vi delar uppgifter",
+  "sharingTable": "Mottagare av uppgifter",
+  "rights": "Dina rättigheter",
+  "storage": "Hur länge vi lagrar uppgifter",
+  "children": "Barns integritet",
+  "transfers": "Tredje land",
+  "thirdParty": "Inloggning via tredje part",
+  "security": "Säkerhet",
+  "automated": "Automatiserat beslutsfattande",
+  "changes": "Ändringar av policyn"
+},
+"childSafety": {
+  "title": "Barns säkerhet och skydd av minderåriga",
+
+  "text1":
+    "På mommi är säkerheten för våra användare av högsta prioritet. Vi arbetar aktivt för att skapa en trygg och respektfull miljö för alla som använder tjänsten.",
+
+  "text2":
+    "I enlighet med Google Plays riktlinjer för barnsäkerhet har vi etablerat tydliga policyer och rutiner för att förebygga och hantera risker kopplade till minderåriga samt säkerställa efterlevnad av gällande lagstiftning.",
+
+  "text3":
+    "Du kan läsa mer om detta i vår",
+
+  "link":
+    "policy för barnsäkerhet (Child Safety Standards)"
+},
+"sectionTitles": {
+  "providedData":
+    "1. Personuppgifter du själv lämnar till oss",
+
+  "automaticData":
+    "2. Personuppgifter som samlas in automatiskt",
+
+  "consentData":
+    "3. Personuppgifter som samlas in med ditt samtycke",
+
+  "legalBasis":
+    "Hur vi behandlar personuppgifter",
+
+  "sharingRecipients":
+    "Mottagare av personuppgifter",
+
+  "effectiveDate":
+    "Effektivt datum:"
+}
+}

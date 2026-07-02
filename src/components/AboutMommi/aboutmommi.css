@@ -3,58 +3,37 @@
 /* ========================= */
 
 .aboutmommi-section {
-    background: linear-gradient(180deg, #d19fa9 0%, #c87484 100%);
-    padding: 120px 32px 100px;
-    /* 🔥 mindre */
+
+    min-height: 100vh;
+
+    padding: 180px 32px 120px;
+
+    background: linear-gradient(180deg,
+            #d19fa9 0%,
+            #c87484 100%);
+
+    font-family: "Raleway", sans-serif;
+
+    overflow: hidden;
 }
 
 /* ========================= */
-/* DESKTOP LAYOUT */
+/* CONTAINER */
 /* ========================= */
 
 .aboutmommi-container {
-    max-width: 1100px;
-    /* 🔥 lite mindre */
+
+    max-width: 1180px;
+
     margin: 0 auto;
 
     display: flex;
+
     align-items: flex-start;
+
     justify-content: space-between;
-    gap: 60px;
-    /* 🔥 mindre gap */
-}
 
-/* ========================= */
-/* TEXT */
-/* ========================= */
-
-.aboutmommi-content {
-    flex: 1;
-    max-width: 480px;
-    /* 🔥 mindre textblock */
-}
-
-.aboutmommi-title {
-    font-size: 2.6rem;
-    /* 🔥 mindre */
-    line-height: 1.1;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.aboutmommi-intro {
-    font-size: 1rem;
-    /* 🔥 mindre */
-    margin-bottom: 18px;
-    color: white;
-}
-
-.aboutmommi-text {
-    font-size: 0.95rem;
-    /* 🔥 mindre */
-    line-height: 1.7;
-    margin-bottom: 16px;
-    color: white;
+    gap: 90px;
 }
 
 /* ========================= */
@@ -62,38 +41,151 @@
 /* ========================= */
 
 .aboutmommi-image-wrapper {
+
     flex: 1;
+
     display: flex;
+
     justify-content: center;
-    margin-top: 10px;
+
+    position: relative;
+
+    padding-top: 30px;
+}
+
+.aboutmommi-image-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    filter: blur(70px);
+
+    z-index: 0;
 }
 
 .aboutmommi-image {
-    width: 480px;
-    /* 🔥 mindre */
-    height: 420px;
-    border-radius: 20%;
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 500px;
+
+    height: 600px;
+
     object-fit: cover;
 
+    object-position: center top;
+
+    border-radius: 34px;
+
     opacity: 0;
+
     transform: scale(1.08);
+
     filter: blur(12px);
 
-    transition: all 0.8s ease;
+    transition:
+        all 0.9s ease,
+        transform 0.35s ease;
 
     box-shadow:
-        0 40px 100px rgba(0, 0, 0, 0.25),
-        0 10px 30px rgba(0, 0, 0, 0.15);
+        0 25px 60px rgba(0, 0, 0, 0.22),
+        0 10px 25px rgba(0, 0, 0, 0.14);
 }
 
 .aboutmommi-image.loaded {
+
     opacity: 1;
+
     transform: scale(1);
+
     filter: blur(0);
 }
 
 .aboutmommi-image:hover {
-    transform: scale(1.03);
+
+    transform: scale(1.02);
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.aboutmommi-content {
+
+    flex: 1;
+
+    max-width: 520px;
+}
+
+.aboutmommi-tag {
+
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.16);
+
+    color: white;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+}
+
+.aboutmommi-title {
+
+    font-size: 4rem;
+
+    line-height: 1;
+
+    margin-bottom: 28px;
+
+    color: white;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+.aboutmommi-intro {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 24px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    line-height: 1.8;
+}
+
+.aboutmommi-text {
+
+    font-size: 1rem;
+
+    line-height: 2;
+
+    margin-bottom: 22px;
+
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* ========================= */
@@ -101,21 +193,30 @@
 /* ========================= */
 
 .aboutmommi-signature-area {
-    margin-top: 30px;
+
+    margin-top: 40px;
 }
 
 .aboutmommi-signatures {
+
     display: flex;
-    gap: 20px;
+
+    align-items: center;
+
+    gap: 28px;
 }
 
 .aboutmommi-signature-img {
-    width: 140px;
-    /* 🔥 mindre */
+
+    width: 150px;
+
+    opacity: 0.95;
+
     transition: transform 0.3s ease;
 }
 
 .aboutmommi-signature-img:hover {
+
     transform: scale(1.05);
 }
 
@@ -123,29 +224,84 @@
 /* MOBILE */
 /* ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+
     .aboutmommi-section {
-        padding: 100px 16px 70px;
+
+        padding: 140px 20px 90px;
     }
 
     .aboutmommi-container {
+
         flex-direction: column;
-        gap: 40px;
-        align-items: center;
+
+        gap: 60px;
+
         text-align: center;
+
+        align-items: center;
     }
 
-    .aboutmommi-image {
-        width: min(300px, 100%);
-        height: auto;
-        aspect-ratio: 1 / 1;
+    .aboutmommi-content {
+
+        max-width: 100%;
     }
 
     .aboutmommi-title {
-        font-size: 2rem;
+
+        font-size: 2.7rem;
+
+        line-height: 1.1;
+    }
+
+    .aboutmommi-intro {
+
+        font-size: 0.98rem;
+    }
+
+    .aboutmommi-text {
+
+        font-size: 0.95rem;
+
+        line-height: 1.9;
+    }
+
+    .aboutmommi-image-wrapper {
+
+        padding-top: 0;
+    }
+
+    .aboutmommi-image-wrapper::before {
+
+        width: 280px;
+
+        height: 280px;
+    }
+
+    .aboutmommi-image {
+
+        width: 100%;
+
+        max-width: 360px;
+
+        height: auto;
+
+        aspect-ratio: 4 / 5;
+
+        border-radius: 26px;
+    }
+
+    .aboutmommi-signatures {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 16px;
     }
 
     .aboutmommi-signature-img {
+
         width: 120px;
     }
 }

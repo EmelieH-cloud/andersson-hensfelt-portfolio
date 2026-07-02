@@ -1,35 +1,65 @@
 import './commonquestions.css'
+
 import { useState } from 'react'
+
 import { Link } from 'react-router-dom'
+
+import { useTranslation } from 'react-i18next'
+
 import AppText from '../../Font/AppText'
 
-const questions = [
-  {
-    q: "Vad är mommi?",
-    a: "mommi är en app för mammor som vill träffa mammor, för att knyta kontakt, träffas och skapa communities."
-  },
-  {
-    q: "Är appen gratis?",
-    a: "Ja, appen är gratis att använda. Njut!"
-  },
-  {
-  q: "Hur hanteras personuppgifter?",
-  a: (
-    <>
-      Vi hanterar dina uppgifter enligt vår{" "}
-      <Link to="/integrity" className="faq-link">integritetspolicy</Link>{" "}
-      . Vänligen läs även igenom våra {" "}
-      <Link to="/terms" className="faq-link">användarvillkor</Link>.
-    </>
-  )
-},
-  {
-    q: "Kontakt & support",
-    a: "Du når oss på info@anderssonhensfelt@gmail.se"
-  }
-]
-
 const CommonQuestionsSection = () => {
+
+  const { t } = useTranslation("general")
+
+  const questions = [
+
+    {
+      q: t("faq.question1"),
+
+      a: t("faq.answer1")
+    },
+
+    {
+      q: t("faq.question2"),
+
+      a: t("faq.answer2")
+    },
+
+    {
+      q: t("faq.question3"),
+
+      a: (
+        <>
+          {t("faq.answer3_1")}{" "}
+
+          <Link to="/integrity" className="faq-link">
+            {t("faq.integrity")}
+          </Link>{" "}
+
+          {t("faq.answer3_2")}{" "}
+
+          <Link to="/terms" className="faq-link">
+            {t("faq.terms")}
+          </Link>
+        </>
+      )
+    },
+
+    {
+      q: t("faq.question4"),
+
+      a: t("faq.answer4")
+    },
+
+    {
+      q: t("faq.question5"),
+
+      a: t("faq.answer5")
+    }
+
+  ]
+
   const [openIndex, setOpenIndex] = useState(null)
 
   const toggle = (index) => {
@@ -37,20 +67,23 @@ const CommonQuestionsSection = () => {
   }
 
   return (
-    <section className="faq-section">
 
+    <section className="faq-section">
 
       <div className="faq-container">
 
         <div className="faq-header">
+
           <AppText as="h2" className="faq-title">
-            Vanliga frågor
+            {t("faq.title")}
           </AppText>
+
         </div>
 
         <div className="faq-list">
 
           {questions.map((item, index) => (
+
             <div
               key={index}
               className={`faq-item ${openIndex === index ? 'active' : ''}`}
@@ -64,19 +97,24 @@ const CommonQuestionsSection = () => {
                 </p>
 
                 <div className="faq-icon">
+
                   <span />
                   <span />
+
                 </div>
 
               </div>
 
               <div className="faq-answer">
+
                 <AppText className="faq-answer-text">
                   {item.a}
                 </AppText>
+
               </div>
 
             </div>
+
           ))}
 
         </div>

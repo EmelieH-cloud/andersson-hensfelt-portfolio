@@ -1,7 +1,17 @@
 import './appfeaturesintro.css'
 import AppText from '../../Font/AppText'
+import { useTranslation }
+from "react-i18next";
 
 const AppFeaturesIntro = () => {
+
+  const { t } =
+  useTranslation("general");
+
+const appFeaturesIntro =
+  t("appFeaturesIntro", {
+    returnObjects: true,
+  });
   return (
     <section className="app-features-intro">
 
@@ -9,15 +19,13 @@ const AppFeaturesIntro = () => {
 
         <span className="accent-line animate-line" />
 
-        <AppText as="h1" weight={400} className="intro-heading animate-heading">
-          Kom i kontakt med mommis på det sätt som passar dig bäst
-        </AppText>
+      <AppText as="h1" weight={400} className="intro-heading animate-heading">
+  {appFeaturesIntro.heading}
+</AppText>
 
-        <AppText weight={400} className="intro-paragraph animate-text">
-          När vi skapade mommi hade vi med oss att alla är olika och vill träffas på olika sätt. 
-          Vissa föredrar att träffa en person i taget, medan andra hellre ses i grupp. 
-          Därför har vi skapat tre olika sätt för dig att komma i kontakt med och träffa andra mommis - mommiSök, mommiTräff och mommiGrupper.
-        </AppText>
+       <AppText weight={400} className="intro-paragraph animate-text">
+  {appFeaturesIntro.text}
+</AppText>
 
         <span className="accent-line bottom animate-line delay" />
 

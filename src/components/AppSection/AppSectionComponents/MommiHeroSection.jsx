@@ -1,32 +1,47 @@
 import './mommihero.css'
 
+import { useTranslation } from 'react-i18next'
+
 import MOMMIBG from '../../../assets/mommi/mommibg.jpg'
 import MOMMI from '../../../assets/mommi/phonepictures/mommiherophone.png'
+
 import AppText from '../../Font/AppText'
 
 const MommiHeroSection = () => {
+
+  const { t } = useTranslation("general")
+
   return (
+
     <section className="mommi-hero">
 
-      <div 
+      <div
         className="mommi-hero-bg"
         style={{ backgroundImage: `url(${MOMMIBG})` }}
       />
-
 
       <div className="mommi-hero-inner">
 
         <div className="mommi-hero-text">
 
-          <AppText as="h1" weight={400} className="mommi-hero-title">
-            För mammor som vill träffa mammor
+          <AppText
+            as="h1"
+            weight={400}
+            className="mommi-hero-title"
+          >
+            {t("mommiHeroTitle")}
           </AppText>
-
 
         </div>
 
         <div className="mommi-hero-phone">
-          <img src={MOMMI} alt="Mommi app" className="mommi-phone" />
+
+          <img
+            src={MOMMI}
+            alt="Mommi app"
+            className="mommi-phone"
+          />
+
         </div>
 
       </div>

@@ -1,22 +1,47 @@
 import { useEffect } from "react";
 import "./termsstyle.css";
-
+import { useTranslation }
+from "react-i18next";
 import AppText from "../Font/AppText";
 import ContentRulesSection from "./TermsComponents/ContentRulesSection";
 import GeneralTermsSection from "./TermsComponents/GeneralTermsSection";
 import UserResponsibilitiesSection from "./TermsComponents/UserResponsibilitesSection";
-import { introductionTermsData } from "./data/introductionTermsData";
 import IntroductionTermsSection from "./TermsComponents/IntroductionTermsSection";
-import { contentRulesData } from "./data/contentRulesData";
-import {generalTermsData} from "./data/generalTermsData";
-import {userResponsibilitiesData} from "./data/userResponsibilitesData";
 
 function Terms() {
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const { t } =
+  useTranslation("terms");
+
+  const contentRulesData =
+  t("contentRulesData", {
+    returnObjects: true,
+  });
+
+  const generalTermsData =
+  t("generalTermsData", {
+    returnObjects: true,
+  });
+
+  const userResponsibilitiesData =
+  t("userResponsibilitiesData", {
+    returnObjects: true,
+  });
+
+  const introductionTermsData =
+  t("introductionTermsData", {
+    returnObjects: true,
+  });
+
+  const toc =
+  t("toc", {
+    returnObjects: true,
+  });
 
   const scrollToSection = (id) => {
 
@@ -51,7 +76,7 @@ function Terms() {
 
 
         <AppText as="h1" weight={600} className="terms-main-title">
-          Användarvillkor
+           {t("pageTitle")}
         </AppText>
 
 <IntroductionTermsSection
@@ -63,49 +88,49 @@ function Terms() {
         <div className="terms-toc">
 
           <AppText weight={600}>
-            Innehåll
+          {toc.title}
           </AppText>
 
           <ol>
 
             <li onClick={() => scrollToSection("responsibilities")}>
-              Ditt ansvar
+              {toc.responsibilities}
             </li>
 
             <li onClick={() => scrollToSection("content-rules")}>
-              Innehåll
+              {toc.content}
             </li>
 
             <li onClick={() => scrollToSection("privacy")}>
-              Integritet
+              {toc.privacy}
             </li>
 
             <li onClick={() => scrollToSection("license")}>
-              Rättigheter du ger mommi
+              {toc.license}
             </li>
 
             <li onClick={() => scrollToSection("termination")}>
-              Avslut av konto
+              {toc.termination}
             </li>
 
             <li onClick={() => scrollToSection("security")}>
-              Säkerhet och ansvar
+              {toc.security}
             </li>
 
             <li onClick={() => scrollToSection("liability")}>
-              Ansvarsfriskrivning
+              {toc.liability}
             </li>
 
             <li onClick={() => scrollToSection("ads")}>
-              Annonser och innehåll från tredje part
+              {toc.ads}
             </li>
 
             <li onClick={() => scrollToSection("law")}>
-              Tillämplig lag och tvist
+              {toc.law}
             </li>
 
             <li onClick={() => scrollToSection("changes")}>
-              Ändringar av användarvillkoren
+              {toc.changes}
             </li>
 
           </ol>

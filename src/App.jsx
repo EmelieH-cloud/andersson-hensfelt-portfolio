@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-
+import AppStoreRedirectPage from './pages/AppStoreRedirectPage';
+import GooglePlayRedirectPage from './pages/GooglePlayRedirectPage';
 import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
 import Appspage from './pages/Appspage';
@@ -12,6 +13,8 @@ import SecurityPage from './pages/SecurityPage';
 import FAQpage from './pages/FAQpage';
 import GuidePage from './pages/GuidePage';
 import ChildSafetyPolicyPage from './pages/ChildSafetyPolicypage';
+import PressRoomPage from './pages/PressRoomPage';
+import Collabspage from './pages/Collabspage';
 import ScrollToTop from './components/Helpers/ScrollToTop';
 
 function App() {
@@ -31,6 +34,10 @@ function App() {
         <Route path="/faq" element={<FAQpage/>}/>
         <Route path="/guide" element={<GuidePage/>}/>
         <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage/>}/>
+        <Route path="/pressroom" element={<PressRoomPage />} />
+        <Route path="/collabs" element={<Collabspage />} />
+        <Route path="/app-store" element={<AppStoreRedirectPage />} />
+        <Route path="/google-play" element={<GooglePlayRedirectPage />} />
       </Routes>
 
     </div>

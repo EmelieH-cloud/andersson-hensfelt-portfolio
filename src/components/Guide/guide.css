@@ -13,8 +13,16 @@ body {
 /* ========================= */
 
 .guide-section {
-    width: 100%;
-    padding: 180px 20px 120px;
+
+    min-height: 100vh;
+
+    padding: 180px 24px 120px;
+
+    background: linear-gradient(180deg,
+            #d19fa9 0%,
+            #c87484 100%);
+
+    font-family: "Raleway", sans-serif;
 }
 
 /* ========================= */
@@ -22,7 +30,9 @@ body {
 /* ========================= */
 
 .guide-container {
-    max-width: 900px;
+
+    max-width: 1100px;
+
     margin: 0 auto;
 }
 
@@ -31,24 +41,99 @@ body {
 /* ========================= */
 
 .guide-header {
+
     text-align: center;
-    margin-bottom: 60px;
+
+    margin-bottom: 90px;
+}
+
+.guide-tag {
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.16);
+
+    color: white;
+
+    font-size: .72rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
 }
 
 .guide-title {
-    font-size: 3.4rem;
-    font-weight: 800;
-    letter-spacing: -1.5px;
-    margin-bottom: 16px;
-    color:#d3aabb;
+
+    font-size: 4rem;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+
+    color: white;
+
+    line-height: 1;
 }
 
 .guide-intro {
-    font-size: 1.2rem;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-    color: #555;
+
+    max-width: 720px;
+
+    margin: 0 auto 38px;
+
+    font-size: 1.05rem;
+
+    line-height: 2;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* ========================= */
+/* DOWNLOAD BUTTONS */
+/* ========================= */
+
+.guide-download-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.guide-store-link {
+
+    transition: transform .25s ease;
+}
+
+.guide-store-link:hover {
+
+    transform: translateY(-3px) scale(1.03);
+}
+
+.guide-store-btn {
+
+    height: 58px;
+
+    width: auto;
+
+    display: block;
+
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
 }
 
 /* ========================= */
@@ -56,9 +141,12 @@ body {
 /* ========================= */
 
 .guide-videos {
+
     display: flex;
+
     flex-direction: column;
-    gap: 48px;
+
+    gap: 55px;
 }
 
 /* ========================= */
@@ -66,10 +154,24 @@ body {
 /* ========================= */
 
 .guide-video-card {
-    background: white;
-    padding: 46px 22px 3px;
+
+    background: rgba(255, 255, 255, 1);
+
+    padding: 60px 40px 40px;
+
+    border-radius: 32px;
+
     text-align: center;
-    border-top: 1px solid #e9bcbc;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.12);
+
+    transition: .35s ease;
+}
+
+.guide-video-card:hover {
+
+    transform: translateY(-4px);
 }
 
 /* ========================= */
@@ -77,32 +179,14 @@ body {
 /* ========================= */
 
 .guide-video-header-img {
-    width: 400px;
+
+    width: 380px;
+
     max-width: 100%;
-    margin: 0 auto;
+
+    margin: 0 auto 30px;
+
     display: block;
-}
-
-/* 🔥 FIX: endast mommiTräff */
-.guide-video-card--vent .guide-video-header-img {
-    margin-bottom: 0px;
-    
-}
-
-.guide-video-card--vent .guide-video-text {
-    margin-top: 0;
-}
-
-/* ========================= */
-/* TEXT */
-/* ========================= */
-
-.guide-video-text {
-    font-size: 1.02rem;
-    line-height: 1.8;
-    color: #333;
-    max-width: 620px;
-    margin: 0 auto 34px;
 }
 
 /* ========================= */
@@ -110,8 +194,11 @@ body {
 /* ========================= */
 
 .guide-video-embed {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
@@ -120,7 +207,11 @@ body {
 /* ========================= */
 
 .guide-video-embed video {
-    border-radius: 18px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* ========================= */
@@ -130,15 +221,20 @@ body {
 .guide-video-embed .mommi-video-hero,
 .guide-video-embed .mommivent-video-hero,
 .guide-video-embed .mommigrupp-video-hero {
+
     min-height: auto;
+
     padding: 0;
+
     background: transparent;
 }
 
 .guide-video-embed .mommi-video-wrapper,
 .guide-video-embed .mommivent-video-wrapper,
 .guide-video-embed .mommigrupp-video-wrapper {
+
     max-width: 420px;
+
     width: 100%;
 }
 
@@ -149,44 +245,65 @@ body {
 @media (max-width: 768px) {
 
     .guide-section {
-        padding: 150px 16px 80px;
+
+        padding:
+            140px 18px 90px;
+    }
+
+    .guide-header {
+
+        margin-bottom: 50px;
     }
 
     .guide-title {
-        font-size: 2.6rem;
+
+        font-size: 2.7rem;
+
+        line-height: 1.1;
     }
 
     .guide-intro {
-        font-size: 1.05rem;
+
+        font-size: .96rem;
+
+        line-height: 1.9;
+
+        margin-bottom: 30px;
+    }
+
+    .guide-download-buttons {
+
+        gap: 14px;
+    }
+
+    .guide-store-btn {
+
+        height: 50px;
     }
 
     .guide-video-card {
-        padding: 34px 18px 36px;
+
+        padding: 34px 20px 28px;
+
+        border-radius: 24px;
     }
 
     .guide-video-header-img {
+
         width: 240px;
-        max-width: 100%;
-        margin-bottom: 18px;
-    }
 
-    /* 🔥 FIX även på mobil */
-    .guide-video-card--vent .guide-video-header-img {
-        margin-bottom: 8px;
-    }
-
-    .guide-video-text {
-        font-size: 0.95rem;
-        margin-bottom: 26px;
+        margin-bottom: 22px;
     }
 
     .guide-video-embed .mommi-video-wrapper,
     .guide-video-embed .mommivent-video-wrapper,
     .guide-video-embed .mommigrupp-video-wrapper {
+
         max-width: 100%;
     }
 
     .guide-video-embed video {
-        border-radius: 16px;
+
+        border-radius: 18px;
     }
 }

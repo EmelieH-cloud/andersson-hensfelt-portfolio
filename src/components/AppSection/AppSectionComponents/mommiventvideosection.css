@@ -4,7 +4,7 @@
 
 .mommivent-section {
     width: 100%;
-    background: #c06f7e;
+    background: #ffffff;
 
     padding: 50px 32px 50px;
 
@@ -77,13 +77,13 @@
     margin-bottom: 16px;
 
     font-size: 2.4rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .mommivent-text {
     font-size: 1rem;
     line-height: 1.7;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-bottom: 16px;
 }
 
