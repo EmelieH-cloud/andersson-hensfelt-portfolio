@@ -230,36 +230,67 @@
 /* ========================= */
 
 .collabs-logos-grid {
-
     display: flex;
-
     justify-content: center;
-
-    align-items: center;
+    align-items: flex-start;
+    gap: 110px;
+    flex-wrap: wrap;
 }
 
 .collabs-logo-item {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
+    width: 240px;
+    gap: 50px;
+}
 
+.collabs-logo-wrapper {
+    height: 220px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-
-    gap: 20px;
+    width: 100%;
 }
 
 .collabs-logo {
+    max-width: 260px;
+    max-height: 180px;
 
-    width: 220px;
-
-    max-width: 100%;
+    width: auto;
+    height: auto;
 
     object-fit: contain;
-
     transition: transform .3s ease;
+}
+
+.collabs-company-name {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+    /* tidigare 22px */
+    padding: 10px 22px;
+
+    background: #f6e8eb;
+    color: #b56576;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+
+    min-width: 170px;
+    min-height: 44px;
+
+    transition: all .3s ease;
+}
+
+.collabs-logo-item:hover .collabs-company-name {
+    background: #efd9de;
+    transform: translateY(-2px);
 }
 
 .collabs-logo:hover {

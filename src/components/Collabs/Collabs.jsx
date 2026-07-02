@@ -1,8 +1,9 @@
 import './collabsstyle.css'
 
 import { useTranslation } from 'react-i18next'
-
+import Lemira from '../../assets/pressrum/lemira.png'
 import Mammasnack from '../../assets/pressrum/mammasnack.png'
+import EverydayBaby from '../../assets/pressrum/everydaybaby.jpeg'
 
 const Collabs = () => {
 
@@ -97,6 +98,32 @@ const Collabs = () => {
 
               <h3 className='collabs-company-name'>
                 Mammasnack
+              </h3>
+
+            </div>
+              <div className='collabs-logo-item'>
+
+              <img
+                src={Lemira}
+                alt="Lemira"
+                className='collabs-logo'
+              />
+
+              <h3 className='collabs-company-name'>
+                Lemira
+              </h3>
+
+            </div>
+            <div className='collabs-logo-item'>
+
+              <img
+                src={EverydayBaby}
+                alt="Everyday Baby"
+                className='collabs-logo'
+              />
+
+              <h3 className='collabs-company-name'>
+                Everyday Baby
               </h3>
 
             </div>
