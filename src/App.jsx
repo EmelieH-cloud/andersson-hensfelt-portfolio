@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-
+import AppStoreRedirectPage from './pages/AppStoreRedirectPage';
+import GooglePlayRedirectPage from './pages/GooglePlayRedirectPage';
 import Homepage from './pages/Homepage';
 import Aboutpage from './pages/Aboutpage';
 import Appspage from './pages/Appspage';
@@ -35,6 +36,8 @@ function App() {
         <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage/>}/>
         <Route path="/pressroom" element={<PressRoomPage />} />
         <Route path="/collabs" element={<Collabspage />} />
+        <Route path="/app-store" element={<AppStoreRedirectPage />} />
+        <Route path="/google-play" element={<GooglePlayRedirectPage />} />
       </Routes>
 
     </div>
