@@ -1,23 +1,32 @@
 import { useEffect } from "react";
 
 function GooglePlayRedirectPage() {
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+  console.log("GooglePlayRedirectPage laddades");
 
-    if (window.gtag) {
-      window.gtag("event", "google_play_redirect", {
-        store: "google_play",
-        utm_source: params.get("utm_source"),
-        utm_medium: params.get("utm_medium"),
-        utm_campaign: params.get("utm_campaign"),
-        page_location: window.location.href,
-      });
-    }
+  useEffect(() => {
+    console.log("useEffect körs");
+
+    const hashQuery = window.location.hash.split("?")[1] || "";
+    const params = new URLSearchParams(hashQuery);
+
+    console.log("Hash:", window.location.hash);
+    console.log("Source:", params.get("utm_source"));
+    console.log("Medium:", params.get("utm_medium"));
+    console.log("Campaign:", params.get("utm_campaign"));
+
+    window.gtag?.("event", "google_play_redirect", {
+        debug_mode: true,
+      store: "google_play",
+      source: params.get("utm_source") || "direct",
+      medium: params.get("utm_medium") || "none",
+      campaign: params.get("utm_campaign") || "none",
+      page_location: window.location.href,
+    });
 
     const timer = setTimeout(() => {
       window.location.href =
         "https://play.google.com/store/apps/details?id=com.anderssonhensfelt.mommi1";
-    }, 1200);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,14 +35,6 @@ function GooglePlayRedirectPage() {
     <main style={{ padding: "40px", textAlign: "center" }}>
       <h1>Öppnar Google Play...</h1>
       <p>Du skickas vidare automatiskt.</p>
-
-      <p>
-        Om inget händer{" "}
-        <a href="https://play.google.com/store/apps/details?id=com.anderssonhensfelt.mommi1">
-          klicka här
-        </a>
-        .
-      </p>
     </main>
   );
 }

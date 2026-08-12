@@ -14,7 +14,7 @@ const ChildSafetyPolicy = () => {
         <div className="child-safety-block">
           <h3>1. Introduction</h3>
           <p>
-            At mommi, developed by Andersson & Hensfelt Handelsbolag, the safety of our users is our highest priority.
+            At mommi, developed by Andersson & Hensfelt AB, the safety of our users is our highest priority.
             We are committed to maintaining a safe and respectful environment for everyone using our platform.
           </p>
           <p>
