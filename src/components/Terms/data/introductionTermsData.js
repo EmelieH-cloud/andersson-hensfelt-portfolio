@@ -14,7 +14,7 @@ export const introductionTermsData = {
 
     "Vi uppmuntrar alla användare att vara uppmärksamma på sin egen säkerhet när de använder mommi och när de träffar andra medlemmar. Vi rekommenderar därför att du tar del av våra säkerhetsråd innan du använder appen.",
 
-    "Applikationen tillhandahålls av Andersson & Hensfelt Handelsbolag (org.nr 969801-6434)."
+    "Applikationen tillhandahålls av Andersson & Hensfelt AB (org.nr 559595-6532)."
 
   ],
 
@@ -22,9 +22,9 @@ export const introductionTermsData = {
 
   definitions: [
 
-    "I dessa användarvillkor avser \"mommi\", \"appen\", \"applikationen\" eller \"tjänsten\" mobilapplikationen mommi som tillhandahålls av Andersson & Hensfelt Handelsbolag.",
+    "I dessa användarvillkor avser \"mommi\", \"appen\", \"applikationen\" eller \"tjänsten\" mobilapplikationen mommi som tillhandahålls av Andersson & Hensfelt AB.",
 
-    "När vi använder \"vi\", \"oss\" eller \"vår\" syftar detta på Andersson & Hensfelt Handelsbolag.",
+    "När vi använder \"vi\", \"oss\" eller \"vår\" syftar detta på Andersson & Hensfelt AB.",
 
     "När vi använder \"du\", \"din\" eller \"användare\" syftar detta på den person som använder appen mommi."
 
