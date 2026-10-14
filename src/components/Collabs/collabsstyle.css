@@ -3,7 +3,6 @@
 /* ========================= */
 
 .collabs-section {
-
     padding: 180px 24px 120px;
 
     background:
@@ -16,30 +15,27 @@
     font-family: "Raleway", sans-serif;
 }
 
+
 /* ========================= */
 /* CONTAINER */
 /* ========================= */
 
 .collabs-container {
-
     max-width: 1180px;
-
     margin: 0 auto;
 }
+
 
 /* ========================= */
 /* HEADER */
 /* ========================= */
 
 .collabs-heading {
-
     text-align: center;
-
     margin-bottom: 90px;
 }
 
 .collabs-tag {
-
     display: inline-block;
 
     padding: 8px 18px;
@@ -50,50 +46,43 @@
 
     color: #c87484;
 
-    font-size: .72rem;
-
+    font-size: 0.72rem;
     font-weight: 700;
-
     letter-spacing: 2px;
 
     margin-bottom: 24px;
 }
 
 .collabs-title {
-
     font-size: 4rem;
-
     font-weight: 300;
 
     color: #1f1f1f;
 
-    margin-bottom: 24px;
+    margin: 0 0 24px;
 
     line-height: 1;
-
     letter-spacing: -2px;
 }
 
 .collabs-subtitle {
-
     max-width: 720px;
 
     margin: 0 auto;
 
     font-size: 1.05rem;
-
     line-height: 2;
 
     color: #5f5f5f;
 }
+
 
 /* ========================= */
 /* MAIN CARD */
 /* ========================= */
 
 .collabs-card {
-
-    background: white;
+    background: #ffffff;
 
     border-radius: 36px;
 
@@ -106,12 +95,10 @@
 }
 
 .collabs-card-content {
-
     max-width: 760px;
 }
 
 .collabs-small-tag {
-
     display: inline-block;
 
     margin-bottom: 20px;
@@ -124,47 +111,41 @@
 
     color: #c87484;
 
-    font-size: .72rem;
-
+    font-size: 0.72rem;
     font-weight: 700;
 
     letter-spacing: 2px;
 }
 
 .collabs-card-title {
-
     font-size: 2.8rem;
-
     font-weight: 300;
 
     line-height: 1.1;
 
-    margin-bottom: 28px;
+    margin: 0 0 28px;
 
     color: #1f1f1f;
 }
 
 .collabs-text {
-
     font-size: 1rem;
-
     line-height: 2;
 
     color: #555;
 
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
+
 
 /* ========================= */
 /* BUTTON */
 /* ========================= */
 
 .collabs-button {
-
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     margin-top: 20px;
@@ -174,30 +155,29 @@
     border-radius: 999px;
 
     background: #c87484;
-
-    color: white;
+    color: #ffffff;
 
     font-weight: 600;
 
     text-decoration: none;
 
-    transition: .3s ease;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
 .collabs-button:hover {
-
     background: #b86474;
-
     transform: translateY(-2px);
 }
+
 
 /* ========================= */
 /* PARTNERS */
 /* ========================= */
 
 .collabs-partners-card {
-
-    background: white;
+    background: #ffffff;
 
     border-radius: 36px;
 
@@ -208,84 +188,133 @@
 }
 
 .collabs-partners-header {
-
     text-align: center;
-
     margin-bottom: 50px;
 }
 
 .collabs-partners-title {
-
     font-size: 2.5rem;
-
     font-weight: 300;
 
     color: #1f1f1f;
 
-    margin-top: 18px;
+    margin: 18px 0 0;
 }
 
+
 /* ========================= */
-/* LOGOS */
+/* LOGOS GRID */
+/* 3 PER RAD */
 /* ========================= */
 
 .collabs-logos-grid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 110px;
-    flex-wrap: wrap;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 70px 50px;
+
+    align-items: start;
 }
+
+
+/* ========================= */
+/* LOGO ITEM */
+/* ========================= */
 
 .collabs-logo-item {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    width: 240px;
-    gap: 50px;
+    justify-content: flex-start;
+
+    gap: 28px;
+
+    min-width: 0;
 }
+
+
+/* ========================= */
+/* LOGO WRAPPER */
+/* ========================= */
 
 .collabs-logo-wrapper {
-    height: 220px;
+    width: 100%;
+    max-width: 230px;
+
+    height: 175px;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
-    width: 100%;
+
+    flex-shrink: 0;
 }
+
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
 
 .collabs-logo {
-    max-width: 260px;
-    max-height: 180px;
+    display: block;
 
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 
     object-fit: contain;
-    transition: transform .3s ease;
+    object-position: center;
+
+    transition: transform 0.3s ease;
 }
 
+.collabs-logo-item:hover .collabs-logo {
+    transform: scale(1.04);
+}
+
+
+/* ========================= */
+/* COMPANY NAME */
+/* ========================= */
+
 .collabs-company-name {
-    display: inline-flex;
+    display: flex;
+
     align-items: center;
     justify-content: center;
 
-    margin-top: 40px;
-    /* tidigare 22px */
-    padding: 10px 22px;
+    width: 190px;
+    min-height: 46px;
+
+    margin: 0;
+
+    padding: 10px 20px;
+
+    box-sizing: border-box;
 
     background: #f6e8eb;
+
     color: #b56576;
 
     border-radius: 999px;
 
     font-size: 1rem;
     font-weight: 600;
-    letter-spacing: .4px;
 
-    min-width: 170px;
-    min-height: 44px;
+    line-height: 1.2;
 
-    transition: all .3s ease;
+    letter-spacing: 0.4px;
+
+    text-align: center;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
 .collabs-logo-item:hover .collabs-company-name {
@@ -293,79 +322,129 @@
     transform: translateY(-2px);
 }
 
-.collabs-logo:hover {
 
-    transform: scale(1.04);
+/* ========================= */
+/* TABLET */
+/* 2 PER RAD */
+/* ========================= */
+
+@media (max-width: 950px) {
+
+    .collabs-partners-card {
+        padding: 50px 40px;
+    }
+
+    .collabs-logos-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 60px 40px;
+    }
+
+    .collabs-logo-wrapper {
+        max-width: 220px;
+        height: 165px;
+    }
 }
 
-.collabs-company-name {
-
-    font-size: 1.2rem;
-
-    font-weight: 600;
-
-    color: #1f1f1f;
-
-    letter-spacing: .5px;
-
-    margin: 0;
-}
 
 /* ========================= */
 /* MOBILE */
+/* 1 PER RAD */
 /* ========================= */
 
 @media (max-width: 768px) {
 
     .collabs-section {
-
         padding: 140px 18px 90px;
     }
 
     .collabs-heading {
-
         margin-bottom: 60px;
     }
 
     .collabs-title {
-
         font-size: 2.8rem;
-
         line-height: 1.1;
     }
 
     .collabs-subtitle {
-
-        font-size: .96rem;
-
+        font-size: 0.96rem;
         line-height: 1.9;
     }
 
     .collabs-card,
     .collabs-partners-card {
-
         padding: 34px 24px;
-
         border-radius: 26px;
     }
 
     .collabs-card-title {
-
         font-size: 2rem;
     }
 
     .collabs-partners-title {
-
         font-size: 2rem;
     }
 
-    .collabs-logo {
+    .collabs-partners-header {
+        margin-bottom: 40px;
+    }
 
-        width: 170px;
+    .collabs-logos-grid {
+        grid-template-columns: 1fr;
+
+        gap: 52px;
+    }
+
+    .collabs-logo-item {
+        gap: 22px;
+    }
+
+    .collabs-logo-wrapper {
+        width: 100%;
+        max-width: 220px;
+
+        height: 160px;
     }
 
     .collabs-company-name {
+        width: 180px;
 
-        font-size: 1rem;
+        min-height: 44px;
+
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 420px) {
+
+    .collabs-section {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .collabs-title {
+        font-size: 2.4rem;
+    }
+
+    .collabs-card,
+    .collabs-partners-card {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .collabs-logo-wrapper {
+        max-width: 190px;
+        height: 145px;
+    }
+
+    .collabs-company-name {
+        width: 170px;
     }
 }
