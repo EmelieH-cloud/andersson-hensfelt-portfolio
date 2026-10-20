@@ -15,6 +15,8 @@ import svCollabs from "./sv/collabs.json";
 import enCollabs from "./en/collabs.json";
 import svSecurity from "./sv/security.json"
 import enSecurity from "./en/security.json"
+import svAdmin from "./sv/admin.json";
+import enAdmin from "./en/admin.json";
 
 i18n
   .use(initReactI18next)
@@ -30,7 +32,8 @@ i18n
         general: svGeneral,
         pressroom: svPressroom,
         collabs: svCollabs,
-        security: svSecurity
+        security: svSecurity,
+        admin: svAdmin,
       },
 
       en: {
@@ -41,7 +44,8 @@ i18n
         general: enGeneral,
         pressroom: enPressroom,
         collabs: enCollabs,
-        security: enSecurity
+        security: enSecurity,
+        admin: enAdmin,
 
       },
 

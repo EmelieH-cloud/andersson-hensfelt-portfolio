@@ -1,0 +1,134 @@
+.app-features {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.app-features-container {
+  width: min(100%, 1380px);
+  margin: 0 auto;
+  padding: 0 28px clamp(36px, 4vw, 56px);
+}
+
+.app-features-phones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(12px, 1.5vw, 22px);
+  width: 100%;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0 14px 8px;
+  background: transparent;
+}
+
+.phone-image {
+  display: block;
+  width: min(112%, 620px);
+  height: clamp(540px, 52vw, 640px);
+  margin: 0 auto 22px;
+  object-fit: contain;
+  border-radius: 0 0 18px 18px;
+}
+
+.feature-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 340px);
+  margin: 0 auto;
+  padding: 14px 0 0;
+  background: transparent;
+  text-align: center;
+}
+
+.feature-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0 0 20px;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.bullet {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--color-rose);
+}
+
+.feature-desc {
+  width: 100%;
+  margin: 0;
+  color: #000000;
+  font-family: var(--font-display);
+  font-size: 1.32rem;
+  font-weight: 600;
+  line-height: 1.65;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .app-features-phones {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .feature-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: min(100%, 360px);
+    justify-self: center;
+  }
+
+  .phone-image {
+    height: 500px;
+  }
+
+  .feature-desc {
+    font-size: 1.18rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-features-container {
+    padding: 0 18px 40px;
+  }
+
+  .app-features-phones {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    max-width: 420px;
+  }
+
+  .feature-item:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .feature-item { padding: 20px; }
+
+  .phone-image {
+    height: 460px;
+    margin: 0 auto 8px;
+  }
+
+  .feature-card {
+    padding-top: 10px;
+  }
+}
+

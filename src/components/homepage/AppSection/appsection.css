@@ -1,0 +1,39 @@
+.app-features-showcase {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: #ffffff;
+}
+
+.app-features-showcase .app-features-intro {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    background: transparent;
+}
+
+.app-features-showcase .app-features {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    background: #ffffff;
+}
+
+/* 🔥 FULL WIDTH BACKGROUND WRAPPER */
+.video-sections-wrapper {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    padding: clamp(48px, 7vw, 96px) 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 3vw, 40px);
+}
+
+.video-sections-wrapper > section {
+    position: relative;
+    z-index: 1;
+}

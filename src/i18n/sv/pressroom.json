@@ -1,5 +1,14 @@
 {
   "title": "Pressrum",
+  "loadingPosts": "Hämtar pressinlägg…",
+  "loadPostsError": "Pressinläggen kunde inte hämtas just nu. Försök igen senare.",
+  "noPosts": "Det finns inga publicerade pressinlägg ännu.",
+  "readArticle": "Läs mer",
+  "deletePostShort": "Radera",
+  "deletePost": "Radera pressinlägget {{title}}",
+  "deletingPost": "Raderar…",
+  "confirmDelete": "Vill du radera pressinlägget \"{{title}}\"? Det går inte att ångra.",
+  "deletePostError": "Pressinlägget kunde inte raderas. Kontrollera Appwrite-behörigheten och försök igen.",
 
   "subtitle": "Senaste nyheterna från Andersson & Hensfelt.",
 

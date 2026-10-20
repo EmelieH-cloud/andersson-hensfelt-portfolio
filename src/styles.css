@@ -1,0 +1,567 @@
+/* Site-wide foundations. Component and page details live beside their JSX. */
+:root {
+  font-size: 16px;
+  font-family: var(--font-body);
+  color: #111111;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Shared palette */
+  --color-ink: #111111;
+  --color-muted: #1f1f1f;
+  --color-rose: #a85f6d;
+  --color-rose-deep: #874a57;
+  --color-ivory: #ffffff;
+  --color-paper: #fffdfa;
+  --gradient-rose: linear-gradient(180deg, #b66d7a 0%, #c98590 48%, #d9a5ad 100%);
+  --font-body: 'Outfit', 'Segoe UI', Arial, sans-serif;
+  --font-display: 'Cormorant Garamond', Garamond, Georgia, 'Times New Roman', serif;
+
+  /* Shared surfaces */
+  --radius-card: 28px;
+  --radius-card-small: 20px;
+  --shadow-card: 0 22px 60px rgba(75, 45, 43, 0.12);
+  --content-width: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  background: var(--color-ivory);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--color-ink);
+  background: var(--color-ivory);
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(168, 95, 109, 0.7);
+  outline-offset: 4px;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-rose);
+}
+
+.app-root {
+  overflow: clip;
+}
+
+/* Homepage feature heading; page headers use the PageHeader component. */
+.intro-heading {
+  font-family: var(--font-display);
+  color: var(--color-ink);
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.intro-paragraph {
+  color: var(--color-muted);
+}
+
+/* Shared card surface for page content panels. */
+.our-apps-card,
+.policy-card,
+.support-content-wrapper,
+.guide-video-card,
+.collabs-card,
+.collabs-partners-card,
+.press-post {
+  border: 1px solid rgba(105, 75, 68, 0.08);
+  border-radius: var(--radius-card);
+  background: rgba(255, 253, 250, 0.97);
+  box-shadow: var(--shadow-card);
+}
+
+/* Navigation */
+.navbar-custom {
+  padding: 12px 0;
+  transition: background-color 220ms ease, box-shadow 220ms ease, padding 220ms ease;
+}
+
+.navbar-custom .container {
+  max-width: 1320px;
+}
+
+.navbar-scrolled {
+  padding: 7px 0;
+  background: rgba(45, 43, 44, 0.72);
+  box-shadow: 0 8px 30px rgba(25, 17, 17, 0.13);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.logo-navbar {
+  width: clamp(138px, 15vw, 190px);
+  transition: transform 220ms ease;
+}
+
+.navbar-brand:hover .logo-navbar {
+  transform: translateY(-1px);
+}
+
+.navlinks {
+  gap: clamp(12px, 2vw, 28px);
+  letter-spacing: 0.035em;
+}
+
+.navlinks a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Homepage hero and feature section */
+.hero-container {
+  min-height: min(850px, 100svh);
+  height: 100svh;
+  background: #403638;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(76, 54, 60, 0.78) 0%,
+    rgba(132, 93, 101, 0.52) 55%,
+    rgba(115, 78, 86, 0.6) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 900px);
+  margin-top: clamp(120px, 20vh, 210px);
+  padding: 56px 38px;
+  gap: 0;
+}
+
+.hero-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 14px 36px rgba(45, 24, 30, 0.16);
+}
+
+.hero-logo {
+  width: clamp(280px, 42vw, 470px);
+}
+
+.hero-intro {
+  max-width: 780px;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  font-optical-sizing: auto;
+  text-wrap: balance;
+  color: #ffffff;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.32);
+}
+
+.hero-highlight {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0.35px 0 currentColor, -0.35px 0 currentColor;
+}
+
+.app-features-intro {
+  padding: clamp(76px, 9vw, 120px) 24px 54px;
+  background: #ffffff;
+}
+
+.intro-heading {
+  color: var(--color-ink);
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+}
+
+.intro-paragraph {
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.85;
+}
+
+.accent-line {
+  width: 72px;
+  height: 3px;
+  background: linear-gradient(90deg, #c98691, var(--color-rose));
+}
+
+/* Shared background and surface refinements for marketing pages. */
+.our-apps-section,
+.aboutmommi-section,
+.guide-section,
+.pressroom-section,
+.policy-section {
+  background: var(--gradient-rose);
+}
+
+.faq-page {
+  background: var(--gradient-rose);
+}
+
+.terms-page,
+.security-page,
+.child-safety-section,
+.integrity-page {
+  background: #fff;
+}
+
+.aboutmommi-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.policy-card,
+.support-content-wrapper,
+.guide-video-card,
+.collabs-card,
+.collabs-partners-card,
+.press-post,
+.our-apps-card {
+  background: var(--color-paper);
+}
+
+.our-apps-card,
+.policy-card,
+.support-content-wrapper,
+.guide-video-card,
+.collabs-card,
+.collabs-partners-card,
+.press-post {
+  background: var(--color-paper);
+  padding: clamp(32px, 5vw, 60px);
+}
+
+/* Shared positioning for page headers below the fixed navigation. */
+.pressroom-section,
+.guide-section,
+.our-apps-section,
+.aboutmommi-section,
+.policy-section,
+.support-section-wrapper,
+.faq-section,
+.collabs-section {
+  padding-top: 180px !important;
+}
+
+@media (max-width: 768px) {
+  .our-apps-section,
+  .aboutmommi-section,
+  .guide-section,
+  .pressroom-section,
+  .policy-section,
+  .support-section-wrapper,
+  .faq-section,
+  .collabs-section {
+    padding-top: 140px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .our-apps-section,
+  .aboutmommi-section,
+  .guide-section,
+  .pressroom-section,
+  .policy-section,
+  .support-section-wrapper,
+  .faq-section,
+  .collabs-section {
+    padding-top: 132px !important;
+  }
+}
+
+.aboutmommi-image {
+  border: 7px solid rgba(255, 253, 250, 0.72);
+  box-shadow: 0 30px 75px rgba(54, 31, 34, 0.24);
+}
+
+.guide-video-embed video {
+  box-shadow: 0 18px 45px rgba(42, 27, 30, 0.18);
+}
+
+.collabs-section {
+  background: var(--gradient-rose);
+}
+
+.collabs-button {
+  background: var(--color-rose);
+  box-shadow: 0 10px 24px rgba(168, 95, 109, 0.22);
+}
+
+.collabs-button:hover {
+  background: var(--color-rose-deep);
+}
+
+.collabs-company-name {
+  background: #f5e9e7;
+  color: var(--color-rose-deep);
+}
+
+.press-post {
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.press-image-item {
+  border-radius: var(--radius-card-small);
+}
+
+/* Footer */
+.footer {
+  color: var(--color-ink);
+  background: #ffffff;
+}
+
+.footer-container {
+  max-width: 1320px;
+  padding: clamp(48px, 6vw, 76px) 28px;
+  gap: 34px;
+}
+
+.footer-title {
+  margin: 0 0 16px;
+  color: var(--color-rose-deep);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+.footer-text,
+.footer-contact {
+  color: #3f3739;
+}
+
+.footer-link {
+  padding: 4px 0;
+  color: #3f3739;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.footer-link:hover {
+  color: var(--color-rose-deep);
+  transform: translateX(2px);
+}
+
+.footer-bottom {
+  border-color: rgba(63, 55, 57, 0.16);
+  color: #62595b;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 12px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(24, 17, 18, 0.18);
+  }
+
+  .navbar-collapse:not(.show) {
+    background: transparent;
+  }
+
+  .navlinks {
+    gap: 8px;
+  }
+
+  .navlinks a {
+    padding: 10px 8px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  .navbar-custom {
+    padding: 8px 0;
+  }
+
+  .navbar-custom > .container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .navbar-collapse {
+    padding: 14px;
+  }
+
+  .our-apps-section,
+  .aboutmommi-section,
+  .guide-section,
+  .pressroom-section,
+  .policy-section,
+  .support-section-wrapper,
+  .faq-section,
+  .collabs-section {
+    padding-top: 132px;
+  }
+
+  .pressroom-heading,
+  .guide-header,
+  .our-apps-heading,
+  .policy-header,
+  .support-heading,
+  .faq-header,
+  .collabs-heading {
+    margin-bottom: 44px;
+  }
+
+  .hero-container {
+    min-height: 640px;
+    height: 100svh;
+    max-height: 900px;
+  }
+
+  .hero-content {
+    margin-top: 112px;
+    padding: 36px 22px;
+  }
+
+  .hero-logo-wrapper {
+    margin-bottom: 24px;
+    padding: 14px 20px;
+  }
+
+  .hero-logo {
+    width: min(78vw, 340px);
+  }
+
+  .hero-intro {
+    max-width: 25ch;
+    font-size: clamp(1.35rem, 5.8vw, 1.75rem);
+    letter-spacing: -0.02em;
+    line-height: 1.18;
+  }
+
+  .our-apps-card,
+  .policy-card,
+  .support-content-wrapper,
+  .guide-video-card,
+  .collabs-card,
+  .collabs-partners-card {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 46px 22px;
+    text-align: left;
+    gap: 32px 20px;
+  }
+
+  .footer-column:first-child {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-text {
+    margin-inline: auto;
+  }
+
+  .footer-title {
+    font-size: 0.9rem;
+  }
+
+  .footer-links,
+  .footer-download {
+    align-items: flex-start;
+  }
+
+  .footer-contact {
+    align-items: flex-start;
+    overflow-wrap: anywhere;
+  }
+
+  .store-btn {
+    width: min(100%, 145px);
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-column:first-child {
+    grid-column: auto;
+  }
+
+  .footer-column:not(:first-child) {
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-download {
+    align-items: center;
+  }
+
+  .footer-contact {
+    justify-content: center;
+  }
+}
+i 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

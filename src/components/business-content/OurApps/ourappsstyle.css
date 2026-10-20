@@ -1,0 +1,249 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.our-apps-section {
+
+    min-height: 100vh;
+
+    padding: 180px 32px 120px;
+
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.our-apps-container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.our-apps-heading {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.our-apps-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.our-apps-links a {
+
+    color: var(--color-rose-deep);
+
+    text-decoration: none;
+
+    font-size: .92rem;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    transition: .3s ease;
+}
+
+.our-apps-links a:hover {
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================= */
+/* MAIN CARD */
+/* ========================= */
+
+.our-apps-card {
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 36px;
+
+    padding: 60px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+/* ========================= */
+/* IMAGES */
+/* ========================= */
+
+.our-apps-images {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 26px;
+
+    margin-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+.our-img {
+
+    width: 260px;
+
+    border-radius: 26px;
+
+    object-fit: contain;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.our-img.loaded {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.our-img:hover {
+
+    transform: translateY(-4px);
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.our-apps-content {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+.our-apps-text {
+
+    margin-bottom: 24px;
+
+    line-height: 2;
+
+    color: #111111;
+
+    font-size: 1rem;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.our-apps-cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    margin: 40px 0 45px;
+
+    flex-wrap: wrap;
+}
+
+.omd-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    width: 280px;
+
+    text-align: left;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.08),
+        0 5px 15px rgba(0, 0, 0, 0.05);
+
+    transition: .35s ease;
+}
+
+.omd-card:hover {
+
+    transform: translateY(-6px);
+}
+
+.omd-card-intro {
+
+    display: block;
+
+    font-size: .75rem;
+
+    color: #c87484;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.omd-card p {
+
+    font-size: .98rem;
+
+    line-height: 1.7;
+
+    color: #222;
+
+    margin: 0;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .our-apps-section {
+
+        padding: 140px 20px 80px;
+    }
+
+    .our-apps-heading {
+
+        margin-bottom: 45px;
+    }
+
+}

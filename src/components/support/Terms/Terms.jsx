@@ -1,0 +1,176 @@
+import { useEffect } from "react";
+import "./termsstyle.css";
+import { useTranslation }
+from "react-i18next";
+import AppText from "../../shared/typography/Font/AppText";
+import ContentRulesSection from "./TermsComponents/ContentRulesSection";
+import GeneralTermsSection from "./TermsComponents/GeneralTermsSection";
+import UserResponsibilitiesSection from "./TermsComponents/UserResponsibilitesSection";
+import IntroductionTermsSection from "./TermsComponents/IntroductionTermsSection";
+
+function Terms() {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { t } =
+  useTranslation("terms");
+
+  const contentRulesData =
+  t("contentRulesData", {
+    returnObjects: true,
+  });
+
+  const generalTermsData =
+  t("generalTermsData", {
+    returnObjects: true,
+  });
+
+  const userResponsibilitiesData =
+  t("userResponsibilitiesData", {
+    returnObjects: true,
+  });
+
+  const introductionTermsData =
+  t("introductionTermsData", {
+    returnObjects: true,
+  });
+
+  const toc =
+  t("toc", {
+    returnObjects: true,
+  });
+
+  const scrollToSection = (id) => {
+
+    const element = document.getElementById(id);
+
+    if (element) {
+
+      const offset = 110;
+
+      const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
+
+    }
+
+  };
+
+
+  return (
+
+    <section className="terms-page">
+
+      <div className="terms-container">
+
+        {/* TITLE */}
+
+
+        <AppText as="h1" weight={600} className="terms-main-title">
+           {t("pageTitle")}
+        </AppText>
+
+<IntroductionTermsSection
+  data={introductionTermsData}
+/>
+
+        {/* CONTENTS */}
+
+        <div className="terms-toc">
+
+          <AppText weight={600}>
+          {toc.title}
+          </AppText>
+
+          <ol>
+
+            <li onClick={() => scrollToSection("responsibilities")}>
+              {toc.responsibilities}
+            </li>
+
+            <li onClick={() => scrollToSection("content-rules")}>
+              {toc.content}
+            </li>
+
+            <li onClick={() => scrollToSection("privacy")}>
+              {toc.privacy}
+            </li>
+
+            <li onClick={() => scrollToSection("license")}>
+              {toc.license}
+            </li>
+
+            <li onClick={() => scrollToSection("termination")}>
+              {toc.termination}
+            </li>
+
+            <li onClick={() => scrollToSection("security")}>
+              {toc.security}
+            </li>
+
+            <li onClick={() => scrollToSection("liability")}>
+              {toc.liability}
+            </li>
+
+            <li onClick={() => scrollToSection("ads")}>
+              {toc.ads}
+            </li>
+
+            <li onClick={() => scrollToSection("law")}>
+              {toc.law}
+            </li>
+
+            <li onClick={() => scrollToSection("changes")}>
+              {toc.changes}
+            </li>
+
+          </ol>
+
+        </div>
+
+
+
+        {/* USER RESPONSIBILITIES */}
+
+        <UserResponsibilitiesSection
+          id="responsibilities"
+          data={userResponsibilitiesData}
+        />
+
+
+
+        {/* CONTENT RULES */}
+
+        <ContentRulesSection
+          id="content-rules"
+          data={contentRulesData}
+        />
+
+
+
+        {/* GENERAL TERMS */}
+
+        <GeneralTermsSection
+          data={generalTermsData}
+        />
+
+
+
+      </div>
+
+    </section>
+
+  );
+
+}
+
+export default Terms;

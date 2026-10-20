@@ -1,25 +1,34 @@
 import { Route, Routes } from 'react-router-dom';
-import AppStoreRedirectPage from './pages/AppStoreRedirectPage';
-import GooglePlayRedirectPage from './pages/GooglePlayRedirectPage';
-import Homepage from './pages/Homepage';
-import Aboutpage from './pages/Aboutpage';
-import Appspage from './pages/Appspage';
-import Supportpage from './pages/Supportpage';
-import Policypage from './pages/Policypage';
-import Integritypage from './pages/Integritypage';
-import Termsspage from './pages/Termspage';
-import AboutMommiPage from './pages/AboutMommiPage';
-import SecurityPage from './pages/SecurityPage';
-import FAQpage from './pages/FAQpage';
-import GuidePage from './pages/GuidePage';
-import ChildSafetyPolicyPage from './pages/ChildSafetyPolicypage';
-import PressRoomPage from './pages/PressRoomPage';
-import Collabspage from './pages/Collabspage';
-import ScrollToTop from './components/Helpers/ScrollToTop';
+import AppStoreRedirectPage from './pages/redirects/AppStoreRedirectPage';
+import GooglePlayRedirectPage from './pages/redirects/GooglePlayRedirectPage';
+import Homepage from './pages/homepage/Homepage';
+import Aboutpage from './pages/business-content/Aboutpage';
+import Appspage from './pages/business-content/Appspage';
+import Supportpage from './pages/support/Supportpage';
+import Policypage from './pages/support/Policypage';
+import Integritypage from './pages/support/Integritypage';
+import Termsspage from './pages/support/Termspage';
+import AboutMommiPage from './pages/business-content/AboutMommiPage';
+import SecurityPage from './pages/support/SecurityPage';
+import FAQpage from './pages/support/FAQpage';
+import GuidePage from './pages/support/GuidePage';
+import ChildSafetyPolicyPage from './pages/support/ChildSafetyPolicypage';
+import PressRoomPage from './pages/business-content/PressroomPage';
+import Collabspage from './pages/business-content/Collabspage';
+import ScrollToTop from './components/shared/Helpers/ScrollToTop';
+import AdminAuthProvider from './components/admin/Admin/AdminAuthProvider';
+import AdminStatusBar from './components/admin/Admin/AdminStatusBar';
+import useAdminAuth from './components/admin/Admin/useAdminAuth';
+import AdminPage from './pages/admin/AdminPage';
+import AdminBlogPage from './pages/admin/AdminBlogPage';
 
-function App() {
+function AppContent() {
+  const { status, user } = useAdminAuth();
+  const isAdmin = status === 'authenticated' && Boolean(user);
+
   return (
-    <div>
+    <div className={`app-root${isAdmin ? ' admin-authenticated' : ''}`}>
+      {isAdmin && <AdminStatusBar />}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -31,16 +40,25 @@ function App() {
         <Route path="/terms" element={<Termsspage />} />
         <Route path="/safety" element={<SecurityPage />} />
         <Route path="/about-mommi" element={<AboutMommiPage />} />
-        <Route path="/faq" element={<FAQpage/>}/>
-        <Route path="/guide" element={<GuidePage/>}/>
-        <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage/>}/>
+        <Route path="/faq" element={<FAQpage />} />
+        <Route path="/guide" element={<GuidePage />} />
+        <Route path="/child-safety-policy" element={<ChildSafetyPolicyPage />} />
         <Route path="/pressroom" element={<PressRoomPage />} />
         <Route path="/collabs" element={<Collabspage />} />
         <Route path="/app-store" element={<AppStoreRedirectPage />} />
         <Route path="/google-play" element={<GooglePlayRedirectPage />} />
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/admin/blog" element={<AdminBlogPage />} />
       </Routes>
-
     </div>
+  );
+}
+
+function App() {
+  return (
+    <AdminAuthProvider>
+      <AppContent />
+    </AdminAuthProvider>
   );
 }
 

@@ -1,0 +1,183 @@
+/* =====================================================
+   NAVBAR LAYOUT
+   ===================================================== */
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 20;
+
+    padding: 14px 0;
+
+    background: transparent;
+
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* =====================================================
+   SCROLLED NAVBAR
+   ===================================================== */
+
+.navbar-scrolled {
+    background: rgba(45, 43, 44, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 4px 20px rgba(20, 18, 19, 0.16);
+}
+
+.navbar-support,
+.navbar-support.navbar-scrolled {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 4px 20px rgba(50, 35, 38, 0.08);
+}
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo-navbar {
+    width: 200px;
+}
+
+/* =====================================================
+   NAV LINKS CONTAINER
+   ===================================================== */
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   NAV LINKS
+   ===================================================== */
+
+.navlinks a {
+    position: relative;
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.navbar-support .navlinks a {
+    color: #30292b !important;
+}
+
+.navbar-support .navlinks a::after {
+    background: var(--color-rose-deep);
+}
+
+/* underline animation */
+
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
+
+/* hover effect */
+
+.navlinks a:hover {
+    opacity: 0.7;
+}
+
+.navlinks a:hover::after {
+    width: 100%;
+}
+
+/* =====================================================
+   HAMBURGER BUTTON
+   ===================================================== */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* 🔥 HAMBURGER COLOR FIX */
+
+/* DARK MODE (default) */
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+    /* vit */
+}
+
+.navbar-support .navbar-toggler-icon {
+    filter: none;
+}
+
+.navbar-support .language-toggle {
+    background: rgba(168, 95, 109, 0.08);
+    border-color: rgba(135, 74, 87, 0.22);
+}
+
+.navbar-support .language-btn {
+    color: #55484b;
+}
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    .logo-navbar {
+        width: 160px;
+    }
+
+    .navbar-custom {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* 🔥 MOBILE MENU BACKGROUND */
+
+    .navbar-collapse {
+        margin-top: 15px;
+        padding: 20px;
+
+        border-radius: 16px;
+
+        background: rgba(40, 40, 40, 0.95);
+        backdrop-filter: blur(10px);
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-support .navbar-collapse {
+        border: 1px solid rgba(135, 74, 87, 0.12);
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 10px 30px rgba(50, 35, 38, 0.12);
+    }
+
+    /* LINKS */
+
+    .navlinks {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding-top: 10px;
+    }
+
+    .navlinks a {
+        font-size: 1rem;
+    }
+}
+

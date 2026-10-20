@@ -1,0 +1,148 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+.app-features-intro {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+
+    padding: 88px 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.app-features-intro-container {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========================= */
+/* ACCENT LINE */
+/* ========================= */
+
+.accent-line {
+    width: 60px;
+    height: 2px;
+
+    background: linear-gradient(to right, #a95c6a, #c87484);
+    border-radius: 2px;
+}
+
+.accent-line--over-heading {
+    margin-bottom: 22px;
+}
+
+.accent-line--under-heading {
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+/* ========================= */
+/* TYPOGRAPHY */
+/* ========================= */
+
+.intro-heading {
+    margin-bottom: 0;
+}
+
+.app-features-intro .intro-paragraph {
+    color: #000000 !important;
+    font-family: var(--font-display);
+    font-size: 1.32rem;
+    font-weight: 600;
+    line-height: 1.65;
+    max-width: 820px;
+    margin: 0;
+}
+
+/* ========================= */
+/* 🔥 ANIMATIONS */
+/* ========================= */
+
+/* Line animation */
+.animate-line {
+    opacity: 0;
+    transform: scaleX(0.6);
+
+    animation: lineReveal 0.7s ease forwards;
+}
+
+.animate-line.delay {
+    animation-delay: 0.4s;
+}
+
+/* Heading */
+.animate-heading {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeUp 0.7s ease forwards;
+    animation-delay: 0.15s;
+}
+
+/* Paragraph */
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: fadeUp 0.7s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes lineReveal {
+    from {
+        opacity: 0;
+        transform: scaleX(0.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .app-features-intro {
+        padding: 68px 16px 0;
+    }
+
+    .app-features-intro .intro-paragraph {
+        font-size: 1.18rem;
+        line-height: 1.65;
+    }
+}
